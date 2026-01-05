@@ -1,0 +1,2802 @@
+[
+  {
+    "index": 38001,
+    "Problem": "Let $a$ and $b$ be positive real numbers such that $a^3 + b^3 = a + b.$  Simplify\n\\[\\frac{a}{b} + \\frac{b}{a} - \\frac{1}{ab}.\\]",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers",
+    "Facts": "a^3 + b^3 = a + b",
+    "Query": "(a / b) + (b / a) - (1 / (a * b)) = ?"
+  },
+  {
+    "index": 38002,
+    "Problem": "Find the coefficient of $x^3$ in the polynomial $T(x) = (2x - 1)^4$ and verify if $x = 0.5$ is a root.",
+    "Declaration": "T: Decl_Polynomial(Real)",
+    "Facts": "T = (2 * X - 1)^4",
+    "Query": "Get_Term_Coefficient(T, 3) = ? ∧ Is_Polynomial_Root(T, 0.5) = ?"
+  },
+  {
+    "index": 38003,
+    "Problem": "For the arithmetic sequence $\\{g_n\\}$ with $g_5 = 15$ and $g_{10} = 30$, find the sum of the first 20 terms.",
+    "Declaration": "G: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(G, 5) = 15; Get_Sequence_Terms(G, 10) = 30",
+    "Query": "Get_Sequence_Sum(G, 1, 20) = ?"
+  },
+  {
+    "index": 38004,
+    "Problem": "Let $c$ and $d$ be the roots of the polynomial $x^2 - 6x + 10 = 0$. Compute\n\\[\nc^3 + c^5d^3 + c^3d^5 + d^3.\n\\]",
+    "Declaration": "c: Real; d: Real",
+    "Facts": "Solve_equation(x, x^2 - 6*x + 10 = 0) = {c, d}",
+    "Query": "c^3 + c^5 * d^3 + c^3 * d^5 + d^3 = ?"
+  },
+  {
+    "index": 38005,
+    "Problem": "Prove that for any real numbers \\( \\alpha \\) and \\( \\beta \\), the inequality \\([2 \\alpha] + [2 \\beta] \\geqslant [\\alpha] + [\\beta] + [\\alpha + \\beta]\\) holds.",
+    "Declaration": "alpha: Real; beta: Real",
+    "Facts": "",
+    "Query": "Get_Number_Floor(2 * alpha) + Get_Number_Floor(2 * beta) >= Get_Number_Floor(alpha) + Get_Number_Floor(beta) + Get_Number_Floor(alpha + beta)"
+  },
+  {
+    "index": 38006,
+    "Problem": "Solve the inequality $x^2 - 7x + 12 < 0$ for $x$ and find the product of all real solutions.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Solve_inequation(x: Real, x^2 - 7 * x + 12 < 0)) = ?"
+  },
+  {
+    "index": 38007,
+    "Problem": "Calculate the product of all numbers from 1 to 5 and check if the result is odd or equals the digit sum of 120 in base 10.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Prod(Range(1, 5), n, n) = ? ∧ (Is_OddNumber(Get_Prod(Range(1, 5), n, n)) ∨ Get_Prod(Range(1, 5), n, n) = Get_DigitSum(10, 120))"
+  },
+  {
+    "index": 38008,
+    "Problem": "Find the product of all solutions to the equation $\\lfloor x\\rfloor^2 - 3\\lfloor x\\rfloor + 2 = 0$, where $\\lfloor x\\rfloor$ denotes the greatest integer less than or equal to $x$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Build_Set(x: Real, Get_Number_Floor(x)^2 - 3 * Get_Number_Floor(x) + 2 = 0)) = ?"
+  },
+  {
+    "index": 38009,
+    "Problem": "Solve the inequality $\\lfloor x \\rfloor^2 - 5\\lfloor x \\rfloor + 6 < 0$ for real $x$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Get_Number_Floor(x)^2 - 5 * Get_Number_Floor(x) + 6 < 0) = ?"
+  },
+  {
+    "index": 38010,
+    "Problem": "For the sequence $\\{c_n\\}$ defined by $c_n = n^2 - 2n + 1$, compute the product $\\prod_{k=1}^5 c_k$.",
+    "Declaration": "C: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(C, n) = n^2 - 2 * n + 1)",
+    "Query": "Get_Sequence_Prod(C, 1, 5) = ?"
+  },
+  {
+    "index": 38011,
+    "Problem": "Given an arithmetic sequence $\\{a_n\\}$ with common difference $d = 4$, and a geometric sequence $\\{b_n\\}$ with common ratio $r = 2$. If $a_1 = b_1$ and $a_3 = b_2$, find the sum of the first 5 terms of $\\{a_n\\}$.",
+    "Declaration": "A: Decl_Sequence(Real); B: Decl_Sequence(Real)",
+    "Facts": "Is_ArithmeticSequence(A) = True; Is_GeometricSequence(B) = True; Get_CommonDifference(A) = 4; Get_CommonRatio(B) = 2; Get_Sequence_Terms(A, 1) = Get_Sequence_Terms(B, 1); Get_Sequence_Terms(A, 3) = Get_Sequence_Terms(B, 2)",
+    "Query": "Get_Sequence_Sum(A, 1, 5) = ?"
+  },
+  {
+    "index": 38012,
+    "Problem": "Find the minimum value of $x^2 + 4x + 5$ for real numbers $x$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Build_Set(m: Real, m = x^2 + 4 * x + 5)) = ?"
+  },
+  {
+    "index": 38013,
+    "Problem": "If a and b are integers and ab = 12, find the sum of all possible values of a + b.",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "a * b = 12",
+    "Query": "Get_Set_Sum(Build_Set(s: Integers, Exists(a: Integers, Exists(b: Integers, a * b = 12 ∧ s = a + b)))) = ?"
+  },
+  {
+    "index": 38014,
+    "Problem": "If $f(x) = \\sqrt{x - 2}$ and $g(x) = x^2 + 1$, find the range of $g \\circ f$.",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, Sqrt(x - 2)); Get_Function_Expression(g) = Get_Lambda_Function(x, x^2 + 1)",
+    "Query": "Get_Function_Range(Get_Function_Composition(g, f)) = ?"
+  },
+  {
+    "index": 38015,
+    "Problem": "Find the product of all values of \\( x \\) that satisfy the equation \\( |4x + 8| = 32 \\).",
+    "Declaration": "S: Decl_Set(Real)",
+    "Facts": "S = Solve_equation(x: Real, Abs(4 * x + 8) = 32)",
+    "Query": "Get_Set_Product(S) = ?"
+  },
+  {
+    "index": 38016,
+    "Problem": "Find the product of all real solutions to $\\cos(x) \\cdot \\lfloor x\\rfloor^2 = 1$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Solve_equation(x: Real, Cos(x) * Get_Number_Floor(x)^2 = 1)) = ?"
+  },
+  {
+    "index": 38017,
+    "Problem": "A certain speed in m/s is equivalent to 1.2 km/h when converted. If the numerator of the fraction representing the speed in m/s is 12, what is the denominator?",
+    "Declaration": "D: Real",
+    "Facts": "12 / D = 1.2 * (1000 / 3600)",
+    "Query": "D = ?"
+  },
+  {
+    "index": 38018,
+    "Problem": "The expression $\\cos x + \\cos 5x + \\cos 9x + \\cos 13x$ can be written in the equivalent form\n\\[a \\cos bx \\cos cx \\cos dx\\] for some positive integers $a,$ $b,$ $c,$ and $d.$  Find $a + b + c + d.$",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers; d: PositiveIntegers",
+    "Facts": "Cos(x) + Cos(5 * x) + Cos(9 * x) + Cos(13 * x) = a * Cos(b * x) * Cos(c * x) * Cos(d * x)",
+    "Query": "a + b + c + d = ?"
+  },
+  {
+    "index": 38019,
+    "Problem": "Let  $ f, g: \\mathbb {R} \\to \\mathbb {R} $  function such that  $ f (x + g (y)) = - x + y + 1 $  for each pair of real numbers  $ x $  e  $ y $ . What is the value of  $ g (x + f (y) $ ?",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, Get_Function_Value(f, x + Get_Function_Value(g, y)) = - x + y + 1))",
+    "Query": "Get_Function_Value(g, x + Get_Function_Value(f, y)) = ?"
+  },
+  {
+    "index": 38020,
+    "Problem": "Given a geometric sequence $\\{a_{n}\\}$ with common ratio $r$, and the sum of the first 4 terms is 15. If the product of the first 4 terms is 1296, find the value of $r$.",
+    "Declaration": "A: GeometricSequence",
+    "Facts": "Get_Sequence_Sum(A, 1, 4) = 15; Get_Sequence_Prod(A, 1, 4) = 1296",
+    "Query": "Get_CommonRatio(A) = ?"
+  },
+  {
+    "index": 38021,
+    "Problem": "The fourth, fifth, and sixth terms of an arithmetic sequence are 11, 15, and 19, respectively. What is the sum of the first five terms of the sequence?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 4) = 11; Get_Sequence_Terms(S, 5) = 15; Get_Sequence_Terms(S, 6) = 19",
+    "Query": "Get_Sequence_Terms(S, 1) + Get_Sequence_Terms(S, 2) + Get_Sequence_Terms(S, 3) + Get_Sequence_Terms(S, 4) + Get_Sequence_Terms(S, 5) = ?"
+  },
+  {
+    "index": 38022,
+    "Problem": "If polynomial L(X) = X^2 - 6X + 9 has a double root at x = a, find a and the leading coefficient of L.",
+    "Declaration": "L : Decl_Polynomial(Real); a : Real",
+    "Facts": "L = X^2 - 6*X + 9; Get_Polyroots(L) = {a}",
+    "Query": "a + Get_Polynomial_Leading_Coefficient(L) = ?"
+  },
+  {
+    "index": 38023,
+    "Problem": "What is the sum of all of the solutions of the equation $\\frac{3x}{15} = \\frac{6}{x}$?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, (3 * x) / 15 = 6 / x)) = ?"
+  },
+  {
+    "index": 38024,
+    "Problem": "When three positive integers are divided by $30$, the remainders are $11$, $5$, and $14$, respectively.\n\nWhen the sum of the three integers is divided by $30$, what is the remainder?",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers",
+    "Facts": "a % 30 = 11; b % 30 = 5; c % 30 = 14",
+    "Query": "(a + b + c) % 30 = ?"
+  },
+  {
+    "index": 38025,
+    "Problem": "Solve the inequality $3x - 7 < 2x + 5$ for real $x$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, 3 * x - 7 < 2 * x + 5) = ?"
+  },
+  {
+    "index": 38026,
+    "Problem": "If \\(a\\), \\(b\\), \\(c\\), \\(d\\), \\(e\\), and \\(f\\) are integers for which \\(729x^3+64 = (ax^2 + bx + c)(dx^2 + ex + f)\\) for all \\(x\\), then what is \\(a^2+b^2+c^2+d^2+e^2+f^2\\)?",
+    "Declaration": "a: Integers; b: Integers; c: Integers; d: Integers; e: Integers; f: Integers",
+    "Facts": "729 * x^3 + 64 = (a * x^2 + b * x + c) * (d * x^2 + e * x + f)",
+    "Query": "a^2 + b^2 + c^2 + d^2 + e^2 + f^2 = ?"
+  },
+  {
+    "index": 38027,
+    "Problem": "Given a geometric sequence S with first term 5 and common ratio 2, find the 6th term and compute the product of the first 6 terms.",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_FirstTerm(S) = 5; Get_CommonRatio(S) = 2",
+    "Query": "Get_Sequence_Terms(S, 6) = ? ∧ Get_Sequence_Prod(S, 1, 6) = ?"
+  },
+  {
+    "index": 38028,
+    "Problem": "Prove that there does not exist a real number x such that the sum of the arithmetic sequence starting with x, with common difference 2, over the first 3 terms equals 10 and the product of the same terms equals 0.",
+    "Declaration": "A: ArithmeticSequence; x: Real",
+    "Facts": "Get_Sequence_Terms(A, 1) = x; Get_CommonDifference(A) = 2; Get_Sequence_Sum(A, 1, 3) = 10; Get_Sequence_Prod(A, 1, 3) = 0",
+    "Query": "ForAll(x: Real, Negation(Exists(A: ArithmeticSequence, Get_Sequence_Sum(A, 1, 3) = 10 ∧ Get_Sequence_Prod(A, 1, 3) = 0)))"
+  },
+  {
+    "index": 38029,
+    "Problem": "If $x$ is a real number and $x > 2$ implies $x^2 > 4$, then find the minimum value of $x$ such that $x^2 > 9$.",
+    "Declaration": "x: Real",
+    "Facts": "x > 2 → x^2 > 4",
+    "Query": "Get_Set_Minimum(Build_Set(x:Real, x^2 > 9)) = ?"
+  },
+  {
+    "index": 38030,
+    "Problem": "Given the inequality $3x - 5 < 10$ and the equation $2x + 1 = 7$, solve for $x$ and determine if the solution satisfies both conditions.",
+    "Declaration": "x: Real",
+    "Facts": "3 * x - 5 < 10; 2 * x + 1 = 7",
+    "Query": "Solve_inequation(x: Real, 3 * x - 5 < 10 ∧ 2 * x + 1 = 7) = ?"
+  },
+  {
+    "index": 38031,
+    "Problem": "Compute tan(π/4) + log₂(8) and express the result as a simplified fraction.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Tan(Pi / 4) + Log(2, 8) = ?"
+  },
+  {
+    "index": 38032,
+    "Problem": "Prove that for any real numbers \\( x \\) and \\( y \\), the inequality \\( x^{2} + 2 y^{2} + 2 x y + 6 y + 10 > 0 \\) holds.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "",
+    "Query": "x^2 + 2 * y^2 + 2 * x * y + 6 * y + 10 > 0"
+  },
+  {
+    "index": 38033,
+    "Problem": "In a geometric sequence, the first term is 2 and the common ratio is 3. Find the product of the first 4 terms and the sum of the same terms.",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 2; Get_CommonRatio(S) = 3",
+    "Query": "Get_Sequence_Prod(S, 1, 4) * Get_Sequence_Sum(S, 1, 4) = ?"
+  },
+  {
+    "index": 38034,
+    "Problem": "Evaluate the following expression for \\(a = \\frac{4}{3}\\) and \\(b = 0.25\\):\n\n\\[\n\\frac{4a^{2} - b^{2}}{a^{6} - 8b^{6}} \\cdot \\sqrt{a^{2} - 2b\\sqrt{a^{2} - b^{2}}} \\cdot \\frac{4^{4} + 2a^{2}b^{2} + 4b^{4}}{4a^{2} + 4ab + b^{2}} \\cdot \\sqrt{a^{2} + 2b\\sqrt{a^{2} - b^{2}}}\n\\]",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "a = 4 / 3; b = 0.25",
+    "Query": "(4 * a^2 - b^2) / (a^6 - 8 * b^6) * Sqrt(a^2 - 2 * b * Sqrt(a^2 - b^2)) * (4^4 + 2 * a^2 * b^2 + 4 * b^4) / (4 * a^2 + 4 * a * b + b^2) * Sqrt(a^2 + 2 * b * Sqrt(a^2 - b^2)) = ?"
+  },
+  {
+    "index": 38035,
+    "Problem": "A student is working on the following problem: \"When $a=\\cdot $, find the value of ${({\\sqrt{a}})^2}+\\sqrt{{a^2}-4a+4}$. The value of the algebraic expression obtained is $\\frac{3}{2}$. Is the student's answer correct? Please explain the reason.",
+    "Declaration": "a: Real",
+    "Facts": "(Sqrt(a))^2 + Sqrt(a^2 - 4 * a + 4) = 3 / 2",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38036,
+    "Problem": "Given the real numbers $a$, $b$, $c$, and $d$ that satisfy $a > b > c > d$, prove that: $\\frac{1}{a-b} + \\frac{1}{b-c} + \\frac{1}{c-d} \\geqslant \\frac{9}{a-d}$.",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real",
+    "Facts": "a > b; b > c; c > d",
+    "Query": "1 / (a - b) + 1 / (b - c) + 1 / (c - d) >= 9 / (a - d)"
+  },
+  {
+    "index": 38037,
+    "Problem": "For a sequence $\\{f_n\\}$ where $f_1 = 1$ and $f_{n} = 2f_{n-1} + 1$ for $n > 1$, compute the sum of the first 4 terms.",
+    "Declaration": "F: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(F, 1) = 1; ForAll(n: NaturalNumbers, n > 1 → Get_Sequence_Terms(F, n) = 2 * Get_Sequence_Terms(F, n - 1) + 1)",
+    "Query": "Get_Sequence_Sum(F, 1, 4) = ?"
+  },
+  {
+    "index": 38038,
+    "Problem": "Let \\(x\\), \\(y\\), \\(z\\) be positive real numbers such that \\(xyz = 27\\). Find the minimum value of \\(3x + 2y + z\\).",
+    "Declaration": "x: PositiveNumbers; y: PositiveNumbers; z: PositiveNumbers",
+    "Facts": "x * y * z = 27",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = 3 * x + 2 * y + z)) = ?"
+  },
+  {
+    "index": 38039,
+    "Problem": "Find the greatest common divisor of the product of all integers from 1 to 10 and the least common multiple of 15 and 25.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_GCD(Get_Prod(Range(1, 10), k, k), Get_LCM(15, 25)) = ?"
+  },
+  {
+    "index": 38040,
+    "Problem": "Find the norm of the complex number -3 + 4i, which is 5.",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = -3 + 4 * Complex.I",
+    "Query": "Get_Complex_Norm(z) = 5"
+  },
+  {
+    "index": 38041,
+    "Problem": "Find all real solutions to $\\cot(x) = \\lfloor x \\rfloor$ where $0 < x < \\pi$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Cot(x) = Get_Number_Floor(x) ∧ x > 0 ∧ x < Real.pi) = ?"
+  },
+  {
+    "index": 38042,
+    "Problem": "Find the coefficient of X² in the polynomial (X³ - 2X + 1)(X² + 3X - 4)",
+    "Declaration": "P : Decl_Polynomial(Real); Q : Decl_Polynomial(Real)",
+    "Facts": "P = X^3 - 2*X + 1; Q = X^2 + 3*X - 4",
+    "Query": "Get_Term_Coefficient(P * Q, 2) = ?"
+  },
+  {
+    "index": 38043,
+    "Problem": "Find all functions \\( f, g: \\mathbb{N} \\to \\mathbb{N} \\) satisfying: \\( f(x) \\leq g(x) \\leq f(x) + 1 \\) and \\( f(x + y) \\geq f(x) + f(y) \\) for all \\( x, y \\in \\mathbb{N} \\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Build_Set((f: Decl_Function(NaturalNumbers, NaturalNumbers), g: Decl_Function(NaturalNumbers, NaturalNumbers)), ForAll(x: NaturalNumbers, ForAll(y: NaturalNumbers, Get_Function_Value(f, x) <= Get_Function_Value(g, x) ∧ Get_Function_Value(g, x) <= Get_Function_Value(f, x) + 1 ∧ Get_Function_Value(f, x+y) >= Get_Function_Value(f, x) + Get_Function_Value(f, y)))) = ?"
+  },
+  {
+    "index": 38044,
+    "Problem": "Solve for x in the inequality x^3 - 2x^2 - 5x + 6 > 0 where x is a real number.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, x^3 - 2 * x^2 - 5 * x + 6 > 0) = ?"
+  },
+  {
+    "index": 38045,
+    "Problem": "Let \\(a, b, c, d\\) be real numbers, none of which are equal to \\(-2\\), and let \\(\\omega\\) be a complex number such that \\(\\omega^4 = 1\\) and \\(\\omega \\neq 1\\). If\n\\[\n\\frac{1}{a + \\omega} + \\frac{1}{b + \\omega} + \\frac{1}{c + \\omega} + \\frac{1}{d + \\omega} = \\frac{3}{\\omega},\n\\]\nfind\n\\[\n\\frac{1}{a + 2} + \\frac{1}{b + 2} + \\frac{1}{c + 2} + \\frac{1}{d + 2}.\n\\]",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real; omega: ComplexNumbers",
+    "Facts": "(1 / (a + omega)) + (1 / (b + omega)) + (1 / (c + omega)) + (1 / (d + omega)) = (3 / omega); omega^4 = 1; omega != 1; a != -2; b != -2; c != -2; d != -2",
+    "Query": "(1 / (a + 2)) + (1 / (b + 2)) + (1 / (c + 2)) + (1 / (d + 2)) = ?"
+  },
+  {
+    "index": 38046,
+    "Problem": "Find the solutions to the equation $z^6 = -64.$ Enter the solutions, separated by commas.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(z: ComplexNumbers, z^6 = -64) = ?"
+  },
+  {
+    "index": 38047,
+    "Problem": "Solve the equation $\\sec x + 3\\tan x = 2$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 1 / Cos(x) + 3*Tan(x) = 2) = ?"
+  },
+  {
+    "index": 38048,
+    "Problem": "It is not true that for all real numbers x, x^2 + 1 = 0 has a solution. Find the minimum value of the set {x^2 + 1 | x ∈ ℝ}.",
+    "Declaration": "S: Decl_Set(Real)",
+    "Facts": "S = Build_Set(y: Real, Exists(x: Real, y = x^2 + 1))",
+    "Query": "Negation(Exists(x: Real, x^2 + 1 = 0)) ∧ Get_Set_Minimum(S) = ?"
+  },
+  {
+    "index": 38049,
+    "Problem": "Determine the nonnegative difference between the roots of the equation $x^2 + 40x + 396 = -4$.",
+    "Declaration": "D: NonNegativeNumbers; x1: Real; x2: Real",
+    "Facts": "D = Abs(x1 - x2); Solve_equation(x: Real, x ^ 2 + 40 * x + 396 = -4) = {x1, x2}",
+    "Query": "D = ?"
+  },
+  {
+    "index": 38050,
+    "Problem": "Let $a, b, x, y,$ and $z$ be positive real numbers. Show that\n\n$$\n\\frac{x}{a y+b z}+\\frac{y}{a z+b x}+\\frac{z}{a x+b y} \\geqslant \\frac{3}{a+b}\n$$",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; x: PositiveNumbers; y: PositiveNumbers; z: PositiveNumbers",
+    "Facts": "",
+    "Query": "(x / (a * y + b * z)) + (y / (a * z + b * x)) + (z / (a * x + b * y)) >= 3 / (a + b)"
+  },
+  {
+    "index": 38051,
+    "Problem": "Solve for $x$, where $x<0$ and $3x^2 - 12x + 9 = 0$. Express your answer as a simplified common fraction.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, 3 * x^2 - 12 * x + 9 = 0 ∧ x < 0) = ?"
+  },
+  {
+    "index": 38052,
+    "Problem": "Find $\\frac{\\frac{1}{5} + \\frac{1}{7}}{ \\frac{3}{8} - \\frac{1}{9}}$. Express your answer as a fraction in simplest form.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(1/5 + 1/7) / (3/8 - 1/9) = ?"
+  },
+  {
+    "index": 38053,
+    "Problem": "What is the next term in the geometric sequence $$3, 9y, 27y^2, 81y^3, \\ldots ?$$ Express your answer in terms of $y$.",
+    "Declaration": "S: GeometricSequence; y: Real",
+    "Facts": "Get_Sequence_Terms(S, 1) = 3; Get_Sequence_Terms(S, 2) = 9 * y; Get_Sequence_Terms(S, 3) = 27 * y^2; Get_Sequence_Terms(S, 4) = 81 * y^3",
+    "Query": "Get_Sequence_Terms(S, 5) = ?"
+  },
+  {
+    "index": 38054,
+    "Problem": "Find the sum of all solutions to $2\\cos^2 x - 3\\cos x + 1 = 0$ in the interval where $\\lfloor x \\rfloor = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Real, 2*Cos(x)^2 - 3*Cos(x) + 1 = 0 ∧ Get_Number_Floor(x) = 0)) = ?"
+  },
+  {
+    "index": 38055,
+    "Problem": "A fashion designer sold a pair of jeans to a retail store for some percent more than it cost to manufacture the pair of jeans. A customer bought the pair of jeans for 15 percent more than the retailer paid for them. The price the customer paid was 61.00000000000001 percent greater than the cost of manufacturing the jeans. What was the percentage increase in price from the manufacturing cost to the retailer's price?",
+    "Declaration": "ManufacturingCost: PositiveNumbers; RetailerPrice: PositiveNumbers; CustomerPrice: PositiveNumbers",
+    "Facts": "CustomerPrice = 1.61 * ManufacturingCost; CustomerPrice = 1.15 * RetailerPrice",
+    "Query": "(RetailerPrice - ManufacturingCost) / ManufacturingCost = ?"
+  },
+  {
+    "index": 38056,
+    "Problem": "Given the function $f(x) = x^2 - 4x + 3$, find its minimum value and all real roots.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 - 4 * x + 3)",
+    "Query": "Get_Function_Minimum(f) = ? ∧ Get_Function_Zeroes(f) = ?"
+  },
+  {
+    "index": 38057,
+    "Problem": "Determine if the function \\( f(x) = e^{-x} \\) is increasing on the set of real numbers.",
+    "Declaration": "f: Decl_Function(Real, Real), S: Decl_Set(Real)",
+    "Facts": "S = Build_Set(x, True); Get_Function_Expression(f) = Get_Lambda_Function(x: Real, Exp(-x))",
+    "Query": "Is_Increasing_On(f, S) = ?"
+  },
+  {
+    "index": 38058,
+    "Problem": "Given the sequence A where A(n) = 2^n, find the product of the 3rd and 4th terms and then determine if this product equals the sum of the first 6 terms.",
+    "Declaration": "A: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(A, n) = (2: Real)^n)",
+    "Query": "Get_Sequence_Terms(A, 3) * Get_Sequence_Terms(A, 4) = Get_Sequence_Sum(A, 1, 6)"
+  },
+  {
+    "index": 38059,
+    "Problem": "A geometric sequence has a first term of 3 and a common ratio of 2. Find the product of the first 4 terms and the sum of the first 5 terms.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(G, 1) = 3; Get_CommonRatio(G) = 2",
+    "Query": "Get_Sequence_Prod(G, 1, 4) = ? ∧ Get_Sequence_Sum(G, 1, 5) = ?"
+  },
+  {
+    "index": 38060,
+    "Problem": "Find the positive difference between the two solutions to the equation $\\sqrt[3]{9 - \\frac{x^2}{4}} = -3$.",
+    "Declaration": "x1: Real; x2: Real",
+    "Facts": "Solve_equation(x: Real, (9 - x^2 / 4)^(1/3) = -3) = {x1, x2}",
+    "Query": "Abs(x1 - x2) = ?"
+  },
+  {
+    "index": 38061,
+    "Problem": "Simplify the fraction $\\frac{90 + 54}{150 - 90}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(90 + 54) / (150 - 90) = ?"
+  },
+  {
+    "index": 38062,
+    "Problem": "Given the sequence $\\{c_n\\}$ defined by $c_n = 3n - 1$, find the sum of the terms from $c_4$ to $c_{10}$.",
+    "Declaration": "C: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(C, n) = 3 * n - 1)",
+    "Query": "Get_Sequence_Sum(C, 4, 10) = ?"
+  },
+  {
+    "index": 38063,
+    "Problem": "Compute $\\cot(\\pi/3) + \\tan(\\pi/6) - \\csc(\\pi/2)$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Cot(Real.pi / 3) + Tan(Real.pi / 6) - 1 / Sin(Real.pi / 2) = ?"
+  },
+  {
+    "index": 38064,
+    "Problem": "Find the sum of all integer solutions to the equation $x^2 - 5x + 6 = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Integers, x^2 - 5 * x + 6 = 0)) = ?"
+  },
+  {
+    "index": 38065,
+    "Problem": "\\( w, x, y, z \\) are real numbers such that\n\\[\n\\begin{aligned}\nw+x+y+z & =5 \\\\\n2 w+4 x+8 y+16 z & =7 \\\\\n3 w+9 x+27 y+81 z & =11 \\\\\n4 w+16 x+64 y+256 z & =1\n\\end{aligned}\n\\]\nWhat is the value of \\( 5w + 25x + 125y + 625z \\)?",
+    "Declaration": "w: Real; x: Real; y: Real; z: Real",
+    "Facts": "4 * w + 16 * x + 64 * y + 256 * z = 1; 2 * w + 4 * x + 8 * y + 16 * z = 7; 3 * w + 9 * x + 27 * y + 81 * z = 11; w + x + y + z = 5",
+    "Query": "5 * w + 25 * x + 125 * y + 625 * z = ?"
+  },
+  {
+    "index": 38066,
+    "Problem": "Find the greatest common divisor of 24 and 36, then check if they are relatively prime.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_GCD(24, 36) = 12 ∧ Is_Coprime(24, 36) = False"
+  },
+  {
+    "index": 38067,
+    "Problem": "Prove that if $f(x) = x^2 + bx + c$ has real roots, then there exists a real number $x$ such that $f(x) \\leq \\frac{4c - b^2}{4}$.",
+    "Declaration": "f: Decl_Function(Real, Real); b: Real; c: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 + b*x + c); Exists(x: Real, Get_Function_Value(f, x) = 0)",
+    "Query": "Exists(x: Real, Get_Function_Value(f, x) <= (4*c - b^2)/4)"
+  },
+  {
+    "index": 38068,
+    "Problem": "If \\( f(x) \\) and \\( g(x) \\) are polynomials such that \\( f(x) + g(x) = 3x - x^2 \\), then what is \\( g(x) \\) if \\( f(x) = x^2 - 4x + 3 \\)?",
+    "Declaration": "f: Decl_Polynomial(Real); g: Decl_Polynomial(Real)",
+    "Facts": "f + g = 3 * X - X^2; f = X^2 - 4 * X + 3",
+    "Query": "g = ?"
+  },
+  {
+    "index": 38069,
+    "Problem": "Determine the range of the function $h(x) = \\frac{1}{x^2 - 4}$ and find its inverse if it exists.",
+    "Declaration": "h: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(h) = Get_Lambda_Function(x, 1 / (x^2 - 4))",
+    "Query": "Get_Function_Range(h) = ? ∧ Get_Inverse_Function(h) = ?"
+  },
+  {
+    "index": 38070,
+    "Problem": "Solve the equation ⌊$\\lfloor x\\rfloor$ = 5.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Get_Number_Floor(x) = 5) = ?"
+  },
+  {
+    "index": 38071,
+    "Problem": "Simplify $((7p+3)-3p\\cdot2)(4)+(5-2\\div4)(9p-12)$ to a much simpler expression of the form $ap-b$, where $a$ and $b$ are positive integers.",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; p: Real",
+    "Facts": "((7 * p + 3) - 3 * p * 2) * 4 + (5 - 2 / 4) * (9 * p - 12) = a * p - b",
+    "Query": "a * p - b = ?"
+  },
+  {
+    "index": 38072,
+    "Problem": "Find all functions \\( f: \\mathbb{R} \\to \\mathbb{R} \\) such that for all \\( x, y \\in \\mathbb{R} \\),;  \\[ f(x + y) = f(x) + f(y) + 2xy. \\];  Show that the solutions are \\( f(x) = x^2 + kx \\) for some constant \\( k \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, Get_Function_Value(f, x + y) = Get_Function_Value(f, x) + Get_Function_Value(f, y) + 2 * x * y))",
+    "Query": "Exists(k: Real, Get_Function_Expression(f) = Get_Lambda_Function(x: Real, x^2 + k * x))"
+  },
+  {
+    "index": 38073,
+    "Problem": "Find the prime factors of 84.",
+    "Declaration": "n : NaturalNumbers",
+    "Facts": "n = 84",
+    "Query": "Get_Prime_Factors(n) = {2, 3, 7}"
+  },
+  {
+    "index": 38074,
+    "Problem": "Three mathematicians disproved another one of Euler's conjecture by finding positive integers such that $133^4 + 110^4 + 56^4 = n^4$. Find the value of $n$.",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "133^4 + 110^4 + 56^4 = n^4",
+    "Query": "n = ?"
+  },
+  {
+    "index": 38075,
+    "Problem": "Find the sum of all solutions to the equation x^2 - (k + 1)x + k = 0, given that the set of solutions has exactly one element.",
+    "Declaration": "k: Real",
+    "Facts": "Set_Cardinality(Solve_equation(x: Real, x^2 - (k + 1) * x + k = 0)) = 1",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, x^2 - (k + 1) * x + k = 0)) = ?"
+  },
+  {
+    "index": 38076,
+    "Problem": "Let \\( a, b, c, d \\) be real numbers. Prove:\n\n\\[ \\left(a^{2}-a+1\\right)\\left(b^{2}-b+1\\right)\\left(c^{2}-c+1\\right)\\left(d^{2}-d+1\\right) \\geq \\frac{9}{16}(a-b)(b-c)(c-d)(d-a) \\]",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real",
+    "Facts": "",
+    "Query": "(a^2 - a + 1) * (b^2 - b + 1) * (c^2 - c + 1) * (d^2 - d + 1) >= 9/16 * (a - b) * (b - c) * (c - d) * (d - a)"
+  },
+  {
+    "index": 38077,
+    "Problem": "Determine the residue of $-998\\pmod{28}$. Your answer should be an integer in the range $0,1,2,\\ldots,25,26,27$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(-998 % 28) = ?"
+  },
+  {
+    "index": 38078,
+    "Problem": "Find the sum of all integers k such that k^3 - 6k^2 + 11k - 6 = 0.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(k:Integers, k^3 - 6 * k^2 + 11 * k - 6 = 0)) = ?"
+  },
+  {
+    "index": 38079,
+    "Problem": "For all integers n, if n is odd, then n + 1 is even.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(n: Integers, Is_OddNumber(n) → Is_EvenNumber(n + 1))"
+  },
+  {
+    "index": 38080,
+    "Problem": "Suppose that $p$ and $q$ are nonzero real numbers, and that the equation $x^2 + px + q = 0$ has roots $p$ and $q$, with $q = -2p$. Find the ordered pair $(p, q)$.",
+    "Declaration": "p: Real; q: Real",
+    "Facts": "Solve_equation(x: Real, x^2 + p * x + q = 0) = {p, q}; q = -2 * p; p != 0; q != 0",
+    "Query": "(p, q) = ?"
+  },
+  {
+    "index": 38081,
+    "Problem": "Given the function $f(x) = x^2 - 4x + 3$ and $g(x) = 2x + 1$, find the range of the composition $f \\circ g$.",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 - 4 * x + 3); Get_Function_Expression(g) = Get_Lambda_Function(x, 2 * x + 1)",
+    "Query": "Get_Function_Range(Get_Function_Composition(f, g)) = ?"
+  },
+  {
+    "index": 38082,
+    "Problem": "Find the product of all real solutions to $\\log_2(x^2 - 3x + 2) = \\cos(\\pi)$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Build_Set(x: Real, Log(2, x^2 - 3 * x + 2) = Cos(Pi))) = ?"
+  },
+  {
+    "index": 38083,
+    "Problem": "Perry wants to buy a new modern bedroom set for $2000.  He received $200.00 in gift cards over the holidays that he can use toward the set.  The store is currently offering the entire set at 15% off.  If he signs up for the store credit card and uses it to buy the set, he will save an additional 10% off on the discounted set.  What is the final price of the set?",
+    "Declaration": "G: Real; P: Real",
+    "Facts": "G = 200; P = 2000",
+    "Query": "P * 0.85 * 0.9 - G = ?"
+  },
+  {
+    "index": 38084,
+    "Problem": "Find all real numbers $m$ such that the equation $mx^2 + (m+1)x + 1 = 0$ has at least one real solution, and compute the sum of all such $m$.",
+    "Declaration": "m: Real",
+    "Facts": "Exists(x: Real, m * x^2 + (m + 1) * x + 1 = 0)",
+    "Query": "Get_Set_Sum(Build_Set(m: Real, Exists(x: Real, m * x^2 + (m + 1) * x + 1 = 0))) = ?"
+  },
+  {
+    "index": 38085,
+    "Problem": "For a sequence defined by a_1 = 2 and a_{n+1} = 3a_n - 1, find the product of the first 4 terms.",
+    "Declaration": "S: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(S, 1) = 2; ForAll(n: NaturalNumbers, Get_Sequence_Terms(S, n+1) = 3 * Get_Sequence_Terms(S, n) - 1)",
+    "Query": "Get_Sequence_Prod(S, 1, 4) = ?"
+  },
+  {
+    "index": 38086,
+    "Problem": "Find all real roots of the function $f(x) = x^3 - 6x^2 + 11x - 6$ and compute their sum.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^3 - 6 * x^2 + 11 * x - 6)",
+    "Query": "Get_Set_Sum(Get_Function_Zeroes(f)) = ?"
+  },
+  {
+    "index": 38087,
+    "Problem": "Solve the equation log₃(x) = 4.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Log(3, x) = 4) = ?"
+  },
+  {
+    "index": 38088,
+    "Problem": "Given a sequence $S$ where $S_n = n^2 + 3n + 2$. Find the smallest integer $n$ for which $S_n$ is not a prime number.",
+    "Declaration": "S: Decl_Sequence(Real); n: PositiveIntegers",
+    "Facts": "Get_Sequence_Terms(S, n) = n^2 + 3 * n + 2; Is_Prime(Get_Sequence_Terms(S, n)) = False",
+    "Query": "Get_Set_Minimum(Build_Set(n: PositiveIntegers, Is_Prime(Get_Sequence_Terms(S, n)) = False)) = ?"
+  },
+  {
+    "index": 38089,
+    "Problem": "Solve for $x$, where $x > 1$ and $x^2 - 5x + 6 = 0$. Express your answer as an integer.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, x^2 - 5 * x + 6 = 0 ∧ x > 1) = ?"
+  },
+  {
+    "index": 38090,
+    "Problem": "If $f(x) = \\frac{1}{x}$ and $g(x) = x^2 - 1$, determine the range of $f \\circ g$.",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 1 / x); Get_Function_Expression(g) = Get_Lambda_Function(x, x^2 - 1)",
+    "Query": "Get_Function_Range(Get_Function_Composition(f, g)) = ?"
+  },
+  {
+    "index": 38091,
+    "Problem": "There exists an integer x such that x^2 ≡ 1 mod 8 and x is even.",
+    "Declaration": "x: Integers",
+    "Facts": "",
+    "Query": "Exists(x, Get_Remainder(x^2, 8) = 1 ∧ Is_EvenNumber(x) = True)"
+  },
+  {
+    "index": 38092,
+    "Problem": "Consider the set of real numbers defined by the expression Cosh(x) + Sin(x). Determine if 2 is the maximum value in this set.",
+    "Declaration": "A : Decl_Set(Real)",
+    "Facts": "A = Build_Set(x: Real, Exists(y, y = Cosh(x) + Sin(x)))",
+    "Query": "Is_Greatest_Element(A, 2)"
+  },
+  {
+    "index": 38093,
+    "Problem": "For all real numbers $a$, $a > 1$ is equivalent to $\\frac{1}{a} < 1$.",
+    "Declaration": "a: Real",
+    "Facts": "",
+    "Query": "a > 1 ↔ 1 / a < 1"
+  },
+  {
+    "index": 38094,
+    "Problem": "Given that $x$ and $y$ are real numbers, and $y= \\frac { \\sqrt {x^{2}-4}+ \\sqrt {4-x^{2}}+1}{x-2}$, find the value of $3x+4y$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "y = (Sqrt(x^2 - 4) + Sqrt(4 - x^2) + 1) / (x - 2)",
+    "Query": "3 * x + 4 * y = ?"
+  },
+  {
+    "index": 38095,
+    "Problem": "Define a sequence $\\{a_{n}\\}$ by $a_1 = 1$ and $a_{n+1} = a_n + 2n + 1$ for $n \\geq 1$. Find the product of the first 5 terms of the sequence.",
+    "Declaration": "A: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(A, 1) = 1; ForAll(n: NaturalNumbers, Get_Sequence_Terms(A, n+1) = Get_Sequence_Terms(A, n) + 2 * n + 1)",
+    "Query": "Get_Sequence_Prod(A, 1, 5) = ?"
+  },
+  {
+    "index": 38096,
+    "Problem": "Solve the inequality for _\\(x\\)_ : \\(a{{x}^{2}}-(a+1)x+1 < 0\\)",
+    "Declaration": "a: Real",
+    "Facts": "",
+    "Query": "Solve_inequation(x, a * x^2 - (a + 1) * x + 1 < 0) = ?"
+  },
+  {
+    "index": 38097,
+    "Problem": "Given the functions $f(x) = 2x + 3$ and $g(x) = 3x - 5$, find $f[g(x)]$.",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2 * x + 3); Get_Function_Expression(g) = Get_Lambda_Function(x, 3 * x - 5)",
+    "Query": "Get_Function_Composition(f, g) = ?"
+  },
+  {
+    "index": 38098,
+    "Problem": "For an arithmetic sequence, the sum of the first 10 terms is 100 and the sum of the next 10 terms is 300. Find the common difference.",
+    "Declaration": "A: ArithmeticSequence",
+    "Facts": "Get_Sequence_Sum(A, 1, 10) = 100; Get_Sequence_Sum(A, 11, 20) = 300",
+    "Query": "Get_CommonDifference(A) = ?"
+  },
+  {
+    "index": 38099,
+    "Problem": "Solve for $x$ in the equation $\\log_2(x) + \\tan(x) = 0$ where $x > 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Log(2, x) + Tan(x) = 0 ∧ x > 0) = ?"
+  },
+  {
+    "index": 38100,
+    "Problem": "Compute the composition $T \\circ U$ where $T(X) = X^2 + X$ and $U(X) = X - 1$, then find its degree.",
+    "Declaration": "T: Decl_Polynomial(Real); U: Decl_Polynomial(Real)",
+    "Facts": "T = X^2 + X; U = X - 1",
+    "Query": "Get_PolyDegree(Get_Polynomial_Composition(T, U)) = ?"
+  },
+  {
+    "index": 38101,
+    "Problem": "An equation has equal roots when k = 1. The equation is in the form (2kx^2 + Bx + 2) = 0. What is the expression for B?",
+    "Declaration": "B: Real; k: Real",
+    "Facts": "Solve_equation(x: Real, 2 * k * x^2 + B * x + 2 = 0) = {1, 1} ; k = 1",
+    "Query": "B = ?"
+  },
+  {
+    "index": 38102,
+    "Problem": "Let \\( a, b, c \\) be the roots of the equation \n\\[ x^{3} - k_{1} x - k_{2} = 0 \\quad \\text{(where } k_{1} + k_{2} \\neq 1 \\text{)}. \\]\nThen find the value of the expression\n\\[ \\frac{1+a}{1-a} + \\frac{1+b}{1-b} + \\frac{1+c}{1-c} = \\]\n",
+    "Declaration": "a: Real; b: Real; c: Real; k1: Real; k2: Real",
+    "Facts": "Solve_equation(x, x^3 - k1 * x - k2 = 0) = {a, b, c}; k1 + k2 ≠ 1",
+    "Query": "(1 + a) / (1 - a) + (1 + b) / (1 - b) + (1 + c) / (1 - c) = ?"
+  },
+  {
+    "index": 38103,
+    "Problem": "Find all values of the parameters \\( a \\), \\( b \\), and \\( c \\) for which the set of real roots of the equation \\( x^5 + 4x^4 + ax = bx^2 + 4c \\) consists exactly of the two numbers 2 and -2.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "Solve_equation(x: Real, x^5 + 4 * x^4 + a * x - b * x^2 - 4 * c = 0) = {2, -2}",
+    "Query": "(a, b, c) = ?"
+  },
+  {
+    "index": 38104,
+    "Problem": "For all real numbers $x$, the function $h$ satisfies $h(x) + h(1 - x) = 2x^2 - 2x + 1$. Find $h(0.5)$.",
+    "Declaration": "h: Decl_Function(Real, Real)",
+    "Facts": "ForAll(x: Real, Get_Function_Value(h, x) + Get_Function_Value(h, 1 - x) = 2 * x^2 - 2 * x + 1)",
+    "Query": "Get_Function_Value(h, 0.5) = ?"
+  },
+  {
+    "index": 38105,
+    "Problem": "There exists an arithmetic sequence $\\{a_n\\}$ such that the sum of the first $n$ terms $S_n$ satisfies $S_5 = 10$ and $S_{10} = 30$. Find the common difference $d$.",
+    "Declaration": "A: ArithmeticSequence; d: Real",
+    "Facts": "Get_Sequence_Sum(A, 1, 5) = 10; Get_Sequence_Sum(A, 1, 10) = 30",
+    "Query": "Get_CommonDifference(A) = ?"
+  },
+  {
+    "index": 38106,
+    "Problem": "For the geometric sequence I with I₄ = 80 and common ratio 2, and the polynomial Z(X) = 2X⁵ - X³ + 4X - 1, find the sum of the first term of I and the constant term of Z.",
+    "Declaration": "I : GeometricSequence; Z : Decl_Polynomial(Real)",
+    "Facts": "Get_Sequence_Terms(I, 4) = 80; Get_CommonRatio(I) = 2; Z = 2*X^5 - X^3 + 4*X - 1",
+    "Query": "Get_Sequence_Terms(I, 1) + Get_Term_Coefficient(Z, 0) = ?"
+  },
+  {
+    "index": 38107,
+    "Problem": "The mean of numbers 28, x, a certain number, 78, and 104 is 90. The mean of 128, 255, 511, 1023, and x is 423. What is the third number in the first set of numbers?",
+    "Declaration": "a: Real; x: Real",
+    "Facts": "(28 + x + a + 78 + 104) / 5 = 90; (128 + 255 + 511 + 1023 + x) / 5 = 423",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38108,
+    "Problem": "Find all real roots of $f(x) = x^3 - 6x^2 + 11x - 6$ and compute their product.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^3 - 6*x^2 + 11*x - 6)",
+    "Query": "Get_Set_Product(Get_Function_Zeroes(f)) = ?"
+  },
+  {
+    "index": 38109,
+    "Problem": "If $a$, $b$, $c$, and $d$ are real numbers satisfying: \\begin{align*}\na+b+c &= 3, \\\\\na+b+d &= -2, \\\\\na+c+d &= 5, \\text{ and} \\\\\nb+c+d &= 4,\n\\end{align*} what is $ab + cd$?",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real",
+    "Facts": "a + b + c = 3; a + b + d = -2; a + c + d = 5; b + c + d = 4",
+    "Query": "a * b + c * d = ?"
+  },
+  {
+    "index": 38110,
+    "Problem": "Find the minimum value of $x + y$ given that $xy = 16$ and $x, y > 0$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x * y = 16; x > 0; y > 0",
+    "Query": "Get_Set_Minimum(Build_Set(m: Real, m = x + y)) = ?"
+  },
+  {
+    "index": 38111,
+    "Problem": "Compute the 4th derivative of \\( f(x) = \\sin(x) \\) at \\( x = \\pi \\).",
+    "Declaration": "f : Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x : Real, Sin(x))",
+    "Query": "Get_Ith_Deriv(4, f, Real.pi) = ?"
+  },
+  {
+    "index": 38112,
+    "Problem": "The solution set of the quadratic inequality $ax^2 + 2x + b > 0$ is $\\{x | x \\neq -\\frac{1}{a}\\}$ and $a > b$. Find the minimum value of $\\frac{a^2 + b^2}{a - b}$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "Solve_inequation(x: Real, a * x^2 + 2 * x + b > 0) = Build_Set(x: Real, x != -1 / a); a > b",
+    "Query": "(a^2 + b^2) / (a - b) = ?"
+  },
+  {
+    "index": 38113,
+    "Problem": "If \\( a \\) is a real, and \\( \\pi^2 + a - 2 = 0 \\). Find the value of \\( a \\).",
+    "Declaration": "a: IrrationalNumbers",
+    "Facts": "Real.π ^ 2 + a - 2 = 0",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38114,
+    "Problem": "What is the value of $x$ in the equation $\\frac{45}{75} = \\sqrt{\\frac{x}{75}} + \\frac{1}{5}$?",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 45 / 75 = Sqrt(x / 75) + 1 / 5) = ?"
+  },
+  {
+    "index": 38115,
+    "Problem": "If the function $f(x) = x^2 + bx + c$ has a minimum value of 3 at $x = 2$, find $f(5)$.",
+    "Declaration": "f: Decl_Function(Real, Real); b: Real; c: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 + b * x + c); Get_Function_Minimum(f) = 3; Get_Function_Argmin(f) = 2",
+    "Query": "Get_Function_Value(f, 5) = ?"
+  },
+  {
+    "index": 38116,
+    "Problem": "The product of all integer solutions to x^2 - 5x + 6 = 0 is 6.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Build_Set(x: Integers, x^2 - 5 * x + 6 = 0)) = 6"
+  },
+  {
+    "index": 38117,
+    "Problem": "Compute the composition \\( f(g(x)) \\) where \\( f(x) = x + 1 \\) and \\( g(x) = 2x \\), and find all real roots of \\( g(x) = 0 \\).",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x + 1); Get_Function_Expression(g) = Get_Lambda_Function(x, 2 * x)",
+    "Query": "Get_Function_Expression(Get_Function_Composition(f, g)) = ? ∧ Get_Function_Zeroes(g) = ?"
+  },
+  {
+    "index": 38118,
+    "Problem": "Calculate the imaginary part of the complex number 4 - 2i, which is -2.",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = 4 - 2 * Complex.I",
+    "Query": "Get_Complex_Im(z) = -2"
+  },
+  {
+    "index": 38119,
+    "Problem": "Prove that it is not true that there exists a real number $x$ such that $x^2 + 1 = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(x: Real, Negation(x^2 + 1 = 0))"
+  },
+  {
+    "index": 38120,
+    "Problem": "Given $h(x) = (x - 1)(x + 2)(x - 3)$, find its constant term and verify if $x=3$ is a root.",
+    "Declaration": "h: Decl_Polynomial(Real)",
+    "Facts": "h = (X - 1) * (X + 2) * (X - 3)",
+    "Query": "Get_ConstantTerm(h) = ? ∧ Is_Polynomial_Root(h, 3) = ?"
+  },
+  {
+    "index": 38121,
+    "Problem": "Let A be the set of complex numbers z such that z² is purely imaginary. Is this set non-empty?",
+    "Declaration": "A : Decl_Set(ComplexNumbers)",
+    "Facts": "A = Build_Set(z: ComplexNumbers, Exists(y: Real, z^2 = y * Complex.I))",
+    "Query": "Is_NonEmpty_Set(A)"
+  },
+  {
+    "index": 38122,
+    "Problem": "Find the inverse of the function $h(x) = \\frac{2x - 3}{x + 1}$ and compute $h^{-1}(4)$.",
+    "Declaration": "h: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(h) = Get_Lambda_Function(x, (2 * x - 3) / (x + 1))",
+    "Query": "Get_Inverse_Function(h) = ? ∧ Get_Function_Value(Get_Inverse_Function(h), 4) = ?"
+  },
+  {
+    "index": 38123,
+    "Problem": "Find the number of ordered pairs (x, y) where x ≤ 15 is odd, y ≤ 12 is a square number, and x and y are coprime. Prove there are exactly 8 such pairs.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Set_Cardinality(Build_Set((x, y) : Decl_Cartesian_Product(NaturalNumbers, NaturalNumbers), x <= 15 ∧ Is_OddNumber(x) ∧ y <= 12 ∧ Is_Square_Number(y) ∧ Is_Coprime(x,y))) = 8"
+  },
+  {
+    "index": 38124,
+    "Problem": "Show that x ≥ 2 is equivalent to x/2 ≥ 1 for positive real x, and find the 5th term of the geometric sequence with first term 3 and common ratio 1/2.",
+    "Declaration": "S: GeometricSequence; x: Real",
+    "Facts": "x > 0; Get_Sequence_Terms(S, 1) = 3; Get_CommonRatio(S) = 1/2",
+    "Query": "x ≥ 2 ↔ x / 2 ≥ 1 ∧ Get_Sequence_Terms(S, 5) = ?"
+  },
+  {
+    "index": 38125,
+    "Problem": "Find the maximum integer $n$ such that $n^2 + 3n + 2$ is divisible by 5, and verify if $n = -1$ is a root of the polynomial $P(X) = X^2 + 3X + 2$.",
+    "Declaration": "P : Decl_Polynomial(Real)",
+    "Facts": "P = X^2 + 3*X + 2",
+    "Query": "Get_Set_Maximum(Build_Set(n: Integers, (n^2 + 3*n + 2) % 5 = 0)) = ? ∧ Is_Polynomial_Root(P, -1) = ?"
+  },
+  {
+    "index": 38126,
+    "Problem": "For any real numbers \\( x \\) and \\( y \\), prove:\n$$\n[2x] + [2y] \\geq [x] + [y] + [x + y].\n$$",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "",
+    "Query": "Get_Number_Floor(2 * x) + Get_Number_Floor(2 * y) ≥ Get_Number_Floor(x) + Get_Number_Floor(y) + Get_Number_Floor(x + y)"
+  },
+  {
+    "index": 38127,
+    "Problem": "Simplify the expression \\[\\frac{1}{\\dfrac{1}{\\sqrt{3}+1} + \\dfrac{2}{\\sqrt{5}-1}}.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(1 / ((1 / (Sqrt(3) + 1)) + (2 / (Sqrt(5) - 1)))) = ?"
+  },
+  {
+    "index": 38128,
+    "Problem": "Simplify the expression $\\frac{6m+12}{6}$ to its simplest form $cm+d$ where $c$ and $d$ are integers. Then find the value of $\\frac{c}{d}$.",
+    "Declaration": "c: Integers; d: Integers; m: Real",
+    "Facts": "(6 * m + 12) / 6 = c * m + d",
+    "Query": "c / d = ?"
+  },
+  {
+    "index": 38129,
+    "Problem": "Given the function $f(x) = \\frac{1}{x^2 + 1}$, find its maximum value and determine its range.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 1 / (x^2 + 1))",
+    "Query": "Get_Function_Maximum(f) = ? ∧ Get_Function_Range(f) = ?"
+  },
+  {
+    "index": 38130,
+    "Problem": "The function $f$ satisfies $f(2x - 1) = x^2 + 4x - 5$ for all real $x$. Find $f(3)$ and the minimum value of $f$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(Get_Function_Composition(f, 2 * x - 1)) = Get_Lambda_Function(x, x^2 + 4 * x - 5)",
+    "Query": "Get_Function_Value(f, 3) = ? ∧ Get_Function_Minimum(f) = ?"
+  },
+  {
+    "index": 38131,
+    "Problem": "For all integers k, the number 4k + 2 is even.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(k: Integers, Negation(Is_OddNumber(4 * k + 2)))"
+  },
+  {
+    "index": 38132,
+    "Problem": "Find the product of all real roots of the equation $x^2 - 5x + 6 = 0$ and determine the minimum value of the function $f(x) = x^2 - 5x + 6$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 - 5*x + 6)",
+    "Query": "Get_Set_Product(Get_Function_Zeroes(f)) * Get_Function_Minimum(f) = ?"
+  },
+  {
+    "index": 38133,
+    "Problem": "Given the function $f(x)=2016^{x}+ \\log _{2016}( \\sqrt {x^{2}+1}+x)-2016^{-x}+2$, determine the solution set for the inequality $f(3x+1)+f(x) > 4$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, (2016: Real)^x + Log(2016, Sqrt(x^2 + 1) + x) - (2016: Real)^(-x) + 2)",
+    "Query": "Solve_inequation(x: Real, Get_Function_Value(f, 3*x + 1) + Get_Function_Value(f, x) > 4) = ?"
+  },
+  {
+    "index": 38134,
+    "Problem": "Solve the equation $|y-4| + 3y = 11$ for $y$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(y: Real, Abs(y - 4) + 3 * y = 11) = ?"
+  },
+  {
+    "index": 38135,
+    "Problem": "Find all functions \\( f: \\mathbb{N} \\rightarrow \\mathbb{N} \\) such that \\( f(x + y) = f(x) + f(y) + xy \\) for all \\( x, y \\in \\mathbb{N} \\).  \nProve that the answer is: \\( \\boxed{f(n) = \\frac{n^2 + n}{2} + kn \\text{ for any } k \\in \\mathbb{N}} \\).",
+    "Declaration": "f: Decl_Function(NaturalNumbers, NaturalNumbers); k: NaturalNumbers",
+    "Facts": "ForAll(x: NaturalNumbers, ForAll(y: NaturalNumbers, Get_Function_Value(f, x + y) = Get_Function_Value(f, x) + Get_Function_Value(f, y) + x * y))",
+    "Query": "Get_Function_Expression(f) = Get_Lambda_Function(n: NaturalNumbers, (n^2 + n)/2 + k * n)"
+  },
+  {
+    "index": 38136,
+    "Problem": "Find the sum of all natural numbers \\( r \\leq 30 \\) such that \\( r \\) is congruent to 0 modulo 5 and \\( r \\) is a factor of 100.",
+    "Declaration": " r : NaturalNumbers",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(r: NaturalNumbers, r <= 30 ∧ Is_Nat_Mod(r, 0, 5) ∧ Is_Factor(r, 100))) = 30"
+  },
+  {
+    "index": 38137,
+    "Problem": "Given the sets $A={x|x^{2}-3x-10=0}$ and $B={x|mx-1=0}$, and $A∪B=A$, find the value of the real number $m$.",
+    "Declaration": "A: Decl_Set(Real); B: Decl_Set(Real); m: Real",
+    "Facts": "A = Solve_equation(x: Real, x^2 - 3*x - 10 = 0); B = Solve_equation(x: Real, m * x - 1 = 0); A ∪ B = A",
+    "Query": "m = ?"
+  },
+  {
+    "index": 38138,
+    "Problem": "Given that $a\\_1$, $a\\_2$, $b\\_1$, $b\\_2$ are real numbers, prove that: $\\sqrt{a\\_1^2+a\\_2^2}+\\sqrt{b\\_1^2+b\\_2^2}\\geqslant \\sqrt{(a\\_1-b\\_1)^2+(a\\_2-b\\_2)^2}$.",
+    "Declaration": "a1: Real; a2: Real; b1: Real; b2: Real",
+    "Facts": "",
+    "Query": "Sqrt(a1^2 + a2^2) + Sqrt(b1^2 + b2^2) >= Sqrt((a1 - b1)^2 + (a2 - b2)^2)"
+  },
+  {
+    "index": 38139,
+    "Problem": "Given $\\sin(x) = \\frac{1}{3}$, compute $\\csc(x) + \\lfloor \\log_3(9) \\rfloor$.",
+    "Declaration": "x: Real",
+    "Facts": "Sin(x) = 1/3",
+    "Query": "1 / Sin(x) + Get_Number_Floor(Log(3, 9)) = ?"
+  },
+  {
+    "index": 38140,
+    "Problem": "Find the range of the function $g(x) = \\sin^6 x + 3\\sin^4 x \\cos^2 x + \\cos^6 x.$",
+    "Declaration": "g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, Sin(x)^6 + 3 * Sin(x)^4 * Cos(x)^2 + Cos(x)^6)",
+    "Query": "Get_Function_Range(g) = ?"
+  },
+  {
+    "index": 38141,
+    "Problem": "For all real numbers $x$, the function $f(x) = ax^2 + bx + c$ satisfies $f(x) \\geq 0$. If $f(1) = 0$, find $f(2)$.",
+    "Declaration": "f: Decl_Function(Real, Real); a: Real; b: Real; c: Real",
+    "Facts": "ForAll(x: Real, Get_Function_Value(f, x) ≥ 0); Get_Function_Expression(f) = Get_Lambda_Function(x, a * x^2 + b * x + c); Get_Function_Value(f, 1) = 0",
+    "Query": "Get_Function_Value(f, 2) = ?"
+  },
+  {
+    "index": 38142,
+    "Problem": "Find the distance between the points (2, 3) and (5, 7) in the plane.",
+    "Declaration": "A: Decl_Cartesian_Product(Real, Real); B: Decl_Cartesian_Product(Real, Real)",
+    "Facts": "A = (2, 3); B = (5, 7)",
+    "Query": "Get_Point_Distance(A, B) = 5"
+  },
+  {
+    "index": 38143,
+    "Problem": "Let $p,$ $q,$ $r,$ $s,$ and $t$ be the roots of the polynomial equation \\[x^5 + 10x^4 + 20x^3 + 15x^2 + 8x + 5 = 0.\\] Find the value of \\[\\frac{1}{pq} + \\frac{1}{pr} + \\frac{1}{ps} + \\frac{1}{pt} + \\frac{1}{qr} + \\frac{1}{qs} + \\frac{1}{qt} + \\frac{1}{rs} + \\frac{1}{rt} + \\frac{1}{st}.\\]",
+    "Declaration": "p: Real; q: Real; r: Real; s: Real; t: Real",
+    "Facts": "Solve_equation(x, x^5 + 10 * x^4 + 20 * x^3 + 15 * x^2 + 8 * x + 5 = 0) = {p, q, r, s, t}",
+    "Query": "1/p/q + 1/p/r + 1/p/s + 1/p/t + 1/q/r + 1/q/s + 1/q/t + 1/r/s + 1/r/t + 1/s/t = ?"
+  },
+  {
+    "index": 38144,
+    "Problem": "Evaluate the expression $4^3 - 4 \\times 4^2 + 6 \\times 4 - 2$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "4^3 - 4 * 4^2 + 6 * 4 - 2 = ?"
+  },
+  {
+    "index": 38145,
+    "Problem": "Find the real part of the complex number \\( 3 - 4i \\).",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = 3 - 4 * Complex.I",
+    "Query": "Get_Complex_Re(z) = 3"
+  },
+  {
+    "index": 38146,
+    "Problem": "Find the imaginary part of the complex number 4 - 7i, which is -7.",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = 4 - 7 * Complex.I",
+    "Query": "Get_Complex_Im(z) = -7"
+  },
+  {
+    "index": 38147,
+    "Problem": "For a geometric sequence $\\{d_n\\}$, $d_2 = 12$ and $d_5 = 324$. Find the sum of the first 6 terms.",
+    "Declaration": "D: Decl_Sequence(Real)",
+    "Facts": "Is_GeometricSequence(D) = True; Get_Sequence_Terms(D, 2) = 12; Get_Sequence_Terms(D, 5) = 324",
+    "Query": "Get_Sequence_Sum(D, 1, 6) = ?"
+  },
+  {
+    "index": 38148,
+    "Problem": "Find the sum of all divisors of 36 that are perfect squares.",
+    "Declaration": "n : NaturalNumbers",
+    "Facts": "n = 36",
+    "Query": "Get_Set_Sum(Build_Set(d: NaturalNumbers, Is_Factor(d,36) ∧ Is_Square_Number(d))) = ?"
+  },
+  {
+    "index": 38149,
+    "Problem": "Let \\( f(x) = \\sinh(x) + \\sin(x) \\) defined on \\( S = \\mathbb{R} \\). Prove that \\( f \\) is injective.",
+    "Declaration": "f : Decl_Function(Real, Real), S : Decl_Set(Real)",
+    "Facts": "S = Build_Set(x, True); Get_Function_Expression(f) = Get_Lambda_Function(x : Real, Sinh(x) + Sin(x))",
+    "Query": "Is_Injection(f)"
+  },
+  {
+    "index": 38150,
+    "Problem": "Determine if the complex number 1 + i has a norm of √2.",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = 1 + Complex.I",
+    "Query": "Get_Complex_Norm(z) = Sqrt(2)"
+  },
+  {
+    "index": 38151,
+    "Problem": "Find the sum of the series $\\sum_{n=1}^\\infty \\frac{1}{n(n + 1)}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Infinite_Sum(n, 1 / (n * (n + 1))) = 1"
+  },
+  {
+    "index": 38152,
+    "Problem": "Let $x$ be a positive integer such that $11x \\equiv 1 \\pmod{27}$. What is the remainder when $13 + x$ is divided by $27$?",
+    "Declaration": "x: PositiveIntegers",
+    "Facts": "11 * x % 27 = 1",
+    "Query": "(13 + x) % 27 = ?"
+  },
+  {
+    "index": 38153,
+    "Problem": "For the sequence $\\{c_n\\}$ defined by $c_n = 3n - 1$, compute the sum of the terms from $c_5$ to $c_{10}$.",
+    "Declaration": "C: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(C, n) = 3 * n - 1)",
+    "Query": "Get_Sequence_Sum(C, 5, 10) = ?"
+  },
+  {
+    "index": 38154,
+    "Problem": "Solve the inequation NaturalLog(x) > 1 for x > 0.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, NaturalLog(x) > 1 ∧ x > 0) = ?"
+  },
+  {
+    "index": 38155,
+    "Problem": "Given that $a$ and $b$ are real numbers, and $\\sqrt{2a+6}+|b-\\sqrt{2}|=0$, find the absolute value of $a+b$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "Sqrt(2 * a + 6) + Abs(b - Sqrt(2)) = 0",
+    "Query": "Abs(a + b) = ?"
+  },
+  {
+    "index": 38156,
+    "Problem": "If $x$ is a real number, find $(x+2)^2 + 2(x+2)(5-x) + (5-x)^2$.",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "(x + 2)^2 + 2 * (x + 2) * (5 - x) + (5 - x)^2 = ?"
+  },
+  {
+    "index": 38157,
+    "Problem": "Given the polynomial $P(x) = 2x^3 - 5x^2 + 3x - 1$ and $Q(x) = x^2 - 2x + 1$, compute the degree of the composition $P \\circ Q(x)$.",
+    "Declaration": "P: Decl_Polynomial(Real); Q: Decl_Polynomial(Real)",
+    "Facts": "P = 2 * X^3 - 5 * X^2 + 3 * X - 1; Q = X^2 - 2 * X + 1; Get_PolyDegree(P) = 3; Get_PolyDegree(Q) = 2",
+    "Query": "Get_PolyDegree(Get_Polynomial_Composition(P, Q)) = ?"
+  },
+  {
+    "index": 38158,
+    "Problem": "Given that 12 is the arithmetic mean of the set $\\{8, 15, 20, 7, y, 9\\}$, what is the value of $y$?",
+    "Declaration": "y: Real",
+    "Facts": "(8 + 15 + 20 + 7 + y + 9) / 6 = 12",
+    "Query": "y = ?"
+  },
+  {
+    "index": 38159,
+    "Problem": "The quadratic function $f(x) = x^2 + bx + c$ has roots $\\alpha$ and $\\beta$. If $\\alpha + \\beta = 5$ and $\\alpha^2 + \\beta^2 = 13$, find the product $f(1) \\cdot f(-1)$.",
+    "Declaration": "f: Decl_Function(Real, Real); b: Real; c: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 + b * x + c); Get_Function_Zeroes(f) = {alpha, beta}; alpha + beta = 5; alpha^2 + beta^2 = 13",
+    "Query": "Get_Function_Value(f, 1) * Get_Function_Value(f, -1) = ?"
+  },
+  {
+    "index": 38160,
+    "Problem": "Let $a,$ $b,$ $c,$ $d,$ $e,$ $f$ be positive real numbers such that $a + b + c + d + e + f = 10.$  Find the minimum value of\n\\[\\frac{1}{a} + \\frac{4}{b} + \\frac{9}{c} + \\frac{16}{d} + \\frac{25}{e} + \\frac{36}{f}.\\]",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers; d: PositiveNumbers; e: PositiveNumbers; f: PositiveNumbers",
+    "Facts": "a + b + c + d + e + f = 10",
+    "Query": "Get_Set_Minimum(Build_Set(x: Real, x = (1 / a) + (4 / b) + (9 / c) + (16 / d) + (25 / e) + (36 / f))) = ?"
+  },
+  {
+    "index": 38161,
+    "Problem": "Find the product of all real solutions to $x^2 + x - 6 = 0$ and determine the range of the function $y = x^2 + x - 6$.",
+    "Declaration": "y: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, x^2 + x - 6)",
+    "Query": "Get_Set_Product(Get_Function_Zeroes(y)) = ? ∧ Get_Function_Range(y) = ?"
+  },
+  {
+    "index": 38162,
+    "Problem": "Find the maximum value of the function \\( f(x) = \\frac{1}{x^2 - 6x + 10} \\) and determine if there exists a real number \\( x \\) such that \\( f(x) = 0.5 \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 1 / (x^2 - 6 * x + 10))",
+    "Query": "Get_Function_Maximum(f) = ? ∧ Exists(x: Real, Get_Function_Value(f, x) = 0.5)"
+  },
+  {
+    "index": 38163,
+    "Problem": "For all real numbers $x$, $x^2 + 2x + 1 \\geq 0$ is equivalent to $x \\geq -1$.",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "ForAll(x: Real, x ^ 2 + 2 * x + 1 ≥ 0) ↔ x ≥ -1"
+  },
+  {
+    "index": 38164,
+    "Problem": "If the real numbers $x$ and $y$ satisfy the inequality $2x-3 \\leqslant \\ln (x+y+1) + \\ln (x-y-2)$, find the value of $xy$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "2 * x - 3 <= Log(E, x + y + 1) + Log(E, x - y - 2)",
+    "Query": "x * y = ?"
+  },
+  {
+    "index": 38165,
+    "Problem": "The value of $\\log_{10}{50721}$ is between which two consecutive integers $c$ and $d$? Find $c+d$.",
+    "Declaration": "c: Integers; d: Integers",
+    "Facts": "Log(10, 50721) < d; Log(10, 50721) > c; d = c + 1",
+    "Query": "c + d = ?"
+  },
+  {
+    "index": 38166,
+    "Problem": "The greatest common divisor of two numbers is 6 and their least common multiple is 36. Find the two numbers.",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "Get_GCD(a, b) = 6 ∧ Get_LCM(a, b) = 36",
+    "Query": "a = ? ∧ b = ?"
+  },
+  {
+    "index": 38167,
+    "Problem": "Find the units digit of 3^7 in base 10 and verify if it is an even number.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_EvenNumber(Get_Digit_Number(3^7, 10, 1)) = ?"
+  },
+  {
+    "index": 38168,
+    "Problem": "For the polynomial $Q(x) = 4x^3 - 2x^2 + 8x - 1$, evaluate it at $x = 2$ and find the coefficient of the $x^2$ term.",
+    "Declaration": "Q: Decl_Polynomial(Real)",
+    "Facts": "Q = 4*x^3 - 2*x^2 + 8*x - 1",
+    "Query": "Eval_Value_Polynomial(Q, 2) + Get_Term_Coefficient(Q, 2) = ?"
+  },
+  {
+    "index": 38169,
+    "Problem": "One more than the reciprocal of a particular number is \\(\\frac{11}{5}\\). What is the original number expressed as a common fraction?",
+    "Declaration": "x: Real",
+    "Facts": "1 / x + 1 = 11 / 5",
+    "Query": "x = ?"
+  },
+  {
+    "index": 38170,
+    "Problem": "There exists an integer k such that n = 3k if n is divisible by 3.",
+    "Declaration": "n: Integers",
+    "Facts": "Is_Divisible(n, 3) = True",
+    "Query": "Exists(k: Integers, 3 * k = n)"
+  },
+  {
+    "index": 38171,
+    "Problem": "Compute $\\sec x + \\tan x$.",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "1 / Cos(x) + Tan(x) = ?"
+  },
+  {
+    "index": 38172,
+    "Problem": "Evaluate the sum $\\frac{1}{1 \\cdot 2} + \\frac{1}{2 \\cdot 3} + \\frac{1}{3 \\cdot 4} + \\cdots + \\frac{1}{99 \\cdot 100}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Sum(Range(1, 99), i, 1 / (i * (i + 1))) = ?"
+  },
+  {
+    "index": 38173,
+    "Problem": "Find all irrational numbers \\( a \\) such that \\( \\sin(a) = \\frac{1}{2} \\).",
+    "Declaration": "a: IrrationalNumbers",
+    "Facts": "Sin(a) = 1/2",
+    "Query": "a = ?\n\n---"
+  },
+  {
+    "index": 38174,
+    "Problem": "Given an arithmetic sequence with first term 5 and common difference 3, and a geometric sequence with first term 2 and common ratio 4. Find the sum of the first 5 terms of the arithmetic sequence multiplied by the product of the first 3 terms of the geometric sequence.",
+    "Declaration": "A: ArithmeticSequence; G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(A, 1) = 5; Get_CommonDifference(A) = 3; Get_Sequence_Terms(G, 1) = 2; Get_CommonRatio(G) = 4",
+    "Query": "Get_Sequence_Sum(A, 1, 5) * Get_Sequence_Prod(G, 1, 3) = ?"
+  },
+  {
+    "index": 38175,
+    "Problem": "Calculate $$2 \\times (1+222+3333+44444+555555+6666666+77777777+888888888) \\pmod 9.$$ Find the modulo 9 value of this expression.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "2 * (1 + 222 + 3333 + 44444 + 555555 + 6666666 + 77777777 + 888888888) % 9 = ?"
+  },
+  {
+    "index": 38176,
+    "Problem": "Given an arithmetic sequence A with common difference d=3 and first term A(1)=5, compute the sum of terms from A(2) to A(5).",
+    "Declaration": "A: Decl_Sequence(Real)",
+    "Facts": "Is_ArithmeticSequence(A) = True; Get_CommonDifference(A) = 3; Get_Sequence_Terms(A, 1) = 5",
+    "Query": "Get_Sequence_Sum(A, 2, 5) = ?"
+  },
+  {
+    "index": 38177,
+    "Problem": "Given that 12 is the arithmetic mean of the set $\\{8, 15, 22, 5, y, z\\}$, and that $y - z = 6$, what are the values of $y$ and $z$?",
+    "Declaration": "y: Real; z: Real",
+    "Facts": "(8 + 15 + 22 + 5 + y + z) / 6 = 12; y - z = 6",
+    "Query": "(y, z) = ?"
+  },
+  {
+    "index": 38178,
+    "Problem": "Andy, Ben, Clara, and Diana weigh themselves in pairs. Together Andy and Ben weigh 300 pounds, Ben and Clara weigh 280 pounds, and Clara and Diana weigh 310 pounds. How many pounds do Andy and Diana weigh together?",
+    "Declaration": "A: Real; B: Real; C: Real; D: Real",
+    "Facts": "A + B = 300; B + C = 280; C + D = 310",
+    "Query": "A + D = ?"
+  },
+  {
+    "index": 38179,
+    "Problem": "A 3x3 integer matrix with all elements equal to 2 has rank 1.",
+    "Declaration": "M : Decl_Matrix(3, 3, Integers)",
+    "Facts": "ForAll((i,j), Get_Matrix_Element(M,i,j) = 2)",
+    "Query": "Get_Matrix_Rank(M) = 1"
+  },
+  {
+    "index": 38180,
+    "Problem": "A geometric sequence has first term 5 and common ratio 2. Find the product of all solutions to the equation x² - (sum of first 3 terms of the sequence)x + 6 = 0.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(G, 1) = 5; Get_CommonRatio(G) = 2",
+    "Query": "Get_Set_Product(Build_Set(x:Real, x^2 - Get_Sequence_Sum(G, 1, 3) * x + 6 = 0)) = ?"
+  },
+  {
+    "index": 38181,
+    "Problem": "If x is a solution to x^2 - 7x + 10 = 0, then x > 2 implies x < 5.",
+    "Declaration": "x: Real",
+    "Facts": "x^2 - 7 * x + 10 = 0",
+    "Query": "x > 2 → x < 5"
+  },
+  {
+    "index": 38182,
+    "Problem": "If the range of a set of data: 7, 9, 6, x, 8, 7, 5 is 6, then the value of x is.",
+    "Declaration": "S: Decl_Set(Real)",
+    "Facts": "Get_Set_Maximum(S) - Get_Set_Minimum(S) = 6; S = {7, 9, 6, x, 8, 7, 5}",
+    "Query": "x = ?"
+  },
+  {
+    "index": 38183,
+    "Problem": "Find the minimum element in the set of integers $k$ such that $k^2 - 4k + 3 > 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Build_Set(k:Integers, k^2 - 4 * k + 3 > 0)) = ?"
+  },
+  {
+    "index": 38184,
+    "Problem": "The determinant of a 2x2 complex matrix A with elements A_{1,1} = 1+i, A_{1,2} = 2, A_{2,1} = 3, A_{2,2} = 4-i is -5-5i.",
+    "Declaration": "A : Decl_Matrix(2, 2, ComplexNumbers)",
+    "Facts": "Get_Matrix_Element(A,1,1) = 1 + Complex.I; Get_Matrix_Element(A,1,2) = 2; Get_Matrix_Element(A,2,1) = 3; Get_Matrix_Element(A,2,2) = 4 - Complex.I",
+    "Query": "Get_Matrix_Det(A) = -5 - 5 * Complex.I"
+  },
+  {
+    "index": 38185,
+    "Problem": "Compute the definite integral of f(x) = x³ from -1 to 1 and show that it equals 0.",
+    "Declaration": "f : Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x : Real, x^3)",
+    "Query": "Get_Integral(-1, 1, x, Get_Function_Value(f, x)) = 0"
+  },
+  {
+    "index": 38186,
+    "Problem": "Suppose that \\( a, b, x \\) and \\( y \\) are real numbers such that\n\\[\na x + b y = 3, \\quad a x^{2} + b y^{2} = 7, \\quad a x^{3} + b y^{3} = 16, \\quad \\text{and} \\quad a x^{4} + b y^{4} = 42.\n\\]\nFind the value of \\( a x^{5} + b y^{5} \\).",
+    "Declaration": "a: Real; b: Real; x: Real; y: Real",
+    "Facts": "a * x + b * y = 3; a * x^2 + b * y^2 = 7; a * x^3 + b * y^3 = 16; a * x^4 + b * y^4 = 42",
+    "Query": "a * x^5 + b * y^5 = ?"
+  },
+  {
+    "index": 38187,
+    "Problem": "Find the sum of all solutions to the equation x^2 - 4 = 0 where x is a negative integer.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Integers, x^2 - 4 = 0 ∧ x < 0)) = ?"
+  },
+  {
+    "index": 38188,
+    "Problem": "Simplify the expression $2x - 3(2 - x) + 4(1 + 3x) - 5(1 - x^2)$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "2 * x - 3 * (2 - x) + 4 * (1 + 3 * x) - 5 * (1 - x^2) = ?"
+  },
+  {
+    "index": 38189,
+    "Problem": "Enid, Aaron, and their friend Clara are knitting clothes for their store. Aaron makes 10 scarves, 5 sweaters, and 6 hats, Enid makes 8 sweaters, 12 hats, and 4 pairs of mittens, and Clara makes 3 scarves, 7 hats, and 5 pairs of mittens. They use three types of wool: merino, alpaca, and cashmere, with varying usage per clothing item as follows:\n\n- Scarf: 3 balls of merino wool, 2 balls of alpaca wool\n- Sweater: 4 balls of alpaca wool, 1 ball of cashmere wool\n- Hat: 2 balls of merino wool, 1 ball of alpaca wool\n- Pair of mittens: 1 ball of cashmere wool\n\nHow many balls of each type of wool did Enid, Aaron, and Clara use in total?",
+    "Declaration": "AAaron: Real; AClaura: Real; AEnid: Real; Amittens: Real; Ascarf: Real; Ashat: Real; Asweater: Real",
+    "Facts": "AAaron = 10 * Ascarf + 5 * Asweater + 6 * Ahat; AEnid = 8 * Asweater + 12 * Ahat + 4 * Amittens; AClaura = 3 * Ascarf + 7 * Ahat + 5 * Amittens; Amittens = 1 * Acashmere; Ascarf = 3 * Amerino + 2 * Alpaca; Ahat = 2 * Amerino + 1 * Alpaca; Asweater = 4 * Alpaca + 1 * Acashmere",
+    "Query": "AAaron + AEnid + AClaura = ?"
+  },
+  {
+    "index": 38190,
+    "Problem": "For the polynomial W(X) = 5X^4 - 3X^3 + X - 7, find the degree and evaluate at X = 0.",
+    "Declaration": "W : Decl_Polynomial(Real)",
+    "Facts": "W = 5 * X^4 - 3 * X^3 + X - 7",
+    "Query": "Get_PolyDegree(W) = ? ∧ Eval_Value_Polynomial(W, 0) = ?"
+  },
+  {
+    "index": 38191,
+    "Problem": "In a geometric sequence with a first term of $4$ and a second term of $12$, what is the $154^{th}$ term?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 4; Get_Sequence_Terms(S, 2) = 12",
+    "Query": "Get_Sequence_Terms(S, 154) = ?"
+  },
+  {
+    "index": 38192,
+    "Problem": "If the minimum value of the set {x | x^2 - 5x + 6 > 0} is a term in an arithmetic sequence A with common difference 2, find the 3rd term of A.",
+    "Declaration": "A: ArithmeticSequence; x: Real",
+    "Facts": "Get_CommonDifference(A) = 2; Get_Set_Minimum(Build_Set(x:Real, x^2 - 5 * x + 6 > 0)) = Get_Sequence_Terms(A, k)",
+    "Query": "Get_Sequence_Terms(A, 3) = ?"
+  },
+  {
+    "index": 38193,
+    "Problem": "Given a sequence {y_n} where y_1 = 1 and y_{n+1} = 2y_n + 1 for n ≥ 1. If the sum of the first k terms is 1023, find k.",
+    "Declaration": "Y: Decl_Sequence(Real); k: PositiveIntegers",
+    "Facts": "Get_Sequence_Terms(Y, 1) = 1; ForAll(n: PositiveIntegers, Get_Sequence_Terms(Y, n+1) = 2 * Get_Sequence_Terms(Y, n) + 1); Get_Sequence_Sum(Y, 1, k) = 1023",
+    "Query": "k = ?"
+  },
+  {
+    "index": 38194,
+    "Problem": "Consider two cubes. The first cube has an edge length of 10 cm and the second cube has an edge length of 25 cm. What is the ratio of the volume of the first cube to the volume of the second cube? Express your answer as a reduced common fraction.",
+    "Declaration": "V1: Real; V2: Real",
+    "Facts": "V1 = 10 ^ 3; V2 = 25 ^ 3",
+    "Query": "V1 / V2 = ?"
+  },
+  {
+    "index": 38195,
+    "Problem": "What is the sum of all values of \\(y\\) for which the expression \\(\\frac{y+6}{y^2-7y+12}\\) is undefined?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(y: Real, y^2 - 7 * y + 12 = 0)) = ?"
+  },
+  {
+    "index": 38196,
+    "Problem": "If $x$ is a real number and $x^2 - 5x + 6 = 0$, then $x = 2$ and $x = 3$.",
+    "Declaration": "x: Real",
+    "Facts": "x^2 - 5*x + 6 = 0",
+    "Query": "x = 2 ∧ x = 3"
+  },
+  {
+    "index": 38197,
+    "Problem": "Let $p$ and $q$ denote the solutions of the quadratic equation $3x^2 + 6x - 24 = 0$. Find the value of $(p-q+3)^2$.",
+    "Declaration": "p: Real; q: Real",
+    "Facts": "Solve_equation(x: Real, 3 * x^2 + 6 * x - 24 = 0) = {p, q}",
+    "Query": "(p - q + 3)^2 = ?"
+  },
+  {
+    "index": 38198,
+    "Problem": "Find the remainder when 1234 is divided by 7 and verify if 1234 is an integer. Show both results.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Remainder(1234, 7) = ? ∧ Is_Integers(1234)"
+  },
+  {
+    "index": 38199,
+    "Problem": "If ab = 12 and a + b is minimized, then a > 0 is equivalent to b > 0.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "a * b = 12",
+    "Query": "a > 0 ↔ b > 0"
+  },
+  {
+    "index": 38200,
+    "Problem": "Calculate the norm of the complex number -2 + 3i, which is the square root of 13.",
+    "Declaration": "z : ComplexNumbers",
+    "Facts": "z = -2 + 3 * Complex.I",
+    "Query": "Get_Complex_Norm(z) = Sqrt(13)"
+  },
+  {
+    "index": 38201,
+    "Problem": "Find the units digit of the least common multiple of 12 and 15.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Digit_Number(Get_LCM(12, 15), 10, 1) = 0"
+  },
+  {
+    "index": 38202,
+    "Problem": "Given the sequence $\\{c_n\\}$ defined by $c_1 = 2$ and $c_{n+1} = 2c_n + 1$ for $n \\geq 1$, find the sum of the first 4 terms.",
+    "Declaration": "C: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(C, 1) = 2; ForAll(n: NaturalNumbers, Get_Sequence_Terms(C, n + 1) = 2 * Get_Sequence_Terms(C, n) + 1)",
+    "Query": "Get_Sequence_Sum(C, 1, 4) = ?"
+  },
+  {
+    "index": 38203,
+    "Problem": "Compute Cot(π/4) + Tan(π/4).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Cot(Real.pi/4) + Tan(Real.pi/4) = ?"
+  },
+  {
+    "index": 38204,
+    "Problem": "Find all functions \\( f: \\mathbb{R} \\to \\mathbb{R} \\) such that for all real numbers \\( x + y = 1 \\), \\[ f(x)^2 + f(y)^2 = 2f(x)f(y). \\] Show that the solutions are \\( f(x) = 0 \\) or \\( f(x) = c \\) for some constant \\( c \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, x + y = 1 → Get_Function_Value(f, x)^2 + Get_Function_Value(f, y)^2 = 2 * Get_Function_Value(f, x) * Get_Function_Value(f, y)))",
+    "Query": "Get_Function_Expression(f) = Get_Lambda_Function(x: Real, 0) ∨ Exists(c: Real, Get_Function_Expression(f) = Get_Lambda_Function(x: Real, c))"
+  },
+  {
+    "index": 38205,
+    "Problem": "Find the least common multiple of 12 and 18, then verify that it is congruent to 6 modulo 8.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Nat_Mod(Get_LCM(12, 18), 6, 8) = True"
+  },
+  {
+    "index": 38206,
+    "Problem": "Given real numbers $a$ and $b$ satisfying $|a| < 2$ and $|b| < 2$, prove that $2|a+b| < |4+ab|$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "Abs(a) < 2; Abs(b) < 2",
+    "Query": "2 * Abs(a + b) < Abs(4 + a * b)"
+  },
+  {
+    "index": 38207,
+    "Problem": "Suppose that the number $\\sqrt{7225} - 55$ can be expressed in the form $(\\sqrt{c} - d)^3,$ where $c$ and $d$ are positive integers. Find $c+d.$",
+    "Declaration": "c: PositiveIntegers; d: PositiveIntegers",
+    "Facts": "Sqrt(7225) - 55 = (Sqrt(c) - d)^3",
+    "Query": "c + d = ?"
+  },
+  {
+    "index": 38208,
+    "Problem": "Given the functions \\( F(x) = x^2 + 1 \\) and \\( G(x) = \\sqrt{x} \\), compute \\( F \\circ G \\) and find its value at \\( x = 4 \\).",
+    "Declaration": "F: Decl_Function(Real, Real), G: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(F) = Get_Lambda_Function(x, x^2 + 1) ∧ Get_Function_Expression(G) = Get_Lambda_Function(x, Sqrt(x))",
+    "Query": "Get_Function_Value(Get_Function_Composition(F, G), 4) = ?"
+  },
+  {
+    "index": 38209,
+    "Problem": "Simplify the expression $105s - 37s + 18t$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "105 * s - 37 * s + 18 * t = ?"
+  },
+  {
+    "index": 38210,
+    "Problem": "Given the geometric sequence $\\{a\\_n\\}$, where $a\\_3=3$ and $a\\_{10}=384$, find the general term formula $a\\_n=$\\_*\\_\\_\\_\\_\\_\\_\\_\\_*.",
+    "Declaration": "a: GeometricSequence; n: PositiveIntegers",
+    "Facts": "Get_Sequence_Terms(a, 3) = 3; Get_Sequence_Terms(a, 10) = 384",
+    "Query": "Get_Sequence_Terms(a, n) = ?"
+  },
+  {
+    "index": 38211,
+    "Problem": "Let $x$ be a positive integer such that $7x \\equiv 1 \\pmod{31}$. What is the remainder when $14 + x$ is divided by $31$?",
+    "Declaration": "remainder: PositiveIntegers; x: PositiveIntegers",
+    "Facts": "7 * x % 31 = 1; remainder = (14 + x) % 31",
+    "Query": "remainder = ?"
+  },
+  {
+    "index": 38212,
+    "Problem": "Expand the expression ${5(x+3)(x+6)}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "5 * (x + 3) * (x + 6) = ?"
+  },
+  {
+    "index": 38213,
+    "Problem": "In a geometric sequence $\\{g_n\\}$, $g_2 = 6$ and $g_5 = 162$. Find the sum of the first 10 terms.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(G, 2) = 6; Get_Sequence_Terms(G, 5) = 162",
+    "Query": "Get_Sequence_Sum(G, 1, 10) = ?"
+  },
+  {
+    "index": 38214,
+    "Problem": "Find the sum of the coefficients in the polynomial $5(2x^{8} - 9x^3 + 6) - 4(x^6 + 8x^3 - 3)$ when it is fully simplified.",
+    "Declaration": "P: Decl_Polynomial(Real); S: Decl_Set(Real)",
+    "Facts": "P = 5 * (2 * X^8 - 9 * X^3 + 6) - 4 * (X^6 + 8 * X^3 - 3); S = Get_PolyCoefficient(P)",
+    "Query": "Get_Set_Sum(S) = ?"
+  },
+  {
+    "index": 38215,
+    "Problem": "Determine the sum of all real numbers \\(x\\) satisfying\n\\[(x^2 - 6x + 5)^{x^2 - 8x + 12} = 1.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, (x^2 - 6*x + 5)^(x^2 - 8*x + 12) = 1)) = ?"
+  },
+  {
+    "index": 38216,
+    "Problem": "Given the polynomial S(X) = 3X⁴ - 2X² + 7, retrieve the term with degree 2 and then compute the degree of S.",
+    "Declaration": "S: Decl_Polynomial(Real)",
+    "Facts": "S = 3*X^4 - 2*X^2 + 7",
+    "Query": "Get_PolyTerm(S, 2) = ? ∧ Get_PolyDegree(S) = ?"
+  },
+  {
+    "index": 38217,
+    "Problem": "If a 3x3 real matrix M satisfies ForAll((i,j), Get_Matrix_Element(M,i,j) = Cos(i+j)), then its rank is at most 2.",
+    "Declaration": "M : Decl_Matrix(3, 3, Real)",
+    "Facts": "ForAll((i,j), Get_Matrix_Element(M,i,j) = Cos(i+j))",
+    "Query": "Get_Matrix_Rank(M) <= 2"
+  },
+  {
+    "index": 38218,
+    "Problem": "Let $a,$ $b,$ and $c$ be positive real numbers such that $a + b + c = 3.$ Find the minimum value of\n\\[\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}.\n\\]",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers",
+    "Facts": "a + b + c = 3",
+    "Query": "Get_Set_Minimum(Build_Set(x: Real, x = (1 / a) + (1 / b) + (1 / c))) = ?"
+  },
+  {
+    "index": 38219,
+    "Problem": "For a geometric sequence {e_n} with e_3 = 8 and e_6 = 64, find the product of the first 4 terms.",
+    "Declaration": "E: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(E, 3) = 8; Get_Sequence_Terms(E, 6) = 64",
+    "Query": "Get_Sequence_Prod(E, 1, 4) = ?"
+  },
+  {
+    "index": 38220,
+    "Problem": "Find all differentiable functions \\( f: \\mathbb{R} \\to \\mathbb{R} \\) such that;  \\[ f'(x) = f(-x) \\];  for all \\( x \\). Prove that the solutions are \\( f(x) = A\\cos(x) + B\\sin(x) \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Is_Differentiable(f) = True ∧ ForAll(x: Real, Get_Deriv(f, x) = Get_Function_Value(f, -x))",
+    "Query": "Exists(A: Real, Exists(B: Real, Get_Function_Expression(f) = Get_Lambda_Function(x: Real, A * Cos(x) + B * Sin(x))))"
+  },
+  {
+    "index": 38221,
+    "Problem": "The function \\( f(x) = ax + b \\) has an inverse \\( f^{-1}(x) = 3x - 6 \\). Find \\( f(0) \\) and the value of \\( a \\).",
+    "Declaration": "f: Decl_Function(Real, Real); a: Real; b: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * x + b); Get_Inverse_Function(f) = Get_Lambda_Function(x, 3 * x - 6)",
+    "Query": "Get_Function_Value(f, 0) = ? ∧ a = ?"
+  },
+  {
+    "index": 38222,
+    "Problem": "For the polynomial \\( q(x) = (x - 2)(x + 3)(x - 5) \\), evaluate \\( q(1) \\) and find the coefficient of the \\( x \\) term.",
+    "Declaration": "q: Decl_Polynomial(Real)",
+    "Facts": "q = (x - 2) * (x + 3) * (x - 5)",
+    "Query": "Eval_Value_Polynomial(q, 1) = ? ∧ Get_Term_Coefficient(q, 1) = ?"
+  },
+  {
+    "index": 38223,
+    "Problem": "Find the remainder of 3^5 divided by 7 and show that it is an odd number.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_OddNumber(Get_Remainder(3^5, 7)) = True"
+  },
+  {
+    "index": 38224,
+    "Problem": "Solve the inequality\n\\[-15x^2 + 10x + 5 > 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, -15 * x^2 + 10 * x + 5 > 0) = ?"
+  },
+  {
+    "index": 38225,
+    "Problem": "Determine the range of the function $y = \\sqrt{x^2 - 6x + 10} + \\sqrt{x^2 + 6x + 10}$.",
+    "Declaration": "y: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, Sqrt(x^2 - 6*x + 10) + Sqrt(x^2 + 6*x + 10))",
+    "Query": "Get_Function_Range(y) = ?"
+  },
+  {
+    "index": 38226,
+    "Problem": "Show that for any positive real number \\( a \\), the following inequality holds:\n\\[ \\left(\\frac{a^{3}+1}{a^{2}+1}\\right)^{2} \\geqslant a^{2}-a+1. \\]",
+    "Declaration": "a: PositiveNumbers",
+    "Facts": "",
+    "Query": "( (a^3 + 1) / (a^2 + 1) )^2 >= a^2 - a + 1"
+  },
+  {
+    "index": 38227,
+    "Problem": "It is not true that there exists a real number $x$ such that $x^2 + 1 < 0$ and $x > 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(x: Real, Negation(x^2 + 1 < 0 ∧ x > 0))"
+  },
+  {
+    "index": 38228,
+    "Problem": "Determine all solutions to the equation\n\\[ \\sqrt{6x-5} + \\frac{12}{\\sqrt{6x-5}} = 8. \\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Sqrt(6 * x - 5) + 12 / Sqrt(6 * x - 5) = 8) = ?"
+  },
+  {
+    "index": 38229,
+    "Problem": "A geometric sequence has $a_2=6$ and $a_4=54$. If the sequence is increasing, find its common ratio.",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 2) = 6; Get_Sequence_Terms(S, 4) = 54",
+    "Query": "Get_CommonRatio(S) = ?"
+  },
+  {
+    "index": 38230,
+    "Problem": "Calculate the value of the following expression: \n$$70 + (105 \\div 15) + (19 \\cdot 11) - 250 - (360 \\div 12)$$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "70 + (105 / 15) + (19 * 11) - 250 - (360 / 12) = ?"
+  },
+  {
+    "index": 38231,
+    "Problem": "Suppose $a$ and $b$ are positive integers such that $(a+bi)^2 = 7 + 24i$. What is $a+bi$?",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers",
+    "Facts": "(a + b * Complex.I)^2 = 7 + 24 * Complex.I",
+    "Query": "a + b * Complex.I = ?"
+  },
+  {
+    "index": 38232,
+    "Problem": "The sum of the first 10 terms of an arithmetic sequence is 100, and the sum of the first 5 terms is 25. Find the common difference.",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Sum(S, 1, 10) = 100; Get_Sequence_Sum(S, 1, 5) = 25",
+    "Query": "Get_CommonDifference(S) = ?"
+  },
+  {
+    "index": 38233,
+    "Problem": "Prove that the statement 'There exists a real number $x$ such that $x^2 + 1 = 0$' is false.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(x: Real, Negation(x^2 + 1 = 0))"
+  },
+  {
+    "index": 38234,
+    "Problem": "Find all natural numbers x ≤ 50 such that x ≡ 3 mod 5. Prove there are exactly 10 solutions.",
+    "Declaration": "x : NaturalNumbers",
+    "Facts": "",
+    "Query": "Set_Cardinality(Build_Set(x: NaturalNumbers, x <= 50 ∧ Is_Nat_Mod(x,3,5))) = 10"
+  },
+  {
+    "index": 38235,
+    "Problem": "Let M be the midpoint of segment AB in 3D space, and let P be a point on the perpendicular bisector of AB. Show that the distances from P to A and P to B are equal.",
+    "Declaration": "A: Decl_Cartesian_Product(Real, Real, Real); B: Decl_Cartesian_Product(Real, Real, Real); M: Decl_Cartesian_Product(Real, Real, Real); P: Decl_Cartesian_Product(Real, Real, Real); a: Real; b: Real; c: Real",
+    "Facts": "A = (a, 0, 0); B = (-a, 0, 0); M = ((a + (-a))/2, 0, 0); P = (0, b, c)",
+    "Query": "Get_Point_Distance(P, A) = Get_Point_Distance(P, B)"
+  },
+  {
+    "index": 38236,
+    "Problem": "Let $p$, $q$, and $r$ be polynomials such that $r(x) = p(x) \\cdot q(x)$. If the constant term of $p(x)$ is 5 and the constant term of $r(x)$ is -15, what is $q(0)$?",
+    "Declaration": "p: Decl_Polynomial(Real); q: Decl_Polynomial(Real); r: Decl_Polynomial(Real)",
+    "Facts": "Get_ConstantTerm(p) = 5; Get_ConstantTerm(r) = -15; r = p * q",
+    "Query": "Eval_Value_Polynomial(q, 0) = ?"
+  },
+  {
+    "index": 38237,
+    "Problem": "Find the product of all real solutions to $x^2 - \\lfloor x \\rfloor x - 1 = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Solve_equation(x: Real, x^2 - Get_Number_Floor(x) * x - 1 = 0)) = ?"
+  },
+  {
+    "index": 38238,
+    "Problem": "James hires a seamstress to fix all his shirts and pants. He has 10 shirts and some pairs of pants. It takes 1.5 hours to fix a shirt and twice as long for pants. The tailor charges $30 per hour. It costs $1530. How many pairs of pants does James have?",
+    "Declaration": "Cost: Real; NumberOfPants: Real; TimeFixShirt: Real; TimeFixPants: Real; TailorCharge: Real",
+    "Facts": "Cost = 1530; NumberOfPants = ?; TimeFixShirt = 1.5; TimeFixPants = 2 * TimeFixShirt; TailorCharge = 30",
+    "Query": "Cost = 10 * TailorCharge * TimeFixShirt + NumberOfPants * TailorCharge * TimeFixPants"
+  },
+  {
+    "index": 38239,
+    "Problem": "The product of two positive consecutive integers is 255. What is their sum?",
+    "Declaration": "A: PositiveIntegers; B: PositiveIntegers",
+    "Facts": "A * B = 255; B = A + 1",
+    "Query": "A + B = ?"
+  },
+  {
+    "index": 38240,
+    "Problem": "An arithmetic sequence has first term $a$ and common difference $d$. If the sum of the first 10 terms is 100 and the 5th term is 15, find $a$ and $d$.",
+    "Declaration": "S: ArithmeticSequence; a: Real; d: Real",
+    "Facts": "Get_Sequence_Sum(S, 1, 10) = 100; Get_Sequence_Terms(S, 5) = 15",
+    "Query": "a = ? ∧ d = ?"
+  },
+  {
+    "index": 38241,
+    "Problem": "For the sequence $\\{c_n\\}$ defined by $c_n = n^2 - 4n + 5$, find the sum of the first 5 terms.",
+    "Declaration": "C: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(C, n) = n^2 - 4 * n + 5)",
+    "Query": "Get_Sequence_Sum(C, 1, 5) = ?"
+  },
+  {
+    "index": 38242,
+    "Problem": "Find the sum of all complex solutions to the equation z^2 + 2z + 2 = 0.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(z:ComplexNumbers, z^2 + 2 * z + 2 = 0)) = ?"
+  },
+  {
+    "index": 38243,
+    "Problem": "Rewrite the algebraic expression $x^2+4x+1$ in the form of $(x+m)^2+n$, where $m$ and $n$ are constants.",
+    "Declaration": "m: Real; n: Real",
+    "Facts": "x^2 + 4 * x + 1 = (x + m)^2 + n",
+    "Query": "m = ? n = ?"
+  },
+  {
+    "index": 38244,
+    "Problem": "Find the sum of all real solutions to the equation $x^4 - 5x^2 + 4 = 0$ and determine if all solutions are integers.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Get_Function_Zeroes(Get_Lambda_Function(x, x^4 - 5*x^2 + 4))) = ? ∧ ForAll(x: Real, x^4 - 5*x^2 + 4 = 0 → Is_Integer(x))"
+  },
+  {
+    "index": 38245,
+    "Problem": "A geometric sequence has first term 5 and sum of the first 4 terms equal to 75. Find the common ratio.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(G, 1) = 5; Get_Sequence_Sum(G, 1, 4) = 75",
+    "Query": "Get_CommonRatio(G) = ?"
+  },
+  {
+    "index": 38246,
+    "Problem": "The rank of a 3x3 integer matrix M is equal to 3 if and only if its determinant is non-zero.",
+    "Declaration": "M : Decl_Matrix(3, 3, Integers)",
+    "Facts": "Get_Matrix_Rank(M) = 3",
+    "Query": "Get_Matrix_Det(M) ≠ 0"
+  },
+  {
+    "index": 38247,
+    "Problem": "If the minimum value of the function $f(x) = x^2 + bx + c$ is 4 at $x = 2$, find the product $b \\cdot c$.",
+    "Declaration": "f: Decl_Function(Real, Real); b: Real; c: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 + b * x + c); Get_Function_Minimum(f) = 4; Get_Function_Argmin(f) = 2",
+    "Query": "b * c = ?"
+  },
+  {
+    "index": 38248,
+    "Problem": "Given the set $A=\\{x|mx^2+2x-1=0\\}$, if set $A$ contains only one element, then the value of the real number $m$ is \\_\\_\\_\\_\\_\\_.",
+    "Declaration": "A: Decl_Set(Real); m: Real",
+    "Facts": "A = Solve_equation(x: Real, m * x^2 + 2 * x - 1 = 0); Set_Cardinality(A) = 1",
+    "Query": "m = ?"
+  },
+  {
+    "index": 38249,
+    "Problem": "Find the area of the triangle formed by the midpoints of the sides of a triangle with area 36.",
+    "Declaration": "A: Decl_Point_Dim(2); B: Decl_Point_Dim(2); C: Decl_Point_Dim(2); M1: Decl_Point_Dim(2); M2: Decl_Point_Dim(2); M3: Decl_Point_Dim(2)",
+    "Facts": "M1 = Get_MidPoint(B, C); M2 = Get_MidPoint(A, C); M3 = Get_MidPoint(A, B); Get_Area_Volume(Get_ConvexHull_Area(A, B, C)) = 36",
+    "Query": "Get_Area_Volume(Get_ConvexHull_Area(M1, M2, M3)) = 9"
+  },
+  {
+    "index": 38250,
+    "Problem": "It is not true that there exists a real number $x$ such that $x^2 + 1 < 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(x: Real, Negation(x^2 + 1 < 0))"
+  },
+  {
+    "index": 38251,
+    "Problem": "Find all natural numbers x ≤ 30 such that x is coprime with 30 and x is a perfect square. Prove there are exactly 4 solutions.",
+    "Declaration": "x : NaturalNumbers",
+    "Facts": "",
+    "Query": "Set_Cardinality(Build_Set(x: NaturalNumbers, x <= 30 ∧ Is_Coprime(x,30) ∧ Is_Square_Number(x))) = 4"
+  },
+  {
+    "index": 38252,
+    "Problem": "Verify that the number 7 is odd and that its square leaves a remainder of 1 when divided by 3.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_OddNumber(7) ∧ Get_Remainder(7 ^ 2, 3) = 1"
+  },
+  {
+    "index": 38253,
+    "Problem": "Determine the value of $k$ such that one root of the cubic equation \\[3x^3 + 9x^2 - 135x + k = 0\\] is double another root, and $k$ is positive.",
+    "Declaration": "k: PositiveNumbers",
+    "Facts": "Set_Cardinality(Solve_equation(x: Real, 3*x^3 + 9*x^2 - 135*x + k = 0)) = 3; Solve_equation(x: Real, 3*x^3 + 9*x^2 - 135*x + k = 0) = {a, b, c}; b = 2 * a",
+    "Query": "k = ?"
+  },
+  {
+    "index": 38254,
+    "Problem": "Find the solution set for the inequality $\\dfrac{2x+1}{x+1} < 1$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, (2*x + 1) / (x + 1) < 1) = ?"
+  },
+  {
+    "index": 38255,
+    "Problem": "On the island, \\(\\frac{2}{3}\\) of all men are married and \\(\\frac{3}{5}\\) of all women are married. What fraction of the island's population is married?",
+    "Declaration": "Women: Real; Men: Real; MarriedWomen: Real; MarriedMen: Real",
+    "Facts": "MarriedWomen = 3 * Women / 5; MarriedMen = 2 * Men / 3",
+    "Query": "(MarriedWomen + MarriedMen) / (Women + Men) = ?"
+  },
+  {
+    "index": 38256,
+    "Problem": "Given that \\( x, y, z \\) are real numbers such that \\( x < y < z \\), \\( x + y + z = 6 \\), and \\( xy + yz + zx = 9 \\), show that \\( 0 < x < 1 < y < 3 < z < 4 \\).",
+    "Declaration": "x: Real; y: Real; z: Real",
+    "Facts": "x + y + z = 6; x * y + y * z + z * x = 9; x < y; y < z",
+    "Query": "0 < x ∧ x < 1 ∧ 1 < y ∧ y < 3 ∧ 3 < z ∧ z < 4"
+  },
+  {
+    "index": 38257,
+    "Problem": "Given an arithmetic sequence $\\{a_n\\}$, where $s_n$ is the sum of the first $n$ terms, and it is known that $s_{10} = s_{20}$, find the value of $s_{30}$.",
+    "Declaration": "a: ArithmeticSequence; n: PositiveIntegers; s: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: PositiveIntegers, Get_Sequence_Sum(a, 1, n) = Get_Sequence_Terms(s, n)); Get_Sequence_Terms(s, 10) = Get_Sequence_Terms(s, 20)",
+    "Query": "Get_Sequence_Terms(s, 30) = ?"
+  },
+  {
+    "index": 38258,
+    "Problem": "Find the greatest common divisor of 36 and 48, then determine if the result is even.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_EvenNumber(Get_GCD(36, 48)) = ?"
+  },
+  {
+    "index": 38259,
+    "Problem": "Find the product of all solutions to $k^2 - 5k + 6 = 0$ where $k$ is a digit in base 8.",
+    "Declaration": "k: NonNegativeIntegers",
+    "Facts": "k < 8",
+    "Query": "Get_Set_Product(Build_Set(k, k^2 - 5 * k + 6 = 0)) = ?"
+  },
+  {
+    "index": 38260,
+    "Problem": "Consider a solid ball in ℝ³ with center T and radius 7. Prove that this region is bounded.",
+    "Declaration": "T: Decl_Point_Dim(3)",
+    "Facts": "S = Get_Ball(T, 7)",
+    "Query": "Is_Bounded_Area(S)"
+  },
+  {
+    "index": 38261,
+    "Problem": "Let $R(X) = 2X^3 - 5X^2 + X - 7$. Evaluate $R(2)$ and determine the leading coefficient.",
+    "Declaration": "R : Decl_Polynomial(Real)",
+    "Facts": "R = 2*X^3 - 5*X^2 + X - 7",
+    "Query": "Eval_Value_Polynomial(R, 2) = ? ∧ Get_Polynomial_Leading_Coefficient(R) = ?"
+  },
+  {
+    "index": 38262,
+    "Problem": "For a quadratic equation $x^2 - (k + 1)x + k = 0$, find the sum of all integer values of $k$ such that the equation has two distinct integer solutions.",
+    "Declaration": "k: Integers",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(k: Integers, Exists(x1: Integers, Exists(x2: Integers, x1 != x2 ∧ x^2 - (k + 1)*x + k = (x - x1)*(x - x2))))) = ?"
+  },
+  {
+    "index": 38263,
+    "Problem": "For all integers n, if n is odd then n^2 is odd. Prove this statement is true.",
+    "Declaration": "n: Integers",
+    "Facts": "",
+    "Query": "Is_OddNumber(n) → Is_OddNumber(n^2)"
+  },
+  {
+    "index": 38264,
+    "Problem": "Given that $a$, $b$, and $c$ are real numbers satisfying $a^2+b^2+c^2=1$, find the maximum value of $2a+b+2c$.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "a^2 + b^2 + c^2 = 1",
+    "Query": "Get_Set_Maximum(Build_Set(x: Real, x = 2 * a + b + 2 * c)) = ?"
+  },
+  {
+    "index": 38265,
+    "Problem": "Let $x$ be a value such that $10x^2 + 9x - 2 = 0$ and $30x^2 + 59x - 6 = 0.$ What is the value of $x$? Express your answer as a simplified common fraction.",
+    "Declaration": "x: Real",
+    "Facts": "10*x^2 + 9*x - 2 = 0; 30*x^2 + 59*x - 6 = 0",
+    "Query": "x = ?"
+  },
+  {
+    "index": 38266,
+    "Problem": "Given an arithmetic sequence {a_n} with common difference d, and a geometric sequence {b_n} with common ratio r. If a_1 = b_1 = 2, a_3 = b_2, and a_5 = b_3, find the value of r.",
+    "Declaration": "A: ArithmeticSequence; B: GeometricSequence; d: Real; r: Real",
+    "Facts": "Is_ArithmeticSequence(A) = True; Is_GeometricSequence(B) = True; Get_CommonDifference(A) = d; Get_CommonRatio(B) = r; Get_Sequence_Terms(A, 1) = 2; Get_Sequence_Terms(B, 1) = 2; Get_Sequence_Terms(A, 3) = Get_Sequence_Terms(B, 2); Get_Sequence_Terms(A, 5) = Get_Sequence_Terms(B, 3)",
+    "Query": "r = ?"
+  },
+  {
+    "index": 38267,
+    "Problem": "Given a sequence defined by A(n+1) = 2A(n) + 1 with A(1) = 1, find the product of the first 4 terms.",
+    "Declaration": "A: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(A, 1) = 1; ForAll(n: NaturalNumbers, Get_Sequence_Terms(A, n + 1) = 2 * Get_Sequence_Terms(A, n) + 1)",
+    "Query": "Get_Sequence_Prod(A, 1, 4) = ?"
+  },
+  {
+    "index": 38268,
+    "Problem": "Find the minimum value of the function \\( f: \\mathbb{R} \\to \\mathbb{R} \\) defined by  \n\\[ f(x) = x^4 - 4x^2 + 5. \\]  \nProve that the answer is 1.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x: Real, x^4 - 4*x^2 + 5)",
+    "Query": "Get_Function_Minimum(f) = 1"
+  },
+  {
+    "index": 38269,
+    "Problem": "Prove that\n\n$$\na^{2}+b^{2}+c^{2} \\geq ab + bc + ca\n$$\n\nwhere \\( a, b, c \\) are any real numbers.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "",
+    "Query": "a^2 + b^2 + c^2 >= a * b + b * c + c * a"
+  },
+  {
+    "index": 38270,
+    "Problem": "If $a$ is a positive real number and $\\log_3(a) = \\sin(\\pi/6)$, find the value of $a$.",
+    "Declaration": "a: Real",
+    "Facts": "a > 0",
+    "Query": "Solve_equation(a: Real, Log(3, a) = Sin(Pi / 6)) = ?"
+  },
+  {
+    "index": 38271,
+    "Problem": "Given the sequence ${a_n}$ that satisfies the condition $a_1=-2$, $a_{n+1}=2+\\frac{2a_n}{1-a_n}$, determine the value of $a_5$.",
+    "Declaration": "a: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(a, 1) = -2; ForAll(n: PositiveIntegers, Get_Sequence_Terms(a, n+1) = 2 + (2 * Get_Sequence_Terms(a, n)) / (1 - Get_Sequence_Terms(a, n)))",
+    "Query": "Get_Sequence_Terms(a, 5) = ?"
+  },
+  {
+    "index": 38272,
+    "Problem": "Find all natural numbers \\( x \\leq 30 \\) such that \\( x \\) is congruent to 2 modulo 5 and \\( x \\) is a divisor of 45. Prove there are exactly 2 solutions.",
+    "Declaration": " x  : NaturalNumbers",
+    "Facts": "",
+    "Query": "Set_Cardinality(Build_Set(x: NaturalNumbers, x <= 30 ∧ Is_Nat_Mod(x, 2, 5) ∧ Is_Factor(x, 45))) = 2"
+  },
+  {
+    "index": 38273,
+    "Problem": "Let $a_1,$ $a_2,$ $\\dots,$ $a_{10}$ be the roots of the polynomial\n\\[x^{10} + x^9 + \\dots + x^2 + x - 680 = 0.\\]\nCompute\n\\[\\sum_{n = 1}^{10} \\frac{1}{1 - a_n}.\\]",
+    "Declaration": "a1: Real; a2: Real; a3: Real; a4: Real; a5: Real; a6: Real; a7: Real; a8: Real; a9: Real; a10: Real",
+    "Facts": "Solve_equation(x, x^10 + x^9 + x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x - 680 = 0) = {a1, a2, a3, a4, a5, a6, a7, a8, a9, a10}",
+    "Query": "1/(1 - a1) + 1/(1 - a2) + 1/(1 - a3) + 1/(1 - a4) + 1/(1 - a5) + 1/(1 - a6) + 1/(1 - a7) + 1/(1 - a8) + 1/(1 - a9) + 1/(1 - a10) = ?"
+  },
+  {
+    "index": 38274,
+    "Problem": "For all integers k, if k^2 - k - 6 = 0, then k = 3 or k = -2.",
+    "Declaration": "k: Integers",
+    "Facts": "k^2 - k - 6 = 0",
+    "Query": "ForAll(k: Integers, k^2 - k - 6 = 0 → (k = 3 ∨ k = -2))"
+  },
+  {
+    "index": 38275,
+    "Problem": "Given $Q(x) = (x - 2)(x + 3)(x - 5)$, find its constant term and leading coefficient.",
+    "Declaration": "Q: Decl_Polynomial(Real)",
+    "Facts": "Q = (X - 2)*(X + 3)*(X - 5)",
+    "Query": "Get_ConstantTerm(Q) = ? ∧ Get_Polynomial_Leading_Coefficient(Q) = ?"
+  },
+  {
+    "index": 38276,
+    "Problem": "Determine the value of $y$ in the equation $8^5 + 8^5 + 2 \\cdot 8^5 = 2^y$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(y: Real, 8^5 + 8^5 + 2 * 8^5 = (2: Real)^y) = ?"
+  },
+  {
+    "index": 38277,
+    "Problem": "Solve the inequality $\\frac{2x - 3}{x + 1} \\leq 0$ for real $x$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, (2 * x - 3) / (x + 1) <= 0) = ?"
+  },
+  {
+    "index": 38278,
+    "Problem": "In the sequence $\\{a\\_n\\}$, $a_{n+1}= \\frac{a\\_n}{1+3a\\_n},a\\_1=2$, find the value of $a_{20}$.",
+    "Declaration": "a: Decl_Sequence(Real)",
+    "Facts": "Get_Sequence_Terms(a, 1) = 2; ForAll(n: PositiveIntegers, Get_Sequence_Terms(a, n + 1) = Get_Sequence_Terms(a, n) / (1 + 3 * Get_Sequence_Terms(a, n)))",
+    "Query": "Get_Sequence_Terms(a, 20) = ?"
+  },
+  {
+    "index": 38279,
+    "Problem": "The sequence $\\{a_n\\}$ is geometric with common ratio $q = 2$ and $a_1 + a_2 = 6$. Find the product $a_1 \\cdot a_2 \\cdot a_3$.",
+    "Declaration": "A: Decl_Sequence(Real); q: Real",
+    "Facts": "Is_GeometricSequence(A) = True; Get_CommonRatio(A) = 2; Get_Sequence_Terms(A, 1) + Get_Sequence_Terms(A, 2) = 6",
+    "Query": "Get_Sequence_Prod(A, 1, 3) = ?"
+  },
+  {
+    "index": 38280,
+    "Problem": "For the sequence S(n) = n^2 + n, compute the sum of terms from S(1) to S(4).",
+    "Declaration": "S: Decl_Sequence(Real)",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Terms(S, n) = n^2 + n)",
+    "Query": "Get_Sequence_Sum(S, 1, 4) = ?"
+  },
+  {
+    "index": 38281,
+    "Problem": "The least common multiple of two consecutive even numbers is divisible by 4.",
+    "Declaration": "n: Integers",
+    "Facts": "Is_EvenNumber(n) ∧ Is_EvenNumber(n + 2)",
+    "Query": "Is_Factor(4, Get_LCM(n, n + 2))"
+  },
+  {
+    "index": 38282,
+    "Problem": "Find the smallest integer $n$ such that $n^2 - 5n + 6 > 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Build_Set(n: Integers, n^2 - 5*n + 6 > 0)) = ?"
+  },
+  {
+    "index": 38283,
+    "Problem": "If $a$ is a real, and $π^2 + a - 2 = 0$ where $π$ is the pi constant. Find the value of $a$.",
+    "Declaration": "a: Real",
+    "Facts": "Real.π ^ 2 + a - 2 = 0",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38284,
+    "Problem": "Calculate the following expression: \\(120 \\div 6 \\times 2 \\div 3\\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "120 / 6 * 2 / 3 = ?"
+  },
+  {
+    "index": 38285,
+    "Problem": "Consider the set A of complex numbers whose norm equals 10 and whose imaginary part is negative. Determine whether the set A is non-empty.",
+    "Declaration": "A : Decl_Set(ComplexNumbers)",
+    "Facts": "A = Build_Set(z: ComplexNumbers, Get_Complex_Norm(z) = 10 ∧ Get_Complex_Im(z) < 0)",
+    "Query": "Is_NonEmpty_Set(A)"
+  },
+  {
+    "index": 38286,
+    "Problem": "Given the polynomial F(X) = 3X^4 - 2X^3 + X - 7, find the coefficient of the X^3 term and solve the inequality F(X) > 0 for X=2.",
+    "Declaration": "F : Decl_Polynomial(Real)",
+    "Facts": "F = 3*X^4 - 2*X^3 + X - 7",
+    "Query": "Get_Term_Coefficient(F, 3) = ? ∧ Eval_Value_Polynomial(F, 2) > 0"
+  },
+  {
+    "index": 38287,
+    "Problem": "Evaluate the integral \\( \\int_{-1}^1 x^3 \\, dx \\) and prove that it equals \\( 0 \\).",
+    "Declaration": "f : Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x : Real, x^3)",
+    "Query": "Get_Integral(-1, 1, x, Get_Function_Value(f, x)) = 0"
+  },
+  {
+    "index": 38288,
+    "Problem": "A 3x3 real matrix has rank 2 and determinant 0.",
+    "Declaration": "M : Decl_Matrix(3, 3, Real)",
+    "Facts": "Get_Matrix_Rank(M) = 2",
+    "Query": "Get_Matrix_Det(M) = 0"
+  },
+  {
+    "index": 38289,
+    "Problem": "Find the maximum value of x in the set of real numbers where x satisfies both x^2 - 5x + 6 ≤ 0 and x > 1.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Maximum(Build_Set(x: Real, x^2 - 5 * x + 6 ≤ 0 ∧ x > 1)) = ?"
+  },
+  {
+    "index": 38290,
+    "Problem": "Find all functions \\( f: \\mathbb{R} \\rightarrow \\mathbb{R} \\) such that \\( f(x + y) = f(x) + f(y) + 2xy \\) for all \\( x, y \\in \\mathbb{R} \\), and \\( f \\) is differentiable. Prove that the answer is \\( \\boxed{f(x) = x^2 + kx \\text{ for some } k \\in \\mathbb{R}} \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, Get_Function_Value(f, x + y) = Get_Function_Value(f, x) + Get_Function_Value(f, y) + 2 * x * y)); Is_Differentiable(f) = True",
+    "Query": "Exists(k: Real, Get_Function_Expression(f) = Get_Lambda_Function(x: Real, x^2 + k * x))"
+  },
+  {
+    "index": 38291,
+    "Problem": "The remainders when four positive integers are divided by 7 are 2, 3, 4, and 5, respectively. Find the remainder when their product is divided by 7.",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers; d: PositiveIntegers",
+    "Facts": "a % 7 = 2; b % 7 = 3; c % 7 = 4; d % 7 = 5",
+    "Query": "(a * b * c * d) % 7 = ?"
+  },
+  {
+    "index": 38292,
+    "Problem": "The function $f(x) = 2x + 3$ has an inverse. Find the inverse function and compute $f^{-1}(7)$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2*x + 3)",
+    "Query": "Get_Inverse_Function(f) = ? ∧ Get_Function_Value(Get_Inverse_Function(f), 7) = ?"
+  },
+  {
+    "index": 38293,
+    "Problem": "If the real numbers \\( x \\) and \\( y \\) satisfy \\(\\frac{x + y}{1 - xy} = \\sqrt{5}\\), then what is the value of \\(\\frac{|1 - xy|}{\\sqrt{1 + x^2} \\sqrt{1 + y^2}}?\\)",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "(x + y) / (1 - x * y) = Sqrt(5)",
+    "Query": "Abs(1 - x * y) / (Sqrt(1 + x^2) * Sqrt(1 + y^2)) = ?"
+  },
+  {
+    "index": 38294,
+    "Problem": "Find the number of divisors of 99 and verify that it is coprime with 4.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Coprime(Set_Cardinality(Build_Set(n: PositiveIntegers, Is_Factor(n, 99))), 4) = True"
+  },
+  {
+    "index": 38295,
+    "Problem": "For all real numbers $x$, $x > 5$ implies $f(x) > 10$, where $f(x) = 2x + 1$. Find the minimum value of $f$.",
+    "Declaration": "f: Decl_Function(Real, Real); x: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2 * x + 1); x > 5 → Get_Function_Value(f, x) > 10",
+    "Query": "Get_Function_Minimum(f) = ?"
+  },
+  {
+    "index": 38296,
+    "Problem": "If the sum of the first n terms of an arithmetic sequence is n^2 + 3n, find the 10th term.",
+    "Declaration": "A: ArithmeticSequence",
+    "Facts": "ForAll(n: NaturalNumbers, Get_Sequence_Sum(A, 1, n) = n^2 + 3 * n)",
+    "Query": "Get_Sequence_Terms(A, 10) = ?"
+  },
+  {
+    "index": 38297,
+    "Problem": "Given that $x$ and $y$ are positive integers such that $xy^{10}$ is a perfect 33rd power, prove that $x^{10}y$ is also a perfect 33rd power and that $x$ and $y$ are relatively prime.",
+    "Declaration": "x: PositiveIntegers; y: PositiveIntegers",
+    "Facts": "Exists(a: PositiveIntegers, (x*y) ^ 10 = a ^ 33)",
+    "Query": "Exists(a: PositiveIntegers, x ^ 10 * y = a ^ 33) ∧ Is_Coprime(x, y) = True"
+  },
+  {
+    "index": 38298,
+    "Problem": "If $\\lfloor a \\rfloor = 4$ and $a^2 - 9a + 20 = 0$, find the value of a.",
+    "Declaration": "a: Real",
+    "Facts": "Get_Number_Floor(a) = 4 ∧ a^2 - 9 * a + 20 = 0",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38299,
+    "Problem": "Compute $\\sec x + \\tan x$.",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "1 / Cos(x) + Tan(x) = ?"
+  },
+  {
+    "index": 38300,
+    "Problem": "Given an arithmetic sequence $\\{a_n\\}$ with common difference $d=3$ and a geometric sequence $\\{b_n\\}$ with common ratio $q=2$. If $a_5 = b_3$ and $a_7 = b_4$, find the sum of the first 10 terms of $\\{a_n\\}$.",
+    "Declaration": "A: ArithmeticSequence; B: GeometricSequence",
+    "Facts": "Get_CommonDifference(A) = 3; Get_CommonRatio(B) = 2; Get_Sequence_Terms(A, 5) = Get_Sequence_Terms(B, 3); Get_Sequence_Terms(A, 7) = Get_Sequence_Terms(B, 4)",
+    "Query": "Get_Sequence_Sum(A, 1, 10) = ?"
+  },
+  {
+    "index": 38301,
+    "Problem": "Find the product of all real numbers x that satisfy both x^2 - 4 = 0 and x > 0.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Solve_inequation(x: Real, x^2 - 4 = 0 ∧ x > 0)) = ?"
+  },
+  {
+    "index": 38302,
+    "Problem": "Find all real roots of the polynomial $Q(X) = X^4 - 5X^2 + 4$ and determine if any root is equal to $2$ or $-2$.",
+    "Declaration": "Q: Decl_Polynomial(Real)",
+    "Facts": "Q = X^4 - 5 * X^2 + 4",
+    "Query": "Get_Polyroots(Q) = ? ∧ (2 ∈ Get_Polyroots(Q) ∨ -2 ∈ Get_Polyroots(Q))"
+  },
+  {
+    "index": 38303,
+    "Problem": "In the sequence $\\{a_n\\}$, it is known that $a_1=1$, and $a_{n+1}-2a_n+3=0$. Find the general formula for $a_n$.",
+    "Declaration": "a: Decl_Sequence(Real); n: PositiveIntegers",
+    "Facts": "Get_Sequence_Terms(a, 1) = 1; ForAll(n: PositiveIntegers, Get_Sequence_Terms(a, n+1) - 2 * Get_Sequence_Terms(a, n) + 3 = 0)",
+    "Query": "Get_Sequence_Terms(a, n) = ?"
+  },
+  {
+    "index": 38304,
+    "Problem": "For Q(X) = 4X⁵ - 2X³ + 8, extract the constant term and evaluate at X=-1",
+    "Declaration": "Q: Decl_Polynomial(Real)",
+    "Facts": "Q = 4*X^5 - 2*X^3 + 8",
+    "Query": "Get_ConstantTerm(Q) = ? ∧ Eval_Value_Polynomial(Q, -1) = ?"
+  },
+  {
+    "index": 38305,
+    "Problem": "Calculate the value of $\\left(\\frac{2}{3}\\right)\\left(\\frac{3}{4}\\right)\\left(\\frac{4}{5}\\right)\\left(\\frac{5}{6}\\right)\\left(\\frac{6}{7}\\right)\\left(\\frac{7}{8}\\right)\\left(\\frac{8}{9}\\right)$ and then subtract 1 from the result. Express your answer as a common fraction.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(2 / 3) * (3 / 4) * (4 / 5) * (5 / 6) * (6 / 7) * (7 / 8) * (8 / 9) - 1 = ?"
+  },
+  {
+    "index": 38306,
+    "Problem": "Find the sum of all natural numbers ≤ 10 that are coprime with 10.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x:NaturalNumbers, x <= 10 ∧ Is_Coprime(x,10))) = ?"
+  },
+  {
+    "index": 38307,
+    "Problem": "For an arithmetic sequence $\\{a_n\\}$, the sum of terms from $a_3$ to $a_7$ is 50. If the common difference $d = 2$, find the value of $a_5$.",
+    "Declaration": "A: ArithmeticSequence; d: Real",
+    "Facts": "Get_CommonDifference(A) = d; d = 2; Get_Sequence_Sum(A, 3, 7) = 50",
+    "Query": "Get_Sequence_Terms(A, 5) = ?"
+  },
+  {
+    "index": 38308,
+    "Problem": "Given an arithmetic sequence {a_n} with common difference d, and a geometric sequence {b_n} with common ratio r. If a_3 = b_2 and a_5 = b_3, find the value of r.",
+    "Declaration": "A: ArithmeticSequence; B: GeometricSequence; d: Real; r: Real",
+    "Facts": "Get_CommonDifference(A) = d; Get_CommonRatio(B) = r; Get_Sequence_Terms(A, 3) = Get_Sequence_Terms(B, 2); Get_Sequence_Terms(A, 5) = Get_Sequence_Terms(B, 3)",
+    "Query": "r = ?"
+  },
+  {
+    "index": 38309,
+    "Problem": "Find the sum of the solutions to \\( x^2 - 5x + 6 = 0 \\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Real, x^2 - 5 * x + 6 = 0)) = 5"
+  },
+  {
+    "index": 38310,
+    "Problem": "Given the polynomial P(X) = 3X^4 - 2X^3 + 7X - 5, find its degree and the coefficient of the highest degree term.",
+    "Declaration": "P : Decl_Polynomial(Real)",
+    "Facts": "P = 3*X^4 - 2*X^3 + 7*X - 5",
+    "Query": "Get_PolyDegree(P) = ? ∧ Get_Polynomial_Leading_Coefficient(P) = ?"
+  },
+  {
+    "index": 38311,
+    "Problem": "Let \\( a \\) and \\( b \\) be two positive real numbers such that \\( ab \\geq 1 \\). Show that:\n\n\\[ \n\\frac{1}{1+a}+\\frac{1}{1+b} \\leq 1 \n\\]\n\nDetermine the case of equality.",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers",
+    "Facts": "a * b >= 1",
+    "Query": "1 / (1 + a) + 1 / (1 + b) <= 1"
+  },
+  {
+    "index": 38312,
+    "Problem": "Given S(X) = 2X^3 - 3X^2 + X - 4 and T(X) = X + 1, find the X^2 term coefficient in S(T(X))",
+    "Declaration": "S : Decl_Polynomial(Real); T : Decl_Polynomial(Real)",
+    "Facts": "S = 2*X^3 - 3*X^2 + X - 4; T = X + 1",
+    "Query": "Get_Term_Coefficient(Get_Polynomial_Composition(S, T), 2) = ?"
+  },
+  {
+    "index": 38313,
+    "Problem": "If the sum of the first n terms of an arithmetic sequence is n^2 + 2n, find the product of the 5th and 6th terms.",
+    "Declaration": "a: Decl_Sequence(Real)",
+    "Facts": "Is_ArithmeticSequence(a) = True; Get_Sum(Range(1, n), k, Get_Sequence_Terms(a, k)) = n^2 + 2 * n",
+    "Query": "Get_Sequence_Terms(a, 5) * Get_Sequence_Terms(a, 6) = ?"
+  },
+  {
+    "index": 38314,
+    "Problem": "Compose the polynomials A(X) = X^2 and B(X) = 2X + 1. Find the leading coefficient of A∘B.",
+    "Declaration": "A: Decl_Polynomial(Real); B: Decl_Polynomial(Real)",
+    "Facts": "A = X^2; B = 2 * X + 1",
+    "Query": "Get_Polynomial_Leading_Coefficient(Get_Polynomial_Composition(A, B)) = ?"
+  },
+  {
+    "index": 38315,
+    "Problem": "Given that $\\{d_n\\}$ is an arithmetic sequence with $d_2 + d_4 = 20$ and $d_3 = 9$, find the common difference.",
+    "Declaration": "D: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(D, 2) + Get_Sequence_Terms(D, 4) = 20; Get_Sequence_Terms(D, 3) = 9",
+    "Query": "Get_CommonDifference(D) = ?"
+  },
+  {
+    "index": 38316,
+    "Problem": "Find the minimum value of the function \\( f: \\mathbb{R} \\to \\mathbb{R} \\) defined by \\( f(x) = e^{x} + e^{-x} \\).  \nProve that the answer is 2.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x: Real, Exp(x) + Exp(-x))",
+    "Query": "Get_Function_Minimum(f) = 2"
+  },
+  {
+    "index": 38317,
+    "Problem": "Let \\( n \\) be a positive integer. Prove that \\( n(n + 1)(n + 2)(n + 3) \\) cannot be a square or a cube.",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "",
+    "Query": "n * (n + 1) * (n + 2) * (n + 3) != m^2 ∧ n * (n + 1) * (n + 2) * (n + 3) != m^3"
+  },
+  {
+    "index": 38318,
+    "Problem": "In a geometric sequence, the sum of the first 2 terms is 6 and the product of the first 3 terms is 64. Find the common ratio.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Sum(G, 1, 2) = 6; Get_Sequence_Prod(G, 1, 3) = 64",
+    "Query": "Get_CommonRatio(G) = ?"
+  },
+  {
+    "index": 38319,
+    "Problem": "Let \\(m\\) and \\(n\\) be consecutive odd integers. Prove that the expression \\(7m^2 - 5n^2 - 2\\) is divisible by 8.",
+    "Declaration": "m: OddNumbers; n: OddNumbers",
+    "Facts": "m = n + 2",
+    "Query": "7 * m^2 - 5 * n^2 - 2 % 8 = 0"
+  },
+  {
+    "index": 38320,
+    "Problem": "Solve for \\(Q\\) if \\(\\sqrt{2Q^3} = 64\\sqrt[16]{32}\\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(Q: Real, Sqrt(2 * Q^3) = 64 * (32)^(1/16)) = ?"
+  },
+  {
+    "index": 38321,
+    "Problem": "For a given positive integer $n > 2^2$, what is the greatest common divisor of $n^2 + 2^2$ and $n + 3$?",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "n > 2^2",
+    "Query": "Get_GCD(n^2 + 2^2, n + 3) = ?"
+  },
+  {
+    "index": 38322,
+    "Problem": "Solve the inequality $\\log_3(2x - 1) > 2$ for x.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Log(3, 2 * x - 1) > 2) = ?"
+  },
+  {
+    "index": 38323,
+    "Problem": "Find all real numbers $x$ such that $\\lfloor \\cos x \\rfloor = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Get_Number_Floor(Cos(x)) = 0) = ?"
+  },
+  {
+    "index": 38324,
+    "Problem": "Simplify the following expression:\n\n$$8x + 15 - 3x + 5 \\times 7$$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "8 * x + 15 - 3 * x + 5 * 7 = ?"
+  },
+  {
+    "index": 38325,
+    "Problem": "Given the sets A = {x | x^2 - x - 6 = 0} and B = {y | y^2 + y - 6 = 0}, find the union of A and B and then count the number of elements in the resulting set.",
+    "Declaration": "A: Decl_Set(Real); B: Decl_Set(Real); C: Decl_Set(Real)",
+    "Facts": "A = Solve_equation(x: Real, x^2 - x - 6 = 0); B = Solve_equation(y: Real, y^2 + y - 6 = 0); C = A ∪ B",
+    "Query": "Set_Cardinality(C) = ?"
+  },
+  {
+    "index": 38326,
+    "Problem": "The positive number $b$ is chosen such that the terms $15, b, \\frac{45}{4}$ are the first, second, and third terms, respectively, of a geometric sequence. What is the value of $b$, if $b$ is positive?",
+    "Declaration": "S: GeometricSequence; b: PositiveNumbers",
+    "Facts": "Get_Sequence_Terms(S, 1) = 15; Get_Sequence_Terms(S, 2) = b; Get_Sequence_Terms(S, 3) = 45 / 4",
+    "Query": "b = ?"
+  },
+  {
+    "index": 38327,
+    "Problem": "Find the coefficient of $X^2$ in the polynomial $D(X) = (X + 1)(X - 3)(X + 5)$ and verify that $X = -1$ is a root.",
+    "Declaration": "D: Decl_Polynomial(Real)",
+    "Facts": "D = (X + 1)*(X - 3)*(X + 5); Is_Polynomial_Root(D, -1) = True",
+    "Query": "Get_Term_Coefficient(D, 2) = ?"
+  },
+  {
+    "index": 38328,
+    "Problem": "An arithmetic sequence has sum of first 10 terms equal to 100 and common difference 2. Find its first term.",
+    "Declaration": "A: ArithmeticSequence",
+    "Facts": "Get_Sequence_Sum(A, 1, 10) = 100; Get_CommonDifference(A) = 2",
+    "Query": "Get_Sequence_Terms(A, 1) = ?"
+  },
+  {
+    "index": 38329,
+    "Problem": "Given that $a$, $b$, and $c$ are positive real numbers, and $a+b+c=1$, prove that $(\\frac{1}{a}-1)(\\frac{1}{b}-1)(\\frac{1}{c}-1)\\geqslant 8$.",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers",
+    "Facts": "a + b + c = 1",
+    "Query": "(1 / a - 1) * (1 / b - 1) * (1 / c - 1) >= 8"
+  },
+  {
+    "index": 38330,
+    "Problem": "The function \\( f(x) = 3x - 2 \\) has an inverse. Find \\( f^{-1}(4) \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 3 * x - 2)",
+    "Query": "Get_Function_Value(Get_Inverse_Function(f), 4) = ?"
+  },
+  {
+    "index": 38331,
+    "Problem": "What is the largest integer $n$ such that $10$ divides $n!$?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Maximum(Build_Set(n: Integers, 10 % Factorial(n) = 0)) = ?"
+  },
+  {
+    "index": 38332,
+    "Problem": "Find the maximum value of $k$ such that the equation $x^2 - kx + 2k = 0$ has real solutions.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Maximum(Build_Set(k: Real, Exists(x: Real, x^2 - k * x + 2 * k = 0))) = ?"
+  },
+  {
+    "index": 38333,
+    "Problem": "A geometric sequence has first term 2 and common ratio 3. Find the product of the first 5 terms. Then, determine if this product is a perfect cube.",
+    "Declaration": "G: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(G, 1) = 2; Get_CommonRatio(G) = 3",
+    "Query": "Exists(k: Integers, k ^ 3 = Get_Sequence_Prod(G, 1, 5))"
+  },
+  {
+    "index": 38334,
+    "Problem": "Verify if 17 is congruent to 5 modulo 6 and find the remainder of 17 divided by 6.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Nat_Mod(17, 5, 6) ∧ Get_Remainder(17, 6) = ?"
+  },
+  {
+    "index": 38335,
+    "Problem": "If Jenna has twice as much money in her bank account as Phil does, and Phil has some fraction of the amount of money that Bob has in his account, and Bob has $60 in his account, and Jenna has $20 less money in her account than Bob. What is the ratio of the amount of money Phil has to the amount Bob has?",
+    "Declaration": "B: Real; F: Real; J: Real; P: Real",
+    "Facts": "B = 60; J = B - 20; P = F * B; J = 2 * P",
+    "Query": "P / B = ?"
+  },
+  {
+    "index": 38336,
+    "Problem": "If x and y are real numbers such that x + y = 10, find the maximum value of x * y.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x + y = 10",
+    "Query": "Get_Set_Maximum(Build_Set(m: Real, m = x * y)) = ?"
+  },
+  {
+    "index": 38337,
+    "Problem": "Find the sum of all integer solutions x to the equation x^2 - 5x + 6 ≤ 0 where x is also a prime number.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Integers, x^2 - 5 * x + 6 ≤ 0 ∧ Is_Prime(x))) = ?"
+  },
+  {
+    "index": 38338,
+    "Problem": "Find the maximum value of the function \\( f(x) = \\sqrt{4 - x^2} \\) and determine all real roots of \\( f(x) \\).",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, Sqrt(4 - x^2))",
+    "Query": "Get_Function_Maximum(f) = ? ∧ Get_Function_Zeroes(f) = ?"
+  },
+  {
+    "index": 38339,
+    "Problem": "Positive real numbers \\( a, b, c \\) are in a geometric progression \\((q \\neq 1)\\), and \\( \\log _{a} b, \\log _{b} c, \\log _{c} a \\) are in an arithmetic progression. Find the common difference \\( d \\).",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers; d: Real; q: Real",
+    "Facts": "a * q = b; b * q = c; Log(a, b) + d = Log(b, c); Log(b, c) + d = Log(c, a)",
+    "Query": "d = ?"
+  },
+  {
+    "index": 38340,
+    "Problem": "Check if 23 is a prime number and if it is coprime with 45. Show both results.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Prime(23) = True ∧ Is_Coprime(23, 45)"
+  },
+  {
+    "index": 38341,
+    "Problem": "Find all integer values of \\( x \\) for which \\( 3|2x+1| + 6 < 24 \\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Integers, 3 * Abs(2 * x + 1) + 6 < 24) = ?"
+  },
+  {
+    "index": 38342,
+    "Problem": "For all polynomials $f$ of degree 2, the composition $f \\circ f$ has degree 4.",
+    "Declaration": "f: QuadraticPolynomial",
+    "Facts": "",
+    "Query": "ForAll(f: QuadraticPolynomial, Get_PolyDegree(Get_Polynomial_Composition(f, f)) = 4)"
+  },
+  {
+    "index": 38343,
+    "Problem": "John's car needs a new engine. The labor costs $75 an hour for a certain number of hours. The part itself cost $1200. The repairs cost in total $2400. How many hours of labor were needed for the repairs?",
+    "Declaration": "Hours: Real; Part: Real; Labor: Real",
+    "Facts": "Hours * Labor + Part = 2400; Part = 1200; Labor = 75; Part + Hours * Labor = 2400",
+    "Query": "Hours = ?"
+  },
+  {
+    "index": 38344,
+    "Problem": "Given a sequence $\\{a_n\\}$ where $a_1=1$ and $a_{n+1}= \\frac{3a_n}{a_n+3}$ ($n\\in\\mathbb{N}^*$), find the general term $a_n$.",
+    "Declaration": "a: Decl_Sequence(Real); n: NaturalNumbers",
+    "Facts": "Get_Sequence_Terms(a, 1) = 1; ForAll(n: NaturalNumbers, Get_Sequence_Terms(a, n+1) = (3 * Get_Sequence_Terms(a, n)) / (Get_Sequence_Terms(a, n) + 3))",
+    "Query": "Get_Sequence_Terms(a, n) = ?"
+  },
+  {
+    "index": 38345,
+    "Problem": "The set A contains all even integers between -10 and 10. Determine if -10 is the least element in A.",
+    "Declaration": "A : Decl_Set(Integers)",
+    "Facts": "A = Build_Set(x: Integers, Is_EvenNumber(x) ∧ x ≥ -10 ∧ x ≤ 10)",
+    "Query": "Is_Least_Element(A, -10)"
+  },
+  {
+    "index": 38346,
+    "Problem": "Find the sum of all integer solutions to the inequality \\( 2x^2 - 5x - 3 \\leq 0 \\) and the minimum element in the solution set.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Build_Set(x: Integers, 2 * x^2 - 5 * x - 3 ≤ 0)) = ? ∧ Get_Set_Minimum(Build_Set(x: Integers, 2 * x^2 - 5 * x - 3 ≤ 0)) = ?"
+  },
+  {
+    "index": 38347,
+    "Problem": "Find the sum $1! + 2! + 3! + \\hdots + 10!$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Sum(Range(1, 10), i, Factorial(i)) = ?"
+  },
+  {
+    "index": 38348,
+    "Problem": "Let $x, y,$ and $z$ be positive real numbers such that $x + y + z = 9$. Find the minimum value of\n\\[\n\\frac{x^2 + y^2 + 1}{x + y} + \\frac{x^2 + z^2 + 1}{x + z} + \\frac{y^2 + z^2 + 1}{y + z}.\n\\]",
+    "Declaration": "x: PositiveNumbers; y: PositiveNumbers; z: PositiveNumbers",
+    "Facts": "x + y + z = 9",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = (x^2 + y^2 + 1) / (x + y) + (x^2 + z^2 + 1) / (x + z) + (y^2 + z^2 + 1) / (y + z))) = ?"
+  },
+  {
+    "index": 38349,
+    "Problem": "Find all real numbers $x$ such that $\\sin x = \\log_2(x)$ and $x > 1$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Sin(x) = Log(2, x) ∧ x > 1) = ?"
+  },
+  {
+    "index": 38350,
+    "Problem": "Let $x,$ $y,$ and $z$ be positive real numbers such that $x + 2y + 3z = 6.$ Find the minimum value of\n\\[\\frac{1}{x} + \\frac{4}{y} + \\frac{9}{z}.\\]",
+    "Declaration": "x: PositiveNumbers; y: PositiveNumbers; z: PositiveNumbers",
+    "Facts": "x + 2 * y + 3 * z = 6",
+    "Query": "(1 / x) + (4 / y) + (9 / z) = ?"
+  },
+  {
+    "index": 38351,
+    "Problem": "Simplify and evaluate the expression when $$x= \\frac {1}{ \\sqrt {3}-2}$$, find the value of the algebraic expression $$x^2+4x-4$$.",
+    "Declaration": "x: Real",
+    "Facts": "x = 1 / (Sqrt(3) - 2)",
+    "Query": "x^2 + 4 * x - 4 = ?"
+  },
+  {
+    "index": 38352,
+    "Problem": "There exists an integer n between 10 and 20 such that n^2 ≡ 1 mod 8. Find the product of all such n.",
+    "Declaration": "n: Integers",
+    "Facts": "10 ≤ n; n ≤ 20",
+    "Query": "Get_Set_Product(Build_Set(n, Is_Nat_Mod(n^2, 1, 8) = True)) = ?"
+  },
+  {
+    "index": 38353,
+    "Problem": "It is not true that there exists a natural number n such that the product of the first n odd numbers is less than 100.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "ForAll(n: NaturalNumbers, Negation(Get_Prod(Range(1, n), i, 2 * i - 1) < 100))"
+  },
+  {
+    "index": 38354,
+    "Problem": "Find the minimum value of the function $m(x) = x^2 + 4x + 7$ and determine the product of all real numbers $x$ such that $m(x) = 8$.",
+    "Declaration": "m: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(m) = Get_Lambda_Function(x, x^2 + 4 * x + 7)",
+    "Query": "Get_Function_Minimum(m) = ? ∧ Get_Set_Product(Build_Set(x: Real, x^2 + 4 * x + 7 = 8)) = ?"
+  },
+  {
+    "index": 38355,
+    "Problem": "Simplify the expression \\( 3w + 6w + 9w + 12w + 15w + 18 + 24 \\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "3 * w + 6 * w + 9 * w + 12 * w + 15 * w + 18 + 24 = ?"
+  },
+  {
+    "index": 38356,
+    "Problem": "Let $R(x) = 3x^2 - 7x + 2$. Evaluate $R(2)$ and find the term with degree 1.",
+    "Declaration": "R: Decl_Polynomial(Real)",
+    "Facts": "R = 3 * X^2 - 7 * X + 2",
+    "Query": "Eval_Value_Polynomial(R, 2) = ? ∧ Get_PolyTerm(R, 1) = ?"
+  },
+  {
+    "index": 38357,
+    "Problem": "If \\( f(x) = 3x + 2 \\) and \\( g(x) = x - 4 \\), find the composition \\( g \\circ f \\) and solve the inequality \\( g(f(x)) > 0 \\) for \\( x \\).",
+    "Declaration": "f: Decl_Function(Real, Real); g: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 3 * x + 2); Get_Function_Expression(g) = Get_Lambda_Function(x, x - 4)",
+    "Query": "Solve_inequation(x: Real, Get_Function_Value(Get_Function_Composition(g, f), x) > 0) = ?"
+  },
+  {
+    "index": 38358,
+    "Problem": "Find all real roots of the polynomial f(X) = (X² - 4)(X + 1) and determine if x = -2 is equivalent to f(x) = 0.",
+    "Declaration": "f : Decl_Polynomial(Real); x : Real",
+    "Facts": "f = (X^2 - 4) * (X + 1)",
+    "Query": "x = -2 ↔ Eval_Value_Polynomial(f, x) = 0"
+  },
+  {
+    "index": 38359,
+    "Problem": "It is not true that for all integers $k$, $k^2 + 1$ is not divisible by 5.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Negation(ForAll(k: Integers, (k^2 + 1) % 5 ≠ 0))"
+  },
+  {
+    "index": 38360,
+    "Problem": "Find the greatest common divisor of 180 and 168, and verify that the 3rd digit of the result in base 10 is 2.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_GCD(180, 168) = g ∧ Get_Digit_Number(g, 10, 3) = 2"
+  },
+  {
+    "index": 38361,
+    "Problem": "Consider the function $f(x) = 2x^2 - 4x + 9$.  Evaluate $2f(3) + 3f(-3)$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2 * x^2 - 4 * x + 9)",
+    "Query": "2 * Get_Function_Value(f, 3) + 3 * Get_Function_Value(f, -3) = ?"
+  },
+  {
+    "index": 38362,
+    "Problem": "Solve the equation x^2 - 5x + 6 = 0 and verify that there exists a solution which is a prime number.",
+    "Declaration": "x: Real",
+    "Facts": "x^2 - 5*x + 6 = 0",
+    "Query": "Exists(a ∈ Solve_equation(x: Real, x^2 - 5*x + 6 = 0), Is_Prime(a) = True)"
+  },
+  {
+    "index": 38363,
+    "Problem": "Check if 7 is congruent to 2 modulo 5 and find its modular inverse modulo 5.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Nat_Mod(7, 2, 5) ∧ Get_InverseMod(7, 5) = ?"
+  },
+  {
+    "index": 38364,
+    "Problem": "For the polynomial Q(X) = 4X⁴ - 3X² + 2X - 1, retrieve the term with degree 2 and verify that 1 is not a root of Q.",
+    "Declaration": "Q : Decl_Polynomial(Real)",
+    "Facts": "Q = 4*X^4 - 3*X^2 + 2*X - 1",
+    "Query": "Get_PolyTerm(Q, 2) = ? ∧ Is_Polynomial_Root(Q, 1) = False"
+  },
+  {
+    "index": 38365,
+    "Problem": "Verify that the digit sum of 100 in base 2 is a prime number.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Prime(Get_DigitSum(2, 100))"
+  },
+  {
+    "index": 38366,
+    "Problem": "If $\\frac{1}{x} + \\frac{1}{y} = 1$ and $\\frac{1}{x} - \\frac{1}{y} = 5$, what is the value of $x + y$? Express your answer as a common fraction.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "1/x + 1/y = 1; 1/x - 1/y = 5",
+    "Query": "x + y = ?"
+  },
+  {
+    "index": 38367,
+    "Problem": "Given the polynomial S(X) = 2X^3 - 3X^2 + 4X - 5, extract the term with degree 2 and find its coefficient.",
+    "Declaration": "S: Decl_Polynomial(Real)",
+    "Facts": "S = 2*X^3 - 3*X^2 + 4*X - 5",
+    "Query": "Get_PolyTerm(S, 2) = ? ∧ Get_Term_Coefficient(S, 2) = ?"
+  },
+  {
+    "index": 38368,
+    "Problem": "The digit sum of 101 in base 2 is equal to the digit product of 12 in base 6 and both numbers are odd.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_DigitSum(2, 5) = Get_DigitProduct(6, 8) ∧ Is_OddNumber(5) = True ∧ Is_OddNumber(8) = True"
+  },
+  {
+    "index": 38369,
+    "Problem": "Solve the equation $\\sec x + 2\\tan x = 3$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 1 / Cos(x) + 2*Tan(x) = 3) = ?"
+  },
+  {
+    "index": 38370,
+    "Problem": "Given an arithmetic sequence where $a_3 + a_7 = 20$ and $a_5 = 8$, find the product of the first 5 terms.",
+    "Declaration": "A: Decl_Sequence(Real)",
+    "Facts": "Is_ArithmeticSequence(A) = True; Get_Sequence_Terms(A, 3) + Get_Sequence_Terms(A, 7) = 20; Get_Sequence_Terms(A, 5) = 8",
+    "Query": "Get_Sequence_Prod(A, 1, 5) = ?"
+  },
+  {
+    "index": 38371,
+    "Problem": "Find the maximum element in the set of solutions to x² - 4x - 5 = 0 and compute the sum of the first 3 terms of the geometric sequence starting with that maximum value and having a common ratio of 2.",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = Get_Set_Maximum(Solve_equation(x: Real, x^2 - 4 * x - 5 = 0)); Get_CommonRatio(S) = 2",
+    "Query": "Get_Sequence_Sum(S, 1, 3) = ?"
+  },
+  {
+    "index": 38372,
+    "Problem": "Given the arithmetic sequence with a₅ = 12 and a₁₀ = 27, find its common difference and show that 15 is not prime.",
+    "Declaration": "A: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(A, 5) = 12; Get_Sequence_Terms(A, 10) = 27; Negation(Is_Prime(15))",
+    "Query": "Get_CommonDifference(A) = ? ∧ Negation(Is_Prime(15))"
+  },
+  {
+    "index": 38373,
+    "Problem": "Let \\( p \\) and \\( q \\) denote the solutions of the quadratic equation \\( 3x^2 + 6x - 9 = 0 \\). Find the value of \\( (p + q - 1)^2 \\).",
+    "Declaration": " p :  Real;  q :  Real",
+    "Facts": "Solve_equation(x: Real, 3 * x^2 + 6 * x - 9 = 0) = {p, q}",
+    "Query": " (p + q - 1)^2 = ? "
+  },
+  {
+    "index": 38374,
+    "Problem": "What is the degree of the polynomial $(5x^3 + 7x + 6)^{10}$?",
+    "Declaration": "P: Decl_Polynomial(Real)",
+    "Facts": "P = (5 * X^3 + 7 * X + 6)^10",
+    "Query": "Get_PolyDegree(P) = ?"
+  },
+  {
+    "index": 38375,
+    "Problem": "Find all functions \\( f: \\mathbb{Z} \\rightarrow \\mathbb{Z} \\) such that \\( f(x + y) + f(x - y) = 2f(x)f(y) \\) for all \\( x, y \\in \\mathbb{Z} \\). Prove that the answer is: \\boxed{f(n) = 0} \\quad \\text{or} \\quad \\boxed{f(n) = 1}.",
+    "Declaration": "f: Decl_Function(Integers, Integers)",
+    "Facts": "ForAll(x: Integers, ForAll(y: Integers, Get_Function_Value(f, x + y) + Get_Function_Value(f, x - y) = 2 * Get_Function_Value(f, x) * Get_Function_Value(f, y)))",
+    "Query": "Get_Function_Expression(f) = Get_Lambda_Function(n: Integers, 0) ∨ Get_Function_Expression(f) = Get_Lambda_Function(n: Integers, 1)\n\n---"
+  },
+  {
+    "index": 38376,
+    "Problem": "Solve the equation 2x + 3 = 7 for x and verify that the solution is greater than 1.",
+    "Declaration": "x: Real",
+    "Facts": "2 * x + 3 = 7",
+    "Query": "x = ? ∧ x > 1"
+  },
+  {
+    "index": 38377,
+    "Problem": "Find the integers \\( a \\) such that 5 divides \\( a^{3} + 3a + 1 \\).",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(a: Integers, a^3 + 3 * a + 1 % 5 = 0) = ?"
+  },
+  {
+    "index": 38378,
+    "Problem": "For what value of $x$ does $3^{2x^2 - 6x + 2} = 3^{2x^2 + 8x - 4}$ hold true? Express your answer as a common fraction.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 2 * x^2 - 6 * x + 2 = 2 * x^2 + 8 * x - 4) = ?"
+  },
+  {
+    "index": 38379,
+    "Problem": "What is the 10th term of an arithmetic sequence of 20 terms with the first term being 7 and the last term being 67?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 7; Get_Sequence_Terms(S, 20) = 67",
+    "Query": "Get_Sequence_Terms(S, 10) = ?"
+  },
+  {
+    "index": 38380,
+    "Problem": "Let D be an arithmetic sequence with D(3) = 10 and D(7) = 22. Find the common difference d and the minimum value of the set {x | x = D(n) for some n ∈ ℕ}.",
+    "Declaration": "D: Decl_Sequence(Real); d: Real",
+    "Facts": "Is_ArithmeticSequence(D) = True; Get_Sequence_Terms(D, 3) = 10; Get_Sequence_Terms(D, 7) = 22",
+    "Query": "Get_CommonDifference(D) + Get_Set_Minimum(Build_Set(x: Real, Exists(n: NaturalNumbers, x = Get_Sequence_Terms(D, n)))) = ?"
+  },
+  {
+    "index": 38381,
+    "Problem": "If \\(x\\) is a real number, find \\((x+2)^2 + 2(x+2)(4-x) + (4-x)^2 + 3\\).",
+    "Declaration": "x: Real",
+    "Facts": "",
+    "Query": "(x + 2)^2 + 2 * (x + 2) * (4 - x) + (4 - x)^2 + 3 = ?"
+  },
+  {
+    "index": 38382,
+    "Problem": "Solve the inequality $\\sin(x) \\cdot \\log_{10}(x) > 0$ for $x$ in $(0, \\pi]$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Sin(x) * Log(10, x) > 0 ∧ x > 0 ∧ x ≤ Pi) = ?"
+  },
+  {
+    "index": 38383,
+    "Problem": "For the function $f(x) = x^3 - 6x^2 + 11x - 6$, find all real roots and determine if there exists a root greater than 3.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^3 - 6 * x^2 + 11 * x - 6)",
+    "Query": "Get_Function_Zeroes(f) = ? ∧ Exists(x: Real, Get_Function_Value(f, x) = 0 ∧ x > 3)"
+  },
+  {
+    "index": 38384,
+    "Problem": "Find all ordered pairs (x, y) where x ≤ 20 is a multiple of 4 and y ≤ 12 is a factor of 12. Prove there are exactly 24 such pairs.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Set_Cardinality(Build_Set((x, y) : Decl_Cartesian_Product(NaturalNumbers, NaturalNumbers), x <= 20 ∧ Is_Factor(4, x) ∧ y <= 12 ∧ Is_Factor(y, 12))) = 24"
+  },
+  {
+    "index": 38385,
+    "Problem": "Find the product of all real numbers x that satisfy x^2 - 4x + 3 ≤ 0 or x^2 - 9 = 0.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Build_Set(x: Real, x^2 - 4 * x + 3 <= 0 ∨ x^2 - 9 = 0)) = ?"
+  },
+  {
+    "index": 38386,
+    "Problem": "Express the solution set of the inequality $|x-1| < 1$ in interval notation.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Abs(x - 1) < 1) = ?"
+  },
+  {
+    "index": 38387,
+    "Problem": "Find $\\frac{\\frac{1}{2} + \\frac{1}{3}}{\\frac{3}{4} - \\frac{1}{5}}$. Express your answer as a fraction in simplest form.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(1/2 + 1/3) / (3/4 - 1/5) = ?"
+  },
+  {
+    "index": 38388,
+    "Problem": "For all real numbers x, if f(x) = x² - 2x + k > 0, find the range of k.",
+    "Declaration": "f: Decl_Function(Real, Real); k: Real",
+    "Facts": "ForAll(x: Real, Get_Function_Value(f, x) > 0); Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 - 2 * x + k)",
+    "Query": "Build_Set(m: Real, m = k) = ?"
+  },
+  {
+    "index": 38389,
+    "Problem": "Let $p$ and $q$ be two distinct solutions to the equation $$(x-5)(x+3) = 24x - 72.$$ If $p > q$, what is the value of $p - q$?",
+    "Declaration": "p: Real; q: Real",
+    "Facts": "Solve_equation(x: Real, (x - 5) * (x + 3) - (24 * x - 72) = 0) = {p, q}; p > q",
+    "Query": "p - q = ?"
+  },
+  {
+    "index": 38390,
+    "Problem": "Let $a, b, c$ be real numbers such that\n\\[\nb+c = 17,\nc+a = 18,\na+b = 19.\n\\]\nFind $\\sqrt{abc(a+b+c)}$.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "a + b = 19; b + c = 17; c + a = 18",
+    "Query": "Sqrt(a * b * c * (a + b + c)) = ?"
+  },
+  {
+    "index": 38391,
+    "Problem": "If $a$ is a prime number, and $a^2 - 9 = 0$. Find the value of $a$.",
+    "Declaration": "a: Integers",
+    "Facts": "Is_Prime(a); a^2 - 9 = 0",
+    "Query": "a = ?"
+  },
+  {
+    "index": 38392,
+    "Problem": "If x^2 = 9 and x is a real number, then x = 3 or x = -3.",
+    "Declaration": "x: Real",
+    "Facts": "x^2 = 9",
+    "Query": "x = 3 ∨ x = -3"
+  },
+  {
+    "index": 38393,
+    "Problem": "Let \\(A\\) be the set of complex numbers \\(z\\) such that \\(\\text{Re}(z) + \\text{Im}(z) = 1\\). Determine if \\(A\\) is infinite.",
+    "Declaration": "A : Decl_Set(ComplexNumbers)",
+    "Facts": "A = Build_Set(z: ComplexNumbers, Get_Complex_Re(z) + Get_Complex_Im(z) = 1)",
+    "Query": "Is_Infinite_Set(A)"
+  },
+  {
+    "index": 38394,
+    "Problem": "For some positive integer $k$, when 120 is divided by $k^2$, the remainder is 24. What is the remainder when 150 is divided by $k$?",
+    "Declaration": "k: PositiveIntegers",
+    "Facts": "120 % k^2 = 24",
+    "Query": "150 % k = ?"
+  },
+  {
+    "index": 38395,
+    "Problem": "The first three terms of an arithmetic sequence are $x + 2$, $2x - 1$, and $3x - 4$ respectively. If the product of the first three terms is 0, find all possible values of $x$.",
+    "Declaration": "S: ArithmeticSequence; x: Real",
+    "Facts": "Get_Sequence_Terms(S, 1) = x + 2; Get_Sequence_Terms(S, 2) = 2 * x - 1; Get_Sequence_Terms(S, 3) = 3 * x - 4; Get_Sequence_Prod(S, 1, 3) = 0",
+    "Query": "Solve_equation(x: Real, Get_Sequence_Prod(S, 1, 3) = 0) = ?"
+  },
+  {
+    "index": 38396,
+    "Problem": "Find the smallest natural number $n$ such that $n^3 > 200$.",
+    "Declaration": "n : NaturalNumbers",
+    "Facts": "",
+    "Query": "Solve_inequation(n: NaturalNumbers, n^3 > 200) = ?"
+  },
+  {
+    "index": 38397,
+    "Problem": "Given the function $f(x) = \\frac{2x + 1}{x - 3}$, find its inverse function $f^{-1}(x)$ and compute $f^{-1}(5)$.",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, (2*x + 1)/(x - 3))",
+    "Query": "Get_Function_Value(Get_Inverse_Function(f), 5) = ?"
+  },
+  {
+    "index": 38398,
+    "Problem": "Find the least common multiple of 12 and 18, then check if it is congruent to 6 modulo 8.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Is_Nat_Mod(Get_LCM(12, 18), 6, 8) = True"
+  },
+  {
+    "index": 38399,
+    "Problem": "In an arithmetic sequence, the sum of the first 5 terms is 45. If the common difference is 3, find the maximum term among the first 5 terms.",
+    "Declaration": "A: ArithmeticSequence",
+    "Facts": "Get_Sequence_Sum(A, 1, 5) = 45; Get_CommonDifference(A) = 3",
+    "Query": "Get_Set_Maximum(Build_Set(m: Real, Exists(n: NaturalNumbers, n <= 5 ∧ m = Get_Sequence_Terms(A, n)))) = ?"
+  },
+  {
+    "index": 38400,
+    "Problem": "Define the function $f(x) = 2x^2 - 5x - 3$. For what value of $x$ is $f(x)$ equal to $f^{-1}(x)$?",
+    "Declaration": "f: Decl_Function(Real, Real)",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2 * x^2 - 5 * x - 3)",
+    "Query": "Solve_equation(a: Real, Get_Function_Value(f, a) = Get_Function_Value(Get_Inverse_Function(f), a)) = ?"
+  }
+]
