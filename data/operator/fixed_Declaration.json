@@ -1,0 +1,2854 @@
+[
+  {
+    "Assertional_Logic": "AlgebraicNumbers",
+    "key_words": [
+      {
+        "key_word": "algebraic",
+        "weight": 5
+      },
+      {
+        "key_word": "algebraicnumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "coefficients",
+        "weight": 1
+      },
+      {
+        "key_word": "construct",
+        "weight": 1
+      },
+      {
+        "key_word": "find algebraic numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "polynomial",
+        "weight": 1
+      },
+      {
+        "key_word": "polynomials",
+        "weight": 1
+      },
+      {
+        "key_word": "real.pi",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "transcendental",
+        "weight": 1
+      },
+      {
+        "key_word": "verify",
+        "weight": 1
+      },
+      {
+        "key_word": "vs",
+        "weight": 1
+      },
+      {
+        "key_word": "√2",
+        "weight": 1
+      },
+      {
+        "key_word": "√3",
+        "weight": 1
+      },
+      {
+        "key_word": "√a",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "Complex",
+    "key_words": [
+      {
+        "key_word": "complex",
+        "weight": 42
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "Euler's",
+        "weight": 1
+      },
+      {
+        "key_word": "argument",
+        "weight": 1
+      },
+      {
+        "key_word": "bi",
+        "weight": 1
+      },
+      {
+        "key_word": "conjugate",
+        "weight": 1
+      },
+      {
+        "key_word": "imaginary",
+        "weight": 11
+      },
+      {
+        "key_word": "modulus",
+        "weight": 1
+      },
+      {
+        "key_word": "part",
+        "weight": 11
+      },
+      {
+        "key_word": "plane",
+        "weight": 1
+      },
+      {
+        "key_word": "polar",
+        "weight": 1
+      },
+      {
+        "key_word": "r(cosθ",
+        "weight": 1
+      },
+      {
+        "key_word": "arctan(b/a)",
+        "weight": 1
+      },
+      {
+        "key_word": "sinθ)",
+        "weight": 1
+      },
+      {
+        "key_word": "unit",
+        "weight": 10
+      },
+      {
+        "key_word": "θ = a",
+        "weight": 1
+      },
+      {
+        "key_word": "√(a²",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "ComplexNumbers",
+    "key_words": [
+      {
+        "key_word": "complex",
+        "weight": 90
+      },
+      {
+        "key_word": "3i",
+        "weight": 6
+      },
+      {
+        "key_word": "4i",
+        "weight": 6
+      },
+      {
+        "key_word": "Euler's",
+        "weight": 1
+      },
+      {
+        "key_word": "Im(z)",
+        "weight": 1
+      },
+      {
+        "key_word": "Re(z)",
+        "weight": 1
+      },
+      {
+        "key_word": "omega",
+        "weight": 1
+      },
+      {
+        "key_word": "a+bi",
+        "weight": 1
+      },
+      {
+        "key_word": "add",
+        "weight": 1
+      },
+      {
+        "key_word": "argument",
+        "weight": 1
+      },
+      {
+        "key_word": "arithmetic",
+        "weight": 1
+      },
+      {
+        "key_word": "b²)",
+        "weight": 1
+      },
+      {
+        "key_word": "calculate imaginary part",
+        "weight": 1
+      },
+      {
+        "key_word": "complex.i",
+        "weight": 1
+      },
+      {
+        "key_word": "complexnumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "conjugate",
+        "weight": 1
+      },
+      {
+        "key_word": "convert",
+        "weight": 1
+      },
+      {
+        "key_word": "determine imaginary part",
+        "weight": 1
+      },
+      {
+        "key_word": "determine integer",
+        "weight": 1
+      },
+      {
+        "key_word": "determine whether complex number",
+        "weight": 1
+      },
+      {
+        "key_word": "e^(iθ)",
+        "weight": 1
+      },
+      {
+        "key_word": "find complex number",
+        "weight": 1
+      },
+      {
+        "key_word": "find complex numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find complex numbers z",
+        "weight": 1
+      },
+      {
+        "key_word": "find imaginary part",
+        "weight": 1
+      },
+      {
+        "key_word": "find real part",
+        "weight": 1
+      },
+      {
+        "key_word": "imaginary",
+        "weight": 11
+      },
+      {
+        "key_word": "isinθ)",
+        "weight": 1
+      },
+      {
+        "key_word": "part",
+        "weight": 10
+      },
+      {
+        "key_word": "plane",
+        "weight": 1
+      },
+      {
+        "key_word": "polar",
+        "weight": 1
+      },
+      {
+        "key_word": "r(cosθ",
+        "weight": 1
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "sqrt(a²",
+        "weight": 1
+      },
+      {
+        "key_word": "unit",
+        "weight": 10
+      },
+      {
+        "key_word": "z̄",
+        "weight": 1
+      },
+      {
+        "key_word": "|a+bi|",
+        "weight": 1
+      },
+      {
+        "key_word": "equation",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "CompositeNumbers",
+    "key_words": [
+      {
+        "key_word": ">1",
+        "weight": 1
+      },
+      {
+        "key_word": "composite",
+        "weight": 1
+      },
+      {
+        "key_word": "compositenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "divisible",
+        "weight": 1
+      },
+      {
+        "key_word": "divisors",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "factors",
+        "weight": 1
+      },
+      {
+        "key_word": "find composite numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 1
+      },
+      {
+        "key_word": "multiple",
+        "weight": 1
+      },
+      {
+        "key_word": "natural",
+        "weight": 1
+      },
+      {
+        "key_word": "non-prime",
+        "weight": 1
+      },
+      {
+        "key_word": "non-trivial",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "primes",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "three",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "EvenNumbers",
+    "key_words": [
+      {
+        "key_word": "even",
+        "weight": 1
+      },
+      {
+        "key_word": "consecutive",
+        "weight": 3
+      },
+      {
+        "key_word": "integers",
+        "weight": 2
+      },
+      {
+        "key_word": "2^2",
+        "weight": 1
+      },
+      {
+        "key_word": "2n",
+        "weight": 1
+      },
+      {
+        "key_word": "quad",
+        "weight": 1
+      },
+      {
+        "key_word": "algebraic",
+        "weight": 1
+      },
+      {
+        "key_word": "composite",
+        "weight": 1
+      },
+      {
+        "key_word": "determine simplified expression",
+        "weight": 1
+      },
+      {
+        "key_word": "divisible",
+        "weight": 1
+      },
+      {
+        "key_word": "evennumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find middle integer",
+        "weight": 1
+      },
+      {
+        "key_word": "grommets",
+        "weight": 1
+      },
+      {
+        "key_word": "m+2",
+        "weight": 1
+      },
+      {
+        "key_word": "m+4",
+        "weight": 1
+      },
+      {
+        "key_word": "m+6",
+        "weight": 1
+      },
+      {
+        "key_word": "m+8",
+        "weight": 1
+      },
+      {
+        "key_word": "middle",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegativeintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "numberofgrommets",
+        "weight": 1
+      },
+      {
+        "key_word": "numberofpaintings",
+        "weight": 1
+      },
+      {
+        "key_word": "numberofracquets",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "racquet",
+        "weight": 1
+      },
+      {
+        "key_word": "determine",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "ImaginaryNumbers",
+    "key_words": [
+      {
+        "key_word": "axis",
+        "weight": 1
+      },
+      {
+        "key_word": "bi",
+        "weight": 1
+      },
+      {
+        "key_word": "component",
+        "weight": 1
+      },
+      {
+        "key_word": "imaginary",
+        "weight": 1
+      },
+      {
+        "key_word": "multiple",
+        "weight": 1
+      },
+      {
+        "key_word": "multiples",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "part",
+        "weight": 1
+      },
+      {
+        "key_word": "purely",
+        "weight": 1
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "real)",
+        "weight": 1
+      },
+      {
+        "key_word": "sqrt(-k)",
+        "weight": 1
+      },
+      {
+        "key_word": "sqrt(negative",
+        "weight": 1
+      },
+      {
+        "key_word": "unit",
+        "weight": 1
+      },
+      {
+        "key_word": "zero",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "Integers",
+    "key_words": [
+      {
+        "key_word": "integers",
+        "weight": 2
+      },
+      {
+        "key_word": "integer",
+        "weight": 13
+      },
+      {
+        "key_word": "diophantine",
+        "weight": 5
+      },
+      {
+        "key_word": "equations",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "two",
+        "weight": 1
+      },
+      {
+        "key_word": "positive",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 1
+      },
+      {
+        "key_word": "value",
+        "weight": 1
+      },
+      {
+        "key_word": "absolute",
+        "weight": 1
+      },
+      {
+        "key_word": "arithmetic",
+        "weight": 1
+      },
+      {
+        "key_word": "b)",
+        "weight": 1
+      },
+      {
+        "key_word": "base",
+        "weight": 1
+      },
+      {
+        "key_word": "ceiling",
+        "weight": 1
+      },
+      {
+        "key_word": "classes",
+        "weight": 1
+      },
+      {
+        "key_word": "combinatorial",
+        "weight": 1
+      },
+      {
+        "key_word": "compute product",
+        "weight": 1
+      },
+      {
+        "key_word": "compute sum",
+        "weight": 1
+      },
+      {
+        "key_word": "congruence",
+        "weight": 1
+      },
+      {
+        "key_word": "constraints",
+        "weight": 1
+      },
+      {
+        "key_word": "conversions",
+        "weight": 1
+      },
+      {
+        "key_word": "counts",
+        "weight": 1
+      },
+      {
+        "key_word": "determine value",
+        "weight": 1
+      },
+      {
+        "key_word": "divisibility",
+        "weight": 1
+      },
+      {
+        "key_word": "element",
+        "weight": 1
+      },
+      {
+        "key_word": "even",
+        "weight": 1
+      },
+      {
+        "key_word": "exponents",
+        "weight": 1
+      },
+      {
+        "key_word": "factorial",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "find general formula",
+        "weight": 1
+      },
+      {
+        "key_word": "find greatest common divisor",
+        "weight": 1
+      },
+      {
+        "key_word": "find integer n",
+        "weight": 1
+      },
+      {
+        "key_word": "find integer solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "find integer values",
+        "weight": 1
+      },
+      {
+        "key_word": "find integers",
+        "weight": 1
+      },
+      {
+        "key_word": "find largest integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find maximum element",
+        "weight": 1
+      },
+      {
+        "key_word": "find maximum integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find minimum positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find positive integers",
+        "weight": 1
+      },
+      {
+        "key_word": "find possible values",
+        "weight": 1
+      },
+      {
+        "key_word": "find smallest integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find smallest positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "forall",
+        "weight": 1
+      },
+      {
+        "key_word": "gcd(a",
+        "weight": 1
+      },
+      {
+        "key_word": "inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "intervals",
+        "weight": 1
+      },
+      {
+        "key_word": "lcm(a",
+        "weight": 1
+      },
+      {
+        "key_word": "line",
+        "weight": 1
+      },
+      {
+        "key_word": "maximal",
+        "weight": 1
+      },
+      {
+        "key_word": "minimal",
+        "weight": 1
+      },
+      {
+        "key_word": "modular",
+        "weight": 1
+      },
+      {
+        "key_word": "odd",
+        "weight": 7
+      },
+      {
+        "key_word": "operations",
+        "weight": 1
+      },
+      {
+        "key_word": "parity",
+        "weight": 1
+      },
+      {
+        "key_word": "positiveintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "prime",
+        "weight": 1
+      },
+      {
+        "key_word": "properties",
+        "weight": 1
+      },
+      {
+        "key_word": "prove integer",
+        "weight": 1
+      },
+      {
+        "key_word": "prove number",
+        "weight": 1
+      },
+      {
+        "key_word": "relations",
+        "weight": 1
+      },
+      {
+        "key_word": "residue",
+        "weight": 1
+      },
+      {
+        "key_word": "sequences",
+        "weight": 1
+      },
+      {
+        "key_word": "solve inequality x^2",
+        "weight": 1
+      },
+      {
+        "key_word": "number",
+        "weight": 1
+      },
+      {
+        "key_word": "solution",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "function",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "IrrationalNumbers",
+    "key_words": [
+      {
+        "key_word": "pi/2",
+        "weight": 2
+      },
+      {
+        "key_word": "2pi",
+        "weight": 1
+      },
+      {
+        "key_word": "pi",
+        "weight": 1
+      },
+      {
+        "key_word": "pi/4",
+        "weight": 1
+      },
+      {
+        "key_word": "pi^2",
+        "weight": 1
+      },
+      {
+        "key_word": "sin",
+        "weight": 1
+      },
+      {
+        "key_word": "a^b",
+        "weight": 1
+      },
+      {
+        "key_word": "algebraic",
+        "weight": 1
+      },
+      {
+        "key_word": "b)",
+        "weight": 1
+      },
+      {
+        "key_word": "decimals",
+        "weight": 1
+      },
+      {
+        "key_word": "e^3",
+        "weight": 15
+      },
+      {
+        "key_word": "find irrational number",
+        "weight": 1
+      },
+      {
+        "key_word": "find irrational numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "identify",
+        "weight": 1
+      },
+      {
+        "key_word": "irrational",
+        "weight": 6
+      },
+      {
+        "key_word": "irrationality",
+        "weight": 1
+      },
+      {
+        "key_word": "irrationalnumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "kπ",
+        "weight": 1
+      },
+      {
+        "key_word": "log(a",
+        "weight": 1
+      },
+      {
+        "key_word": "non-repeating",
+        "weight": 1
+      },
+      {
+        "key_word": "non-terminating",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "proof",
+        "weight": 1
+      },
+      {
+        "key_word": "real.e",
+        "weight": 1
+      },
+      {
+        "key_word": "real.pi/2",
+        "weight": 1
+      },
+      {
+        "key_word": "real.pi/4",
+        "weight": 1
+      },
+      {
+        "key_word": "sqrt(a)",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 1
+      },
+      {
+        "key_word": "transcendental",
+        "weight": 1
+      },
+      {
+        "key_word": "π/2",
+        "weight": 1
+      },
+      {
+        "key_word": "π/a",
+        "weight": 1
+      },
+      {
+        "key_word": "π^2",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "NaturalNumbers",
+    "key_words": [
+      {
+        "key_word": "natural",
+        "weight": 20
+      },
+      {
+        "key_word": "natural number",
+        "weight": 15
+      },
+      {
+        "key_word": "function",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 3
+      },
+      {
+        "key_word": "positive",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 1
+      },
+      {
+        "key_word": "greatest",
+        "weight": 1
+      },
+      {
+        "key_word": "sequence",
+        "weight": 1
+      },
+      {
+        "key_word": "arithmetic",
+        "weight": 1
+      },
+      {
+        "key_word": "base-k",
+        "weight": 1
+      },
+      {
+        "key_word": "common",
+        "weight": 1
+      },
+      {
+        "key_word": "composite",
+        "weight": 1
+      },
+      {
+        "key_word": "counting",
+        "weight": 1
+      },
+      {
+        "key_word": "divisible",
+        "weight": 1
+      },
+      {
+        "key_word": "divisor",
+        "weight": 3
+      },
+      {
+        "key_word": "even",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "induction",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 1
+      },
+      {
+        "key_word": "least",
+        "weight": 1
+      },
+      {
+        "key_word": "mathematical",
+        "weight": 1
+      },
+      {
+        "key_word": "multiple",
+        "weight": 1
+      },
+      {
+        "key_word": "multiples",
+        "weight": 1
+      },
+      {
+        "key_word": "naturals",
+        "weight": 1
+      },
+      {
+        "key_word": "non-negative",
+        "weight": 1
+      },
+      {
+        "key_word": "odd",
+        "weight": 1
+      },
+      {
+        "key_word": "operations",
+        "weight": 1
+      },
+      {
+        "key_word": "prime",
+        "weight": 10
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "representation",
+        "weight": 1
+      },
+      {
+        "key_word": "successor",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "NegativeIntegers",
+    "key_words": [
+      {
+        "key_word": "begin",
+        "weight": 1
+      },
+      {
+        "key_word": "end",
+        "weight": 1
+      },
+      {
+        "key_word": "left",
+        "weight": 1
+      },
+      {
+        "key_word": "right.",
+        "weight": 1
+      },
+      {
+        "key_word": "text",
+        "weight": 1
+      },
+      {
+        "key_word": "ab",
+        "weight": 1
+      },
+      {
+        "key_word": "absolute",
+        "weight": 1
+      },
+      {
+        "key_word": "base",
+        "weight": 1
+      },
+      {
+        "key_word": "compute",
+        "weight": 1
+      },
+      {
+        "key_word": "compute factorial 4",
+        "weight": 1
+      },
+      {
+        "key_word": "decimal",
+        "weight": 1
+      },
+      {
+        "key_word": "determine remainder",
+        "weight": 1
+      },
+      {
+        "key_word": "distance",
+        "weight": 1
+      },
+      {
+        "key_word": "divisible",
+        "weight": 1
+      },
+      {
+        "key_word": "exponents",
+        "weight": 1
+      },
+      {
+        "key_word": "find",
+        "weight": 1
+      },
+      {
+        "key_word": "find times b",
+        "weight": 1
+      },
+      {
+        "key_word": "find negative integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find negative integers",
+        "weight": 1
+      },
+      {
+        "key_word": "find x. x",
+        "weight": 1
+      },
+      {
+        "key_word": "from",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 1
+      },
+      {
+        "key_word": "negative",
+        "weight": 4
+      },
+      {
+        "key_word": "negativeintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegative",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegativeintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "opposite",
+        "weight": 1
+      },
+      {
+        "key_word": "ordering",
+        "weight": 1
+      },
+      {
+        "key_word": "positiveintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "subtract",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 1
+      },
+      {
+        "key_word": "value",
+        "weight": 1
+      },
+      {
+        "key_word": "zero",
+        "weight": 1
+      },
+      {
+        "key_word": "|a|",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "NegativeNumbers",
+    "key_words": [
+      {
+        "key_word": "geqslant",
+        "weight": 1
+      },
+      {
+        "key_word": "left",
+        "weight": 1
+      },
+      {
+        "key_word": "leq",
+        "weight": 1
+      },
+      {
+        "key_word": "acceleration",
+        "weight": 1
+      },
+      {
+        "key_word": "b^",
+        "weight": 1
+      },
+      {
+        "key_word": "below",
+        "weight": 1
+      },
+      {
+        "key_word": "calculate nonnegative difference",
+        "weight": 1
+      },
+      {
+        "key_word": "coefficients",
+        "weight": 1
+      },
+      {
+        "key_word": "debts",
+        "weight": 1
+      },
+      {
+        "key_word": "decreasing",
+        "weight": 1
+      },
+      {
+        "key_word": "determine non-negative real numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "determine nonnegative difference",
+        "weight": 1
+      },
+      {
+        "key_word": "determine number ordered",
+        "weight": 1
+      },
+      {
+        "key_word": "division",
+        "weight": 1
+      },
+      {
+        "key_word": "exponents",
+        "weight": 1
+      },
+      {
+        "key_word": "financial",
+        "weight": 1
+      },
+      {
+        "key_word": "find maximum value",
+        "weight": 1
+      },
+      {
+        "key_word": "find minimum value",
+        "weight": 1
+      },
+      {
+        "key_word": "find number negative",
+        "weight": 1
+      },
+      {
+        "key_word": "freezing",
+        "weight": 1
+      },
+      {
+        "key_word": "functions",
+        "weight": 1
+      },
+      {
+        "key_word": "indicating",
+        "weight": 1
+      },
+      {
+        "key_word": "inequalities",
+        "weight": 1
+      },
+      {
+        "key_word": "involving",
+        "weight": 1
+      },
+      {
+        "key_word": "less",
+        "weight": 1
+      },
+      {
+        "key_word": "loss",
+        "weight": 1
+      },
+      {
+        "key_word": "measurements",
+        "weight": 1
+      },
+      {
+        "key_word": "multiplication",
+        "weight": 1
+      },
+      {
+        "key_word": "negative",
+        "weight": 1
+      },
+      {
+        "key_word": "negativenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "negativity",
+        "weight": 1
+      },
+      {
+        "key_word": "non-negative",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegative",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegativenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "opposite",
+        "weight": 1
+      },
+      {
+        "key_word": "positive",
+        "weight": 1
+      },
+      {
+        "key_word": "profit",
+        "weight": 1
+      },
+      {
+        "key_word": "prove dfrac",
+        "weight": 1
+      },
+      {
+        "key_word": "prove frac",
+        "weight": 1
+      },
+      {
+        "key_word": "prove l",
+        "weight": 1
+      },
+      {
+        "key_word": "prove non-negative",
+        "weight": 1
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "slope",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "subtraction",
+        "weight": 1
+      },
+      {
+        "key_word": "temperature",
+        "weight": 1
+      },
+      {
+        "key_word": "than",
+        "weight": 1
+      },
+      {
+        "key_word": "velocity",
+        "weight": 1
+      },
+      {
+        "key_word": "where",
+        "weight": 1
+      },
+      {
+        "key_word": "x^2",
+        "weight": 1
+      },
+      {
+        "key_word": "y-intercepts",
+        "weight": 1
+      },
+      {
+        "key_word": "zero",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "NonNegativeIntegers",
+    "key_words": [
+      {
+        "key_word": "-3",
+        "weight": 5
+      },
+      {
+        "key_word": "begin",
+        "weight": 5
+      },
+      {
+        "key_word": "left",
+        "weight": 5
+      },
+      {
+        "key_word": "right.",
+        "weight": 1
+      },
+      {
+        "key_word": "arithmetic",
+        "weight": 1
+      },
+      {
+        "key_word": "base",
+        "weight": 1
+      },
+      {
+        "key_word": "combinatorial",
+        "weight": 1
+      },
+      {
+        "key_word": "common",
+        "weight": 1
+      },
+      {
+        "key_word": "compute factorial 4",
+        "weight": 1
+      },
+      {
+        "key_word": "compute factorial 5.",
+        "weight": 1
+      },
+      {
+        "key_word": "compute factorial 6.",
+        "weight": 1
+      },
+      {
+        "key_word": "counting",
+        "weight": 1
+      },
+      {
+        "key_word": "counts",
+        "weight": 1
+      },
+      {
+        "key_word": "decimal",
+        "weight": 1
+      },
+      {
+        "key_word": "digit",
+        "weight": 1
+      },
+      {
+        "key_word": "digits",
+        "weight": 4
+      },
+      {
+        "key_word": "divisibility",
+        "weight": 1
+      },
+      {
+        "key_word": "divisor",
+        "weight": 1
+      },
+      {
+        "key_word": "evaluate factorial 7.",
+        "weight": 1
+      },
+      {
+        "key_word": "factorial",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "find b",
+        "weight": 1
+      },
+      {
+        "key_word": "find maximum value",
+        "weight": 1
+      },
+      {
+        "key_word": "find natural numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find sum digits",
+        "weight": 1
+      },
+      {
+        "key_word": "greatest",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 5
+      },
+      {
+        "key_word": "integers",
+        "weight": 5
+      },
+      {
+        "key_word": "least",
+        "weight": 1
+      },
+      {
+        "key_word": "maximum",
+        "weight": 1
+      },
+      {
+        "key_word": "modular",
+        "weight": 1
+      },
+      {
+        "key_word": "multiple",
+        "weight": 1
+      },
+      {
+        "key_word": "natural",
+        "weight": 1
+      },
+      {
+        "key_word": "non-negative",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegative",
+        "weight": 5
+      },
+      {
+        "key_word": "nonnegativeintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers ≥0",
+        "weight": 1
+      },
+      {
+        "key_word": "partitions",
+        "weight": 1
+      },
+      {
+        "key_word": "positive",
+        "weight": 1
+      },
+      {
+        "key_word": "positiveintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "prime",
+        "weight": 1
+      },
+      {
+        "key_word": "problems",
+        "weight": 1
+      },
+      {
+        "key_word": "prove factorial function",
+        "weight": 1
+      },
+      {
+        "key_word": "representations",
+        "weight": 1
+      },
+      {
+        "key_word": "sequences",
+        "weight": 1
+      },
+      {
+        "key_word": "set",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "theory",
+        "weight": 1
+      },
+      {
+        "key_word": "value",
+        "weight": 1
+      },
+      {
+        "key_word": "verify resulting number",
+        "weight": 1
+      },
+      {
+        "key_word": "whole",
+        "weight": 1
+      },
+      {
+        "key_word": "zero",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "NonNegativeNumbers",
+    "key_words": [
+      {
+        "key_word": "+sqrt",
+        "weight": 1
+      },
+      {
+        "key_word": "a ≥ 0",
+        "weight": 1
+      },
+      {
+        "key_word": "a^2",
+        "weight": 1
+      },
+      {
+        "key_word": "absolute",
+        "weight": 1
+      },
+      {
+        "key_word": "a²",
+        "weight": 1
+      },
+      {
+        "key_word": "b^2",
+        "weight": 1
+      },
+      {
+        "key_word": "calculate nonnegative difference",
+        "weight": 1
+      },
+      {
+        "key_word": "define c",
+        "weight": 1
+      },
+      {
+        "key_word": "determine non-negative real numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "determine nonnegative difference",
+        "weight": 1
+      },
+      {
+        "key_word": "determine number ordered",
+        "weight": 1
+      },
+      {
+        "key_word": "difference",
+        "weight": 1
+      },
+      {
+        "key_word": "distance",
+        "weight": 1
+      },
+      {
+        "key_word": "expression",
+        "weight": 1
+      },
+      {
+        "key_word": "find value",
+        "weight": 1
+      },
+      {
+        "key_word": "inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "metric",
+        "weight": 1
+      },
+      {
+        "key_word": "non-negative",
+        "weight": 6
+      },
+      {
+        "key_word": "nonnegative",
+        "weight": 1
+      },
+      {
+        "key_word": "nonnegativenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "proof",
+        "weight": 1
+      },
+      {
+        "key_word": "properties",
+        "weight": 1
+      },
+      {
+        "key_word": "prove",
+        "weight": 1
+      },
+      {
+        "key_word": "prove sqrt",
+        "weight": 1
+      },
+      {
+        "key_word": "prove following holds",
+        "weight": 1
+      },
+      {
+        "key_word": "prove following inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "prove inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "prove non-negative",
+        "weight": 1
+      },
+      {
+        "key_word": "prove x",
+        "weight": 1
+      },
+      {
+        "key_word": "quadratic",
+        "weight": 1
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "root",
+        "weight": 1
+      },
+      {
+        "key_word": "show sqrt",
+        "weight": 1
+      },
+      {
+        "key_word": "square",
+        "weight": 1
+      },
+      {
+        "key_word": "squares",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 1
+      },
+      {
+        "key_word": "value",
+        "weight": 1
+      },
+      {
+        "key_word": "z^2",
+        "weight": 1
+      },
+      {
+        "key_word": "|a|",
+        "weight": 1
+      },
+      {
+        "key_word": "√a",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "OddNumbers",
+    "key_words": [
+      {
+        "key_word": "2k+1",
+        "weight": 1
+      },
+      {
+        "key_word": "divisible",
+        "weight": 1
+      },
+      {
+        "key_word": "form",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 1
+      },
+      {
+        "key_word": "modulo",
+        "weight": 1
+      },
+      {
+        "key_word": "not",
+        "weight": 1
+      },
+      {
+        "key_word": "odd",
+        "weight": 1
+      },
+      {
+        "key_word": "prove",
+        "weight": 1
+      },
+      {
+        "key_word": "prove odd",
+        "weight": 1
+      },
+      {
+        "key_word": "remainder",
+        "weight": 1
+      },
+      {
+        "key_word": "show",
+        "weight": 1
+      },
+      {
+        "key_word": "show odd",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "PositiveIntegers",
+    "key_words": [
+      {
+        "key_word": "pairs",
+        "weight": 3
+      },
+      {
+        "key_word": "pair",
+        "weight": 3
+      },
+      {
+        "key_word": "remainder",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 15
+      },
+      {
+        "key_word": "prove",
+        "weight": 3
+      },
+      {
+        "key_word": "expression",
+        "weight": 3
+      },
+      {
+        "key_word": "common",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 17
+      },
+      {
+        "key_word": "positive",
+        "weight": 17
+      },
+      {
+        "key_word": "determine",
+        "weight": 3
+      },
+      {
+        "key_word": "find",
+        "weight": 1
+      },
+      {
+        "key_word": "a²",
+        "weight": 1
+      },
+      {
+        "key_word": "b²",
+        "weight": 1
+      },
+      {
+        "key_word": "slice",
+        "weight": 1
+      },
+      {
+        "key_word": "sheet",
+        "weight": 1
+      },
+      {
+        "key_word": "piece",
+        "weight": 1
+      },
+      {
+        "key_word": "consecutive",
+        "weight": 1
+      },
+      {
+        "key_word": "determine positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "difference",
+        "weight": 1
+      },
+      {
+        "key_word": "evaluate",
+        "weight": 1
+      },
+      {
+        "key_word": "evaluate expression",
+        "weight": 1
+      },
+      {
+        "key_word": "existence",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "find common difference",
+        "weight": 1
+      },
+      {
+        "key_word": "find minimum positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find positive integers",
+        "weight": 1
+      },
+      {
+        "key_word": "find possible values",
+        "weight": 1
+      },
+      {
+        "key_word": "find remainder",
+        "weight": 1
+      },
+      {
+        "key_word": "find smallest positive integer",
+        "weight": 1
+      },
+      {
+        "key_word": "find x^2 y^2",
+        "weight": 1
+      },
+      {
+        "key_word": "minimal",
+        "weight": 1
+      },
+      {
+        "key_word": "modulo",
+        "weight": 1
+      },
+      {
+        "key_word": "over",
+        "weight": 1
+      },
+      {
+        "key_word": "positiveintegers",
+        "weight": 1
+      },
+      {
+        "key_word": "possible",
+        "weight": 1
+      },
+      {
+        "key_word": "product",
+        "weight": 5
+      },
+      {
+        "key_word": "property",
+        "weight": 3
+      },
+      {
+        "key_word": "prove positive",
+        "weight": 1
+      },
+      {
+        "key_word": "show",
+        "weight": 1
+      },
+      {
+        "key_word": "show positive",
+        "weight": 1
+      },
+      {
+        "key_word": "smallest",
+        "weight": 1
+      },
+      {
+        "key_word": "values",
+        "weight": 1
+      },
+      {
+        "key_word": "sequence",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "PositiveNumbers",
+    "key_words": [
+      {
+        "key_word": "product",
+        "weight": 1
+      },
+      {
+        "key_word": "geq",
+        "weight": 1
+      },
+      {
+        "key_word": "difference",
+        "weight": 1
+      },
+      {
+        "key_word": "inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "prove",
+        "weight": 1
+      },
+      {
+        "key_word": "where",
+        "weight": 1
+      },
+      {
+        "key_word": "ab",
+        "weight": 1
+      },
+      {
+        "key_word": "let",
+        "weight": 1
+      },
+      {
+        "key_word": "real",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "positive",
+        "weight": 12
+      },
+      {
+        "key_word": "terms",
+        "weight": 1
+      },
+      {
+        "key_word": "2ab",
+        "weight": 1
+      },
+      {
+        "key_word": "AM-GM",
+        "weight": 1
+      },
+      {
+        "key_word": "geqslant",
+        "weight": 6
+      },
+      {
+        "key_word": "a^",
+        "weight": 1
+      },
+      {
+        "key_word": "a²",
+        "weight": 1
+      },
+      {
+        "key_word": "aⁿ",
+        "weight": 1
+      },
+      {
+        "key_word": "b|",
+        "weight": 1
+      },
+      {
+        "key_word": "b²",
+        "weight": 1
+      },
+      {
+        "key_word": "coefficients",
+        "weight": 1
+      },
+      {
+        "key_word": "constraints",
+        "weight": 1
+      },
+      {
+        "key_word": "definite",
+        "weight": 1
+      },
+      {
+        "key_word": "e^a",
+        "weight": 1
+      },
+      {
+        "key_word": "find minimum value",
+        "weight": 1
+      },
+      {
+        "key_word": "find positive real number",
+        "weight": 1
+      },
+      {
+        "key_word": "find positive real numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find smallest possible value",
+        "weight": 1
+      },
+      {
+        "key_word": "find value",
+        "weight": 1
+      },
+      {
+        "key_word": "log(a)",
+        "weight": 1
+      },
+      {
+        "key_word": "matrix",
+        "weight": 1
+      },
+      {
+        "key_word": "maximize",
+        "weight": 1
+      },
+      {
+        "key_word": "measure positive difference",
+        "weight": 1
+      },
+      {
+        "key_word": "minimize",
+        "weight": 1
+      },
+      {
+        "key_word": "optimize",
+        "weight": 1
+      },
+      {
+        "key_word": "positivenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "probability",
+        "weight": 1
+      },
+      {
+        "key_word": "prove frac",
+        "weight": 1
+      },
+      {
+        "key_word": "prove inequality",
+        "weight": 1
+      },
+      {
+        "key_word": "prove positive",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "series",
+        "weight": 1
+      },
+      {
+        "key_word": "show positive",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "sum",
+        "weight": 1
+      },
+      {
+        "key_word": "variables",
+        "weight": 1
+      },
+      {
+        "key_word": "x^4",
+        "weight": 1
+      },
+      {
+        "key_word": "z^2",
+        "weight": 1
+      },
+      {
+        "key_word": "|a",
+        "weight": 1
+      },
+      {
+        "key_word": "expression",
+        "weight": 1
+      },
+      {
+        "key_word": "left",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "PrimeNumbers",
+    "key_words": [
+      {
+        "key_word": "coprime",
+        "weight": 1
+      },
+      {
+        "key_word": "determinant",
+        "weight": 1
+      },
+      {
+        "key_word": "divisors",
+        "weight": 1
+      },
+      {
+        "key_word": "elements",
+        "weight": 1
+      },
+      {
+        "key_word": "factorization",
+        "weight": 1
+      },
+      {
+        "key_word": "factors",
+        "weight": 1
+      },
+      {
+        "key_word": "find prime numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "gaps",
+        "weight": 1
+      },
+      {
+        "key_word": "identification",
+        "weight": 1
+      },
+      {
+        "key_word": "integer",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 1
+      },
+      {
+        "key_word": "irreducible",
+        "weight": 1
+      },
+      {
+        "key_word": "log",
+        "weight": 1
+      },
+      {
+        "key_word": "method",
+        "weight": 1
+      },
+      {
+        "key_word": "primality",
+        "weight": 1
+      },
+      {
+        "key_word": "prime",
+        "weight": 1
+      },
+      {
+        "key_word": "primenumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "primes",
+        "weight": 1
+      },
+      {
+        "key_word": "primes ≤ n",
+        "weight": 1
+      },
+      {
+        "key_word": "sieve",
+        "weight": 1
+      },
+      {
+        "key_word": "theorem",
+        "weight": 1
+      },
+      {
+        "key_word": "twin",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "RationalNumbers",
+    "key_words": [
+      {
+        "key_word": "rational",
+        "weight": 33
+      },
+      {
+        "key_word": "mathbb",
+        "weight": 1
+      },
+      {
+        "key_word": "rightarrow",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "find",
+        "weight": 1
+      },
+      {
+        "key_word": "a/b",
+        "weight": 1
+      },
+      {
+        "key_word": "add/multiply",
+        "weight": 1
+      },
+      {
+        "key_word": "answer",
+        "weight": 1
+      },
+      {
+        "key_word": "approximation",
+        "weight": 1
+      },
+      {
+        "key_word": "convert",
+        "weight": 1
+      },
+      {
+        "key_word": "decimal",
+        "weight": 1
+      },
+      {
+        "key_word": "determine",
+        "weight": 1
+      },
+      {
+        "key_word": "determine rational roots",
+        "weight": 1
+      },
+      {
+        "key_word": "determine whether 4",
+        "weight": 1
+      },
+      {
+        "key_word": "express",
+        "weight": 1
+      },
+      {
+        "key_word": "find possible values",
+        "weight": 1
+      },
+      {
+        "key_word": "find rational numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find rational numbers q",
+        "weight": 1
+      },
+      {
+        "key_word": "find rational numbers x",
+        "weight": 1
+      },
+      {
+        "key_word": "find rational solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "fraction",
+        "weight": 1
+      },
+      {
+        "key_word": "identify",
+        "weight": 1
+      },
+      {
+        "key_word": "if",
+        "weight": 1
+      },
+      {
+        "key_word": "integers",
+        "weight": 1
+      },
+      {
+        "key_word": "lowest",
+        "weight": 1
+      },
+      {
+        "key_word": "polynomial",
+        "weight": 1
+      },
+      {
+        "key_word": "prove",
+        "weight": 1
+      },
+      {
+        "key_word": "rationalnumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "satisfying",
+        "weight": 1
+      },
+      {
+        "key_word": "set",
+        "weight": 1
+      },
+      {
+        "key_word": "simplify",
+        "weight": 1
+      },
+      {
+        "key_word": "solution",
+        "weight": 1
+      },
+      {
+        "key_word": "solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "terminating/repeating",
+        "weight": 1
+      },
+      {
+        "key_word": "terms",
+        "weight": 1
+      },
+      {
+        "key_word": "where",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "equation",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "Real",
+    "key_words": [
+      {
+        "key_word": "mathbb",
+        "weight": 55
+      },
+      {
+        "key_word": "absolute",
+        "weight": 5
+      },
+      {
+        "key_word": "analysis",
+        "weight": 1
+      },
+      {
+        "key_word": "coefficients",
+        "weight": 5
+      },
+      {
+        "key_word": "constant",
+        "weight": 31
+      },
+      {
+        "key_word": "cos",
+        "weight": 93
+      },
+      {
+        "key_word": "cubic",
+        "weight": 3
+      },
+      {
+        "key_word": "decimal",
+        "weight": 1
+      },
+      {
+        "key_word": "discriminant",
+        "weight": 1
+      },
+      {
+        "key_word": "find product",
+        "weight": 1
+      },
+      {
+        "key_word": "find real roots",
+        "weight": 1
+      },
+      {
+        "key_word": "find real solutions",
+        "weight": 1
+      },
+      {
+        "key_word": "interval",
+        "weight": 7
+      },
+      {
+        "key_word": "line",
+        "weight": 5
+      },
+      {
+        "key_word": "linear",
+        "weight": 5
+      },
+      {
+        "key_word": "real-valued",
+        "weight": 3
+      },
+      {
+        "key_word": "sin",
+        "weight": 80
+      },
+      {
+        "key_word": "roots",
+        "weight": 83
+      },
+      {
+        "key_word": "solve",
+        "weight": 66
+      },
+      {
+        "key_word": "product",
+        "weight": 90
+      },
+      {
+        "key_word": "solutions",
+        "weight": 87
+      },
+      {
+        "key_word": "quadratic",
+        "weight": 42
+      },
+      {
+        "key_word": "polynomial",
+        "weight": 95
+      },
+      {
+        "key_word": "real",
+        "weight": 331
+      },
+      {
+        "key_word": "inequality",
+        "weight": 39
+      },
+      {
+        "key_word": "equation",
+        "weight": 161
+      },
+      {
+        "key_word": "set",
+        "weight": 73
+      },
+      {
+        "key_word": "compute",
+        "weight": 67
+      }
+    ]
+  },
+  {
+    "Assertional_Logic": "TranscendentalNumbers",
+    "key_words": [
+      {
+        "key_word": "cos",
+        "weight": 1
+      },
+      {
+        "key_word": "'s",
+        "weight": 1
+      },
+      {
+        "key_word": "ln",
+        "weight": 1
+      },
+      {
+        "key_word": "pi",
+        "weight": 1
+      },
+      {
+        "key_word": "pi/4",
+        "weight": 1
+      },
+      {
+        "key_word": "sin",
+        "weight": 1
+      },
+      {
+        "key_word": "bases",
+        "weight": 1
+      },
+      {
+        "key_word": "cannot",
+        "weight": 1
+      },
+      {
+        "key_word": "constants",
+        "weight": 1
+      },
+      {
+        "key_word": "e^a",
+        "weight": 1
+      },
+      {
+        "key_word": "e^x",
+        "weight": 1
+      },
+      {
+        "key_word": "euler",
+        "weight": 1
+      },
+      {
+        "key_word": "exists",
+        "weight": 1
+      },
+      {
+        "key_word": "exponential",
+        "weight": 1
+      },
+      {
+        "key_word": "exponents",
+        "weight": 1
+      },
+      {
+        "key_word": "eᵃ",
+        "weight": 1
+      },
+      {
+        "key_word": "find possible values",
+        "weight": 1
+      },
+      {
+        "key_word": "find real",
+        "weight": 1
+      },
+      {
+        "key_word": "find transcendental numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "find transcendental numbers x",
+        "weight": 1
+      },
+      {
+        "key_word": "find value",
+        "weight": 1
+      },
+      {
+        "key_word": "functions",
+        "weight": 1
+      },
+      {
+        "key_word": "identify",
+        "weight": 1
+      },
+      {
+        "key_word": "irrational",
+        "weight": 1
+      },
+      {
+        "key_word": "log",
+        "weight": 1
+      },
+      {
+        "key_word": "logarithmic",
+        "weight": 1
+      },
+      {
+        "key_word": "non-algebraic",
+        "weight": 1
+      },
+      {
+        "key_word": "non-constructible",
+        "weight": 1
+      },
+      {
+        "key_word": "non-polynomial",
+        "weight": 1
+      },
+      {
+        "key_word": "numbers",
+        "weight": 1
+      },
+      {
+        "key_word": "pi/2",
+        "weight": 1
+      },
+      {
+        "key_word": "polynomials",
+        "weight": 1
+      },
+      {
+        "key_word": "proofs",
+        "weight": 1
+      },
+      {
+        "key_word": "real.e",
+        "weight": 1
+      },
+      {
+        "key_word": "real.pi",
+        "weight": 1
+      },
+      {
+        "key_word": "real.pi/2",
+        "weight": 1
+      },
+      {
+        "key_word": "roots",
+        "weight": 1
+      },
+      {
+        "key_word": "solve",
+        "weight": 1
+      },
+      {
+        "key_word": "solve x x",
+        "weight": 1
+      },
+      {
+        "key_word": "tan",
+        "weight": 1
+      },
+      {
+        "key_word": "transcendental",
+        "weight": 1
+      },
+      {
+        "key_word": "transcendentalnumbers",
+        "weight": 1
+      },
+      {
+        "key_word": "π.",
+        "weight": 1
+      }
+    ]
+  }
+]

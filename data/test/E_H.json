@@ -1,0 +1,2114 @@
+[
+  {
+    "index": 1,
+    "Problem": "Find the smallest solution to the equation \\[\\frac{1}{x-3} + \\frac{1}{x-5} = \\frac{4}{x-4}.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Solve_equation(x: Real, 1 / (x - 3) + 1 / (x - 5) = 4 / (x - 4))) = ?",
+    "lean_theorem": "theorem Unexplored_2006    : sInf { (x : ℝ) | 1 / ( x - 3 ) + 1 / ( x - 5 ) = 4 / ( x - 4 ) } = sorry := by sorry"
+  },
+  {
+    "index": 2,
+    "Problem": "What is the smallest solution of the equation \\(x^4 - 50x^2 + 576 = 0\\)?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Solve_equation(x: Real, x^4 - 50 * x^2 + 576 = 0)) = ?",
+    "lean_theorem": "theorem Unexplored_3471    : sInf { (x : ℝ) | x ^ 4 - 50 * x ^ 2 + 576 = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 3,
+    "Problem": "If $\\alpha$ and $\\beta$ are the two distinct solutions to the equation $x^2 = 2x + 1$, what is the value of $(\\alpha-\\beta)^2$?",
+    "Declaration": "alpha: Real; beta: Real",
+    "Facts": "Solve_equation(x: Real, x^2 = 2*x + 1) = {alpha, beta}",
+    "Query": "(alpha - beta)^2 = ?",
+    "lean_theorem": "theorem Unexplored_9 (alpha : ℝ) (beta : ℝ)  (h1 : { x : ℝ | x ^ 2 = 2 * x + 1 } = {alpha, beta}) : ( alpha - beta ) ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 4,
+    "Problem": "Find the four roots of the equation:\n\\[3x^4 + 2x^3 - 8x^2 + 2x + 3 = 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 3 * x^4 + 2 * x^3 - 8 * x^2 + 2 * x + 3 = 0) = ?",
+    "lean_theorem": "theorem Unexplored_13112    : { (x : ℝ) | 3 * x ^ 4 + 2 * x ^ 3 - 8 * x ^ 2 + 2 * x + 3 = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 5,
+    "Problem": "Solve the inequality\n\\[ -8x^2 + 6x - 1 < 0. \\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, -8 * x^2 + 6 * x - 1 < 0) = ?",
+    "lean_theorem": "theorem Unexplored_3    : { (x : ℝ) | -8 * x ^ 2 + 6 * x - 1 < 0 } = sorry := by sorry"
+  },
+  {
+    "index": 6,
+    "Problem": "Solve the equation: $\\frac{1}{x-2}=\\frac{3}{x}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 1 / (x - 2) = 3 / x) = ?",
+    "lean_theorem": "theorem Unexplored_7    : { (x : ℝ) | 1 / ( x - 2 ) = 3 / x } = sorry := by sorry"
+  },
+  {
+    "index": 7,
+    "Problem": "Solve for \\( x \\): \n\\[\n\\frac{x-27}{3} = \\frac{3x + 6}{8}\n\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, (x - 27) / 3 = (3 * x + 6) / 8) = ?",
+    "lean_theorem": "theorem Unexplored_13175    : { (x : ℝ) | ( x - 27 ) / 3 = ( 3 * x + 6 ) / 8 } = sorry := by sorry"
+  },
+  {
+    "index": 8,
+    "Problem": "Given the equations $3a + 2 = 2$ and $b - 2a = 4$, find the value of $b$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "3 * a + 2 = 2; b - 2 * a = 4",
+    "Query": "b = ?",
+    "lean_theorem": "theorem Unexplored_2631 (a : ℝ) (b : ℝ)  (h1 : 3 * a + 2 = 2) (h2 : b - 2 * a = 4) : b = sorry := by sorry"
+  },
+  {
+    "index": 9,
+    "Problem": "Solve for $x$ in the equation $\\lg (3x+4)=1$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Log(10, 3 * x + 4) = 1) = ?",
+    "lean_theorem": "theorem Unexplored_13178    : { (x : ℝ) | (Real.logb (10) (3 * x + 4)) = 1 } = sorry := by sorry"
+  },
+  {
+    "index": 10,
+    "Problem": "Calculate $m$ in the equation $(256)^{\\frac{1}{3}} = 2^m$.",
+    "Declaration": "m: Real",
+    "Facts": "",
+    "Query": "Solve_equation(m, (256)^(1/3) = 2^m) = ?",
+    "lean_theorem": "theorem Unexplored_13183 (m : ℝ)   : { m | ( 256 ) ^ ( 1 / 3 ) = 2 ^ m } = sorry := by sorry"
+  },
+  {
+    "index": 11,
+    "Problem": "Find the product of the values of $x$ that satisfy the equation $|5x| + 2 = 47$.",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_equation(x: Real, Abs(5 * x) + 2 = 47)",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_12824 (S : Set ℝ) [Fintype S] (h1 : S = { (x : ℝ) | (|5 * x|) + 2 = 47 }) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 12,
+    "Problem": "Let $a$ and $b$ be the solutions of the equation $3x^2 + 9x - 21 = 0$. What is the value of $(3a-4)(5b-6)$?",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "Solve_equation(x: Real, 3*x^2 + 9*x - 21 = 0) = {a, b}",
+    "Query": "(3*a - 4) * (5*b - 6) = ?",
+    "lean_theorem": "theorem Unexplored_25 (a : ℝ) (b : ℝ)  (h1 : { x : ℝ | 3 * x ^ 2 + 9 * x - 21 = 0 } = {a, b}) : ( 3 * a - 4 ) * ( 5 * b - 6 ) = sorry := by sorry"
+  },
+  {
+    "index": 13,
+    "Problem": "Solve for $x$: $x = \\displaystyle\\frac{\\sqrt{7^2+24^2}}{\\sqrt{49+16}}$. Express as a common fraction.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, x = (Sqrt(7^2 + 24^2)) / Sqrt(49 + 16)) = ?",
+    "lean_theorem": "theorem Unexplored_34    : { (x : ℝ) | x = ( (Real.sqrt (7 ^ 2 + 24 ^ 2)) ) / (Real.sqrt (49 + 16)) } = sorry := by sorry"
+  },
+  {
+    "index": 14,
+    "Problem": "Let $a$, $b$, and $c$ be the roots of the cubic equation $$\n5x^3 - 2019x + 4029 = 0.\n$$ Compute $(a + b)^3 + (b + c)^3 + (c + a)^3.$",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "Solve_equation(x: Real, 5 * x^3 - 2019 * x + 4029 = 0) = {a, b, c}",
+    "Query": "(a + b)^3 + (b + c)^3 + (c + a)^3 = ?",
+    "lean_theorem": "theorem Unexplored_46 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : { x : ℝ | 5 * x ^ 3 - 2019 * x + 4029 = 0 } = {a, b, c}) : ( a + b ) ^ 3 + ( b + c ) ^ 3 + ( c + a ) ^ 3 = sorry := by sorry"
+  },
+  {
+    "index": 15,
+    "Problem": "Real numbers $x$ and $y$ satisfy the equation $x^2 + y^2 = 18x - 10y + 22$. What is $x+y$?",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x^2 + y^2 = 18 * x - 10 * y + 22",
+    "Query": "x + y = ?",
+    "lean_theorem": "theorem Unexplored_81 (x : ℝ) (y : ℝ)  (h1 : x ^ 2 + y ^ 2 = 18 * x - 10 * y + 22) : x + y = sorry := by sorry"
+  },
+  {
+    "index": 16,
+    "Problem": "Determine the discriminant of the quadratic equation $5x^2 - 9x + 4$.",
+    "Declaration": "D: Real",
+    "Facts": "D = b^2 - 4 * a * c; a = 5; b = -9; c = 4",
+    "Query": "D = ?",
+    "lean_theorem": "theorem Unexplored_132 (D : ℝ)  (h1 : D = b ^ 2 - 4 * a * c) (h2 : a = 5) (h3 : b = -9) (h4 : c = 4) : D = sorry := by sorry"
+  },
+  {
+    "index": 17,
+    "Problem": "Compute the product of the roots of the equation \\[x^3 - 15x^2 + 75x - 50 = 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Product(Solve_equation(x: Real, x^3 - 15 * x^2 + 75 * x - 50 = 0)) = ?",
+    "lean_theorem": "theorem Unexplored_226  [Fintype { (x : ℝ) | x ^ 3 - 15 * x ^ 2 + 75 * x - 50 = 0 }]  : ∏ i ∈ { (x : ℝ) | x ^ 3 - 15 * x ^ 2 + 75 * x - 50 = 0 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 18,
+    "Problem": "Given that positive real numbers $r, s$ satisfy the equations $r^3 + s^3 = 1$ and $r^6 + s^6 = \\frac{15}{16}$, find the product $rs$.",
+    "Declaration": "r: PositiveNumbers; s: PositiveNumbers",
+    "Facts": "r^3 + s^3 = 1; r^6 + s^6 = 15/16",
+    "Query": "r * s = ?",
+    "lean_theorem": "theorem Unexplored_275 (r : ℝ) (h_r : r > 0) (s : ℝ) (h_s : s > 0)  (h1 : r ^ 3 + s ^ 3 = 1) (h2 : r ^ 6 + s ^ 6 = 15 / 16) : r * s = sorry := by sorry"
+  },
+  {
+    "index": 19,
+    "Problem": "Let \\( a \\), \\( b \\), and \\( c \\) be the roots of the equation \n\\[\n5x^3 + 500x + 3005 = 0.\n\\]\nFind \\( (a + b)^3 + (b + c)^3 + (c + a)^3 \\).",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "Solve_equation(x: Real, 5*x^3 + 500*x + 3005 = 0) = {a, b, c}",
+    "Query": "(a + b)^3 + (b + c)^3 + (c + a)^3 = ?",
+    "lean_theorem": "theorem Unexplored_298 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : { x : ℝ | 5 * x ^ 3 + 500 * x + 3005 = 0 } = {a, b, c}) : ( a + b ) ^ 3 + ( b + c ) ^ 3 + ( c + a ) ^ 3 = sorry := by sorry"
+  },
+  {
+    "index": 20,
+    "Problem": "Determine the complex number $z$ satisfying the equation $(1+2i)z=-3+4i$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(z: ComplexNumbers, (1 + 2 * Complex.I) * z = -3 + 4 * Complex.I) = ?",
+    "lean_theorem": "theorem Unexplored_351    : { z : ℂ | ( 1 + 2 * Complex.I ) * z = -3 + 4 * Complex.I } = sorry := by sorry"
+  },
+  {
+    "index": 21,
+    "Problem": "Solve the equation:\n\n$$\n\\cos \\pi \\frac{x}{31} \\cos 2 \\pi \\frac{x}{31} \\cos 4 \\pi \\frac{x}{31} \\cos 8 \\pi \\frac{x}{31} \\cos 16 \\pi \\frac{x}{31} = \\frac{1}{32}\n$$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, Cos(Pi * x / 31) * Cos(2 * Pi * x / 31) * Cos(4 * Pi * x / 31) * Cos(8 * Pi * x / 31) * Cos(16 * Pi * x / 31) = 1 / 32) = ?",
+    "lean_theorem": "theorem Unexplored_2051    : { (x : ℝ) | Real.cos (Pi * x / 31) * Real.cos (2 * Pi * x / 31) * Real.cos (4 * Pi * x / 31) * Real.cos (8 * Pi * x / 31) * Real.cos (16 * Pi * x / 31) = 1 / 32 } = sorry := by sorry"
+  },
+  {
+    "index": 22,
+    "Problem": "Find the product of the values of $x$ that satisfy the equation $|5x| + 7 = 47$.",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_equation(x: Real, Abs(5 * x) + 7 = 47)",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_2055 (S : Set ℝ) [Fintype S] (h1 : S = { (x : ℝ) | (|5 * x|) + 7 = 47 }) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 23,
+    "Problem": "Let \\(a\\) and \\(b\\) be integers. Show that the equation\n\n$$(x-a)(x-b)(x-3) + 1 = 0$$\n\nhas at most one integer solution.",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "",
+    "Query": "Set_Cardinality(Solve_equation(x: Integers, (x - a) * (x - b) * (x - 3) + 1 = 0)) <= 1",
+    "lean_theorem": "theorem Unexplored_2100 (a : ℤ) (b : ℤ) [Fintype { (x : ℤ) | ( x - a ) * ( x - b ) * ( x - 3 ) + 1 = 0 }]  : ({ (x : ℤ) | ( x - a ) * ( x - b ) * ( x - 3 ) + 1 = 0 }).toFinset.card <= 1 := by sorry"
+  },
+  {
+    "index": 24,
+    "Problem": "Solve for $z$ in the equation $5 + 2iz = 4 - 6iz$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(z: Real, 5 + 2 * Complex.I * z = 4 - 6 * Complex.I * z) = ?",
+    "lean_theorem": "theorem Unexplored_2197    : { (z : ℝ) | 5 + 2 * Complex.I * z = 4 - 6 * Complex.I * z } = sorry := by sorry"
+  },
+  {
+    "index": 25,
+    "Problem": "Given real numbers $x$ and $y$ that satisfy the equation $x^{2}+2 \\sqrt {3}xy-y^{2}=1$, find the minimum value of $x^{2}+y^{2}$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x^2 + 2 * Sqrt(3) * x * y - y^2 = 1",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = x^2 + y^2)) = ?",
+    "lean_theorem": "theorem Unexplored_3599 (x : ℝ) (y : ℝ)  (h1 : x ^ 2 + 2 * (Real.sqrt (3)) * x * y - y ^ 2 = 1) : sInf {(a : ℝ) | a = x ^ 2 + y ^ 2} = sorry := by sorry"
+  },
+  {
+    "index": 26,
+    "Problem": "What is the value of \\(x\\) in the equation \\(\\frac{2}{x} + \\left(\\frac{3}{x} \\div \\frac{6}{x}\\right) + 2 = 4\\)?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, (2 / x) + ((3 / x) / (6 / x)) + 2 = 4) = ?",
+    "lean_theorem": "theorem Unexplored_7773    : { (x : ℝ) | ( 2 / x ) + ( ( 3 / x ) / ( 6 / x ) ) + 2 = 4 } = sorry := by sorry"
+  },
+  {
+    "index": 27,
+    "Problem": "Find the sum of the solutions of the equation $-15x^2 + 45x - 90 = 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, -15 * x^2 + 45 * x - 90 = 0)) = ?",
+    "lean_theorem": "theorem Unexplored_7796  [Fintype { (x : ℝ) | -15 * x ^ 2 + 45 * x - 90 = 0 }]  : ∑ i ∈ { (x : ℝ) | -15 * x ^ 2 + 45 * x - 90 = 0 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 28,
+    "Problem": "If the equation \\( 3x^2 - 4x + \\frac{h}{3} = 0 \\) has equal roots, find \\( h \\).",
+    "Declaration": "h: Real",
+    "Facts": "Set_Cardinality(Solve_equation(x: Real, 3 * x^2 - 4 * x + h / 3 = 0)) = 1",
+    "Query": "h = ?",
+    "lean_theorem": "theorem Unexplored_9642 (h : ℝ) [Fintype { (x : ℝ) | 3 * x ^ 2 - 4 * x + h / 3 = 0 }] (h1 : ({ (x : ℝ) | 3 * x ^ 2 - 4 * x + h / 3 = 0 }).toFinset.card = 1) : h = sorry := by sorry"
+  },
+  {
+    "index": 29,
+    "Problem": "The three roots of the equation \\[ax^3+bx^2+cx+d=0\\]are $1,$ $2,$ and $3.$ Compute $\\frac{c}{d}.$",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real",
+    "Facts": "Solve_equation(x, a * x^3 + b * x^2 + c * x + d = 0) = {1, 2, 3}",
+    "Query": "c / d = ?",
+    "lean_theorem": "theorem Unexplored_1439 (a : ℝ) (b : ℝ) (c : ℝ) (d : ℝ)  (h1 : { x | a * x ^ 3 + b * x ^ 2 + c * x + d = 0 } = {1, 2, 3}) : c / d = sorry := by sorry"
+  },
+  {
+    "index": 30,
+    "Problem": "Find the number of solutions of the equation \\( a e^{x} = x^{3} \\).",
+    "Declaration": "a: Real",
+    "Facts": "",
+    "Query": "Set_Cardinality(Solve_equation(x: Real, a * Exp(x) = x^3)) = ?",
+    "lean_theorem": "theorem Unexplored_1444 (a : ℝ) [Fintype { (x : ℝ) | a * exp (x) = x ^ 3 }]  : ({ (x : ℝ) | a * exp (x) = x ^ 3 }).toFinset.card = sorry := by sorry"
+  },
+  {
+    "index": 31,
+    "Problem": "Given $m \\in \\mathbb{R}$ and $m < -1$, solve the inequality about $x$: $(m+3)x^2 - (2m+3)x + m > 0$.",
+    "Declaration": "m: Real",
+    "Facts": "m < -1",
+    "Query": "Solve_inequation(x, (m + 3) * x^2 - (2 * m + 3) * x + m > 0) = ?",
+    "lean_theorem": "theorem Unexplored_1530 (m : ℝ)  (h1 : m < -1) : { x | ( m + 3 ) * x ^ 2 - ( 2 * m + 3 ) * x + m > 0 } = sorry := by sorry"
+  },
+  {
+    "index": 32,
+    "Problem": "Find the number of real solutions to the equation\n\\[\\frac{x}{50} = \\sin x.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Set_Cardinality(Solve_equation(x: Real, x / 50 = Sin(x))) = ?",
+    "lean_theorem": "theorem Unexplored_1227  [Fintype { (x : ℝ) | x / 50 = Real.sin (x) }]  : ({ (x : ℝ) | x / 50 = Real.sin (x) }).toFinset.card = sorry := by sorry"
+  },
+  {
+    "index": 33,
+    "Problem": "If 10 pears cost the same as 5 oranges, and 4 oranges cost the same as 6 lemons, and 3 lemons cost the same as 2 grapes, how many grapes can Evelyn buy for the price of 20 pears?",
+    "Declaration": "CostPears: Real; CostOranges: Real; CostLemons: Real; CostGrapes: Real",
+    "Facts": "20 * CostPears = 5 * CostOranges; 4 * CostOranges = 6 * CostLemons; 3 * CostLemons = 2 * CostGrapes",
+    "Query": "CostGrapes / (3 / 2) = ?",
+    "lean_theorem": "theorem Unexplored_1615 (CostPears : ℝ) (CostOranges : ℝ) (CostLemons : ℝ) (CostGrapes : ℝ)  (h1 : 20 * CostPears = 5 * CostOranges) (h2 : 4 * CostOranges = 6 * CostLemons) (h3 : 3 * CostLemons = 2 * CostGrapes) : CostGrapes / ( 3 / 2 ) = sorry := by sorry"
+  },
+  {
+    "index": 34,
+    "Problem": "in the quadratic equation x 2 - bx + 20 = 0 , if the product of two roots is 20 , what is the sum of the two roots ?",
+    "Declaration": "b: Real; x1: Real; x2: Real",
+    "Facts": "b = x1 + x2; 20 = x1 * x2; x^2 - b * x + 20 = 0",
+    "Query": "b = ?",
+    "lean_theorem": "theorem Unexplored_1409 (b : ℝ) (x1 : ℝ) (x2 : ℝ)  (h1 : b = x1 + x2) (h2 : 20 = x1 * x2) (h3 : x ^ 2 - b * x + 20 = 0) : b = sorry := by sorry"
+  },
+  {
+    "index": 35,
+    "Problem": "What is the largest value of $x$ that satisfies the equation $10x^2 - 52x + 48 = 8$?",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_equation(x: Real, 10 * x^2 - 52 * x + 48 = 8)",
+    "Query": "Get_Set_Maximum(S) = ?",
+    "lean_theorem": "theorem Unexplored_1516 (S : Set ℝ)  (h1 : S = { (x : ℝ) | 10 * x ^ 2 - 52 * x + 48 = 8 }) : sSup S = sorry := by sorry"
+  },
+  {
+    "index": 36,
+    "Problem": "Given real numbers $x$ and $y$ that satisfy the equation $x^{2}+y^{2}-4x+6y+12=0$, find the minimum value of $|2x-y-2|$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x^2 + y^2 - 4 * x + 6 * y + 12 = 0",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = Abs(2 * x - y - 2))) = ?",
+    "lean_theorem": "theorem Unexplored_1591 (x : ℝ) (y : ℝ)  (h1 : x ^ 2 + y ^ 2 - 4 * x + 6 * y + 12 = 0) : sInf {(a : ℝ) | a = (|2 * x - y - 2|)} = sorry := by sorry"
+  },
+  {
+    "index": 37,
+    "Problem": "Granger has five times as many spots as his brother, Cisco. Cisco has 5 less than half as many spots as his cousin, Rover. Granger and Cisco have combined 108 spots. How many spots does Rover have?",
+    "Declaration": "Cisco: Real; Granger: Real; Rover: Real",
+    "Facts": "Granger = 5 * Cisco; Cisco = 0.5 * Rover - 5; Granger + Cisco = 108",
+    "Query": "Rover = ?",
+    "lean_theorem": "theorem Unexplored_1652 (Cisco : ℝ) (Granger : ℝ) (Rover : ℝ)  (h1 : Granger = 5 * Cisco) (h2 : Cisco = 0.5 * Rover - 5) (h3 : Granger + Cisco = 108) : Rover = sorry := by sorry"
+  },
+  {
+    "index": 38,
+    "Problem": "Find the sum of all real solutions to the equation \n\\[\n\\sqrt{x} + \\sqrt{\\frac{9}{x}} + \\sqrt{x + \\frac{9}{x} + 1} = 7.\n\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, Sqrt(x) + Sqrt(9 / x) + Sqrt(x + 9 / x + 1) = 7)) = ?",
+    "lean_theorem": "theorem Unexplored_214  [Fintype { (x : ℝ) | (Real.sqrt (x)) + (Real.sqrt (9 / x)) + (Real.sqrt (x + 9 / x + 1)) = 7 }]  : ∑ i ∈ { (x : ℝ) | (Real.sqrt (x)) + (Real.sqrt (9 / x)) + (Real.sqrt (x + 9 / x + 1)) = 7 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 39,
+    "Problem": "How many distinct solutions are there to the equation $|x-7| = 2|x + 1| + |x-3|$?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Set_Cardinality(Solve_equation(x: Real, Abs(x - 7) = 2 * Abs(x + 1) + Abs(x - 3))) = ?",
+    "lean_theorem": "theorem Unexplored_531  [Fintype { (x : ℝ) | (|x - 7|) = 2 * (|x + 1|) + (|x - 3|) }]  : ({ (x : ℝ) | (|x - 7|) = 2 * (|x + 1|) + (|x - 3|) }).toFinset.card = sorry := by sorry"
+  },
+  {
+    "index": 40,
+    "Problem": "Determine all solutions of the diophantine equation  $a^2 = b \\cdot (b + 7)$  in integers  $a\\ge 0$  and  $b \\ge 0$ .\n\n(W. Janous, Innsbruck)",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "a >= 0; b >= 0",
+    "Query": "Build_Set((a, b), a^2 = b * (b + 7)) = ?",
+    "lean_theorem": "theorem Unexplored_544 (a : ℤ) (b : ℤ)  (h1 : a >= 0) (h2 : b >= 0) : {(a, b) | a ^ 2 = b * ( b + 7 )} = sorry := by sorry"
+  },
+  {
+    "index": 41,
+    "Problem": "Suppose $a$, $b$, $c$, and $d$ are integers satisfying the equations: $a - b + c = 7$, $b - c + d = 8$, $c - d + a = 5$, and $d - a + b = 4$. What is the value of $a + b + c + d$?",
+    "Declaration": "a: Integers; b: Integers; c: Integers; d: Integers",
+    "Facts": "a - b + c = 7; b - c + d = 8; c - d + a = 5; d - a + b = 4",
+    "Query": "a + b + c + d = ?",
+    "lean_theorem": "theorem Unexplored_604 (a : ℤ) (b : ℤ) (c : ℤ) (d : ℤ)  (h1 : a - b + c = 7) (h2 : b - c + d = 8) (h3 : c - d + a = 5) (h4 : d - a + b = 4) : a + b + c + d = sorry := by sorry"
+  },
+  {
+    "index": 42,
+    "Problem": "Let \\( n \\geq 1 \\) be a natural number. Determine all positive integer solutions of the equation\n\n\\[ 7 \\cdot 4^n = a^2 + b^2 + c^2 + d^2 \\]",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers; d: PositiveIntegers; n: NaturalNumbers",
+    "Facts": "",
+    "Query": "Build_Set((a, b, c, d), 7 * 4^n = a^2 + b^2 + c^2 + d^2) = ?",
+    "lean_theorem": "theorem Unexplored_612 (a : ℕ) (b : ℕ) (c : ℕ) (d : ℕ) (n : ℕ)   : {(a, b, c, d) | 7 * 4 ^ n = a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2} = sorry := by sorry"
+  },
+  {
+    "index": 43,
+    "Problem": "Solve the following equation:\n\n$$\n2 \\cos 5 x + 2 \\cos 4 x + 2 \\cos 3 x + 2 \\cos 2 x + 2 \\cos x + 1 = 0\n$$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 2 * Cos(5 * x) + 2 * Cos(4 * x) + 2 * Cos(3 * x) + 2 * Cos(2 * x) + 2 * Cos(x) + 1 = 0) = ?",
+    "lean_theorem": "theorem Unexplored_55    : { (x : ℝ) | 2 * Real.cos (5 * x) + 2 * Real.cos (4 * x) + 2 * Real.cos (3 * x) + 2 * Real.cos (2 * x) + 2 * Real.cos (x) + 1 = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 44,
+    "Problem": "Find all positive integer solutions  $ x, y, z$  of the equation  $ 3^x \\plus{} 4^y \\equal{} 5^z.$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Build_Set((x: PositiveIntegers, y: PositiveIntegers, z: PositiveIntegers), 3^x + 4^y = 5^z) = ?",
+    "lean_theorem": "theorem Unexplored_88 : {(x : ℕ, y : ℕ, z : ℕ) | 3 ^ x + 4 ^ y = 5 ^ z} = sorry := by sorry"
+  },
+  {
+    "index": 45,
+    "Problem": "Solve the following equation:\n\n$$\n5(1-\\cos x) = 4 \\sin x\n$$",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, 5 * (1 - Cos(x)) = 4 * Sin(x)) = ?",
+    "lean_theorem": "theorem Unexplored_94    : { (x : ℝ) | 5 * ( 1 - Real.cos (x) ) = 4 * Real.sin (x) } = sorry := by sorry"
+  },
+  {
+    "index": 46,
+    "Problem": "Consider the function $g(x) = x^2 - 2\\sqrt{x}$. Evaluate $2g(3) + g(7)$.",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, x ^ 2 - 2 * Sqrt(x))",
+    "Query": "2 * Get_Function_Value(g, 3) + Get_Function_Value(g, 7) = ?",
+    "lean_theorem": "theorem Unexplored_898 (g : ℝ → ℝ)  (h1 : g = (λ x => x ^ 2 - 2 * (Real.sqrt (x)))) : 2 * (g (3)) + (g (7)) = sorry := by sorry"
+  },
+  {
+    "index": 47,
+    "Problem": "Find all functions \\( f(x) \\) such that \\( f(2x + 1) = 4x^2 + 14x + 7 \\). \n\n",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(Get_Function_Composition(f, 2 * x + 1)) = 4 * x^2 + 14 * x + 7",
+    "Query": "f = ?",
+    "lean_theorem": "theorem Unexplored_1212 (f : ℝ → ℝ)  (h1 : (f) ∘ (2 * x + 1) = 4 * x ^ 2 + 14 * x + 7) : f = sorry := by sorry"
+  },
+  {
+    "index": 48,
+    "Problem": "What is the inverse of the function $f(x) = 3 - 7x + x^2$?",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 3 - 7 * x + x^2)",
+    "Query": "Get_Inverse_Function(f) = ?",
+    "lean_theorem": "theorem Unexplored_1271 (f : ℝ → ℝ)  (h1 : f = (λ x => 3 - 7 * x + x ^ 2)) : (f)⁻¹ = sorry := by sorry"
+  },
+  {
+    "index": 49,
+    "Problem": "Determine the maximum value of the function \\[g(x) = 4x - x^4\\] for \\(0 \\leq x \\leq 2\\).",
+    "Declaration": "S: Set; g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, 4 * x - x^4); S = Build_Set(a: Real, a = Get_Function_Value(g, x) ∧ 0 <= x ∧ x <= 2)",
+    "Query": "Get_Set_Maximum(S) = ?",
+    "lean_theorem": "theorem Unexplored_50 (S : Set ℝ) (g : ℝ → ℝ)  (h1 : g = (λ x => 4 * x - x ^ 4)) (h2 : S = {(a : ℝ) | a = (g (x)) ∧ 0 <= x ∧ x <= 2}) : sSup S = sorry := by sorry"
+  },
+  {
+    "index": 50,
+    "Problem": "The range of the function $y= \\sqrt{x-1} +1$.",
+    "Declaration": "y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, Sqrt(x - 1) + 1)",
+    "Query": "Get_Function_Range(y) = ?",
+    "lean_theorem": "theorem Unexplored_85 (y : ℝ → ℝ)  (h1 : y = (λ x => (Real.sqrt (x - 1)) + 1)) : Set.range (y) = sorry := by sorry"
+  },
+  {
+    "index": 51,
+    "Problem": "Given a function $f(x) = ax^7 + bx - 2$. If $f(2009) = 10$, find the value of $f(-2009)$.",
+    "Declaration": "a: Real; b: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * x^7 + b * x - 2); Get_Function_Value(f, 2009) = 10",
+    "Query": "Get_Function_Value(f, -2009) = ?",
+    "lean_theorem": "theorem Unexplored_3591 (a : ℝ) (b : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => a * x ^ 7 + b * x - 2)) (h2 : (f (2009)) = 10) : (f (-2009)) = sorry := by sorry"
+  },
+  {
+    "index": 52,
+    "Problem": "A function $f$ has the property that $f(5x - 3) = x^2 + x + 1$ for all real numbers $x$. What is $f(7)$?",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(Get_Function_Composition(f, 5*x - 3)) = Get_Lambda_Function(x, x^2 + x + 1)",
+    "Query": "Get_Function_Value(f, 7) = ?",
+    "lean_theorem": "theorem Unexplored_4138 (f : ℝ → ℝ)  (h1 : (f) ∘ (5 * x - 3) = (λ x => x ^ 2 + x + 1)) : (f (7)) = sorry := by sorry"
+  },
+  {
+    "index": 53,
+    "Problem": "Given the function $f\\left(x\\right)=\\sqrt{3}\\sin x-\\cos x$, find $f(\\frac{5π}{12})$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, Sqrt(3) * Sin(x) - Cos(x))",
+    "Query": "Get_Function_Value(f, 5 * Pi / 12) = ?",
+    "lean_theorem": "theorem Unexplored_182 (f : ℝ → ℝ)  (h1 : f = (λ x => (Real.sqrt (3)) * Real.sin (x) - Real.cos (x))) : (f (5 * Pi / 12)) = sorry := by sorry"
+  },
+  {
+    "index": 54,
+    "Problem": "Given the function $f(3x+1)=x^{2}+3x+2$, find $f(4)$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(Get_Function_Composition(f, 3 * x + 1)) = Get_Lambda_Function(x, x^2 + 3 * x + 2)",
+    "Query": "Get_Function_Value(f, 4) = ?",
+    "lean_theorem": "theorem Unexplored_236 (f : ℝ → ℝ)  (h1 : (f) ∘ (3 * x + 1) = (λ x => x ^ 2 + 3 * x + 2)) : (f (4)) = sorry := by sorry"
+  },
+  {
+    "index": 55,
+    "Problem": "If the maximum value of the function $f(x) = a\\sin x + 3\\cos x$ is 5, then the constant $a = \\_\\_\\_\\_\\_$.",
+    "Declaration": "a: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * Sin(x) + 3 * Cos(x)); Get_Function_Maximum(f) = 5",
+    "Query": "a = ?",
+    "lean_theorem": "theorem Unexplored_446 (a : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => a * Real.sin (x) + 3 * Real.cos (x))) (h2 : sSup (Set.range f) = 5) : a = sorry := by sorry"
+  },
+  {
+    "index": 56,
+    "Problem": "Given the function $g(x) = 4x^3 + 3$, find the value of $x$ so that $g^{-1}(x) = 5$.",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, 4 * x^3 + 3)",
+    "Query": "Solve_equation(x: Real, Get_Function_Value(Get_Inverse_Function(g), x) = 5) = ?",
+    "lean_theorem": "theorem Unexplored_622 (g : ℝ → ℝ)  (h1 : g = (λ x => 4 * x ^ 3 + 3)) : { (x : ℝ) | ((g)⁻¹ (x)) = 5 } = sorry := by sorry"
+  },
+  {
+    "index": 57,
+    "Problem": "Given the function $y = 2x + 5$, under what condition is $y > 0$?",
+    "Declaration": "y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, 2 * x + 5)",
+    "Query": "Solve_inequation(x: Real, Get_Function_Value(y, x) > 0) = ?",
+    "lean_theorem": "theorem Unexplored_136 (y : ℝ → ℝ)  (h1 : y = (λ x => 2 * x + 5)) : { (x : ℝ) | (y (x)) > 0 } = sorry := by sorry"
+  },
+  {
+    "index": 58,
+    "Problem": "The maximum value of the function $y = 1 + \\sin x$ is ___.",
+    "Declaration": "y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, 1 + Sin(x))",
+    "Query": "Get_Function_Maximum(y) = ?",
+    "lean_theorem": "theorem Unexplored_588 (y : ℝ → ℝ)  (h1 : y = (λ x => 1 + Real.sin (x))) : sSup (Set.range y) = sorry := by sorry"
+  },
+  {
+    "index": 59,
+    "Problem": "Given the function $f(x) = ax^5 + bx^3 + cx + 1$, and it is known that $f(2) = -1$, find the value of $f(-2)$.",
+    "Declaration": "a: Real; b: Real; c: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * x^5 + b * x^3 + c * x + 1); Get_Function_Value(f, 2) = -1",
+    "Query": "Get_Function_Value(f, -2) = ?",
+    "lean_theorem": "theorem Unexplored_593 (a : ℝ) (b : ℝ) (c : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => a * x ^ 5 + b * x ^ 3 + c * x + 1)) (h2 : (f (2)) = -1) : (f (-2)) = sorry := by sorry"
+  },
+  {
+    "index": 60,
+    "Problem": "The function $f(x) = x(x - c)^2$ has a maximum value at $x = 2$. Find the value of the constant $c$.",
+    "Declaration": "c: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x * (x - c)^2); Get_Function_Maximum(f) = 2",
+    "Query": "c = ?",
+    "lean_theorem": "theorem Unexplored_1344 (c : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => x * ( x - c ) ^ 2)) (h2 : sSup (Set.range f) = 2) : c = sorry := by sorry"
+  },
+  {
+    "index": 61,
+    "Problem": "Determine the range of values for $a$ such that the inequality $x^2 - x - a^2 + a + 1 > 0$ holds for all real numbers $x$.",
+    "Declaration": "a: Real",
+    "Facts": "",
+    "Query": "Build_Set(a, ForAll(x: Real, x^2 - x - a^2 + a + 1 > 0)) = ?",
+    "lean_theorem": "theorem Unexplored_179 (a : ℝ)   : {a | (∀ (x : ℝ), x ^ 2 - x - a ^ 2 + a + 1 > 0)} = sorry := by sorry"
+  },
+  {
+    "index": 62,
+    "Problem": "Find the range of the function $g(x) = \\cos^4 x - \\cos x \\sin x + \\sin^4 x$.",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, Cos(x)^4 - Cos(x) * Sin(x) + Sin(x)^4)",
+    "Query": "Get_Function_Range(g) = ?",
+    "lean_theorem": "theorem Unexplored_227 (g : ℝ → ℝ)  (h1 : g = (λ x => Real.cos (x) ^ 4 - Real.cos (x) * Real.sin (x) + Real.sin (x) ^ 4)) : Set.range (g) = sorry := by sorry"
+  },
+  {
+    "index": 63,
+    "Problem": "Find the range of $x$ in $[0,2\\pi]$ that satisfies $\\sin x \\geqslant \\frac{\\sqrt{2}}{2}$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, 0 <= x ∧ x <= 2 * Real.pi ∧ Sin(x) >= Sqrt(2) / 2) = ?",
+    "lean_theorem": "theorem Unexplored_1248    : { (x : ℝ) | 0 <= x ∧ x <= 2 * Real.pi ∧ Real.sin (x) >= (Real.sqrt (2)) / 2 } = sorry := by sorry"
+  },
+  {
+    "index": 64,
+    "Problem": "Find the range of the function $g(x) = \\sin^6 x + 3\\sin^4 x \\cos^2 x + \\cos^6 x.$",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, Sin(x)^6 + 3 * Sin(x)^4 * Cos(x)^2 + Cos(x)^6)",
+    "Query": "Get_Function_Range(g) = ?",
+    "lean_theorem": "theorem Unexplored_1267 (g : ℝ → ℝ)  (h1 : g = (λ x => Real.sin (x) ^ 6 + 3 * Real.sin (x) ^ 4 * Real.cos (x) ^ 2 + Real.cos (x) ^ 6)) : Set.range (g) = sorry := by sorry"
+  },
+  {
+    "index": 65,
+    "Problem": "Given the function f(x) = x² (x > 0), let its inverse function be y = f^(-1)(x). Find f^(-1)(4).",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2)",
+    "Query": "Get_Function_Value(Get_Inverse_Function(f), 4) = ?",
+    "lean_theorem": "theorem Unexplored_2225 (f : ℝ → ℝ)  (h1 : f = (λ x => x ^ 2)) : ((f)⁻¹ (4)) = sorry := by sorry"
+  },
+  {
+    "index": 66,
+    "Problem": "Given the function $f(x)=ax^{4}+bx^{2}-x+1$, where $a,b\\in\\mathbb{R}$, if $f(2)=9$, find $f(-2)$.",
+    "Declaration": "a: Real; b: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * x^4 + b * x^2 - x + 1); Get_Function_Value(f, 2) = 9",
+    "Query": "Get_Function_Value(f, -2) = ?",
+    "lean_theorem": "theorem Unexplored_2311 (a : ℝ) (b : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => a * x ^ 4 + b * x ^ 2 - x + 1)) (h2 : (f (2)) = 9) : (f (-2)) = sorry := by sorry"
+  },
+  {
+    "index": 67,
+    "Problem": "As $x$ ranges over all real numbers, find the range of\n\\[g(x) = \\sin^6 x + \\cos^4 x.\\]",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, Sin(x)^6 + Cos(x)^4)",
+    "Query": "Get_Function_Range(g) = ?",
+    "lean_theorem": "theorem Unexplored_2461 (g : ℝ → ℝ)  (h1 : g = (λ x => Real.sin (x) ^ 6 + Real.cos (x) ^ 4)) : Set.range (g) = sorry := by sorry"
+  },
+  {
+    "index": 68,
+    "Problem": "Determine the range of values for $x$ that satisfy the inequality $\\log_{2}(-x) < x + 1$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Log(2, -x) < x + 1) = ?",
+    "lean_theorem": "theorem Unexplored_2491    : { (x : ℝ) | (Real.logb (2) (-x)) < x + 1 } = sorry := by sorry"
+  },
+  {
+    "index": 69,
+    "Problem": "Let \\(a\\) and \\(b\\) be distinct real numbers. If the quadratic function \\(f(x) = x^2 + ax + b\\) satisfies \\(f(a) = f(b)\\), find the value of \\(f(2)\\).",
+    "Declaration": "a: Real; b: Real; f: QuadraticFunction",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 + a * x + b); a != b; Get_Function_Value(f, a) = Get_Function_Value(f, b)",
+    "Query": "Get_Function_Value(f, 2) = ?",
+    "lean_theorem": "theorem Unexplored_900 (a : ℝ) (b : ℝ) (f: ℝ → ℝ)(f_a f_b f_c : ℝ) (f_a_nonzero : f_a ≠ 0) (f_discriminant : ℝ) (f_discriminant_rule: f_discriminant = f_b^2 - 4 * f_a * f_c) (f_func : f = λ x => f_a * x^2 + f_b * x + f_c)  (h1 : f = (λ x => x ^ 2 + a * x + b)) (h2 : a != b) (h3 : (f (a)) = (f (b))) : (f (2)) = sorry := by sorry"
+  },
+  {
+    "index": 70,
+    "Problem": "Consider the function $f(x) = x^2 + 4\\sqrt{x}$. Evaluate $2f(3) - f(9)$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x ^ 2 + 4 * Sqrt(x))",
+    "Query": "2 * Get_Function_Value(f, 3) - Get_Function_Value(f, 9) = ?",
+    "lean_theorem": "theorem Unexplored_920 (f : ℝ → ℝ)  (h1 : f = (λ x => x ^ 2 + 4 * (Real.sqrt (x)))) : 2 * (f (3)) - (f (9)) = sorry := by sorry"
+  },
+  {
+    "index": 71,
+    "Problem": "Consider the function $h(x) = 4x - 5$. Find the value of $b$ such that $h(b) = 1$.",
+    "Declaration": "h: Function",
+    "Facts": "Get_Function_Expression(h) = Get_Lambda_Function(x, 4 * x - 5)",
+    "Query": "Solve_equation(b: Real, Get_Function_Value(h, b) = 1) = ?",
+    "lean_theorem": "theorem Unexplored_992 (h : ℝ → ℝ)  (h1 : h = (λ x => 4 * x - 5)) : { (b : ℝ) | (h (b)) = 1 } = sorry := by sorry"
+  },
+  {
+    "index": 72,
+    "Problem": "The range of the function $y=\\cos^2x - 2\\sin x$ is.",
+    "Declaration": "y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, Cos(x)^2 - 2 * Sin(x))",
+    "Query": "Get_Function_Range(y) = ?",
+    "lean_theorem": "theorem Unexplored_1020 (y : ℝ → ℝ)  (h1 : y = (λ x => Real.cos (x) ^ 2 - 2 * Real.sin (x))) : Set.range (y) = sorry := by sorry"
+  },
+  {
+    "index": 73,
+    "Problem": "A fruit drink is made of orange, watermelon, and grape juice, where 25 percent of the drink is orange juice and 40 percent is watermelon juice. If the drink is 300 ounces in total, how many ounces of grape juice are in the drink?",
+    "Declaration": "O: Real; W: Real; G: Real",
+    "Facts": "O + W + G = 300; O = 0.25 * 300; W = 0.4 * 300",
+    "Query": "G = ?",
+    "lean_theorem": "theorem Unexplored_1775 (O : ℝ) (W : ℝ) (G : ℝ)  (h1 : O + W + G = 300) (h2 : O = 0.25 * 300) (h3 : W = 0.4 * 300) : G = sorry := by sorry"
+  },
+  {
+    "index": 74,
+    "Problem": "Find all functions \\( f: \\mathbb{R} \\rightarrow \\mathbb{R} \\) such that for all \\( x, y \\in \\mathbb{R} \\),\n\n$$\nf(x+y) = f(x-y)\n$$",
+    "Declaration": "f: Function",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, Get_Function_Value(f, x + y) = Get_Function_Value(f, x - y)))",
+    "Query": "f = ?",
+    "lean_theorem": "theorem Unexplored_1023 (f : ℝ → ℝ)  (h1 : (∀ (x : ℝ), (∀ (y : ℝ), (f (x + y)) = (f (x - y))))) : f = sorry := by sorry"
+  },
+  {
+    "index": 75,
+    "Problem": "What is the range of the function $$s(x) = \\frac{1}{(2-x)^2}~?$$ Express your answer in interval notation.",
+    "Declaration": "s: Function",
+    "Facts": "Get_Function_Expression(s) = Get_Lambda_Function(x, 1 / (2 - x)^2)",
+    "Query": "Get_Function_Range(s) = ?",
+    "lean_theorem": "theorem Unexplored_2129 (s : ℝ → ℝ)  (h1 : s = (λ x => 1 / ( 2 - x ) ^ 2)) : Set.range (s) = sorry := by sorry"
+  },
+  {
+    "index": 76,
+    "Problem": "a certain telescope increases the visual range at a particular location from 60 kilometers to 150 kilometers . by what percent is the visual range increased by using the telescope ?",
+    "Declaration": "OriginalRange: Real; NewRange: Real",
+    "Facts": "OriginalRange = 60; NewRange = 150",
+    "Query": "(NewRange - OriginalRange) / OriginalRange * 100 = ?",
+    "lean_theorem": "theorem Unexplored_1800 (OriginalRange : ℝ) (NewRange : ℝ)  (h1 : OriginalRange = 60) (h2 : NewRange = 150) : ( NewRange - OriginalRange ) / OriginalRange * 100 = sorry := by sorry"
+  },
+  {
+    "index": 77,
+    "Problem": "Given $p(x): x^2 - 5x + 6 < 0$, the range of values of $x$ that makes $p(x)$ a True statement is \\_\\_\\_\\_\\_\\_.",
+    "Declaration": "p: Polynomial",
+    "Facts": "p = X^2 - 5 * X + 6",
+    "Query": "Solve_inequation(x: Real, p < 0) = ?",
+    "lean_theorem": "theorem Unexplored_5925 (p : Polynomial ℝ)  (h1 : p = X ^ 2 - 5 * X + 6) : { (x : ℝ) | p < 0 } = sorry := by sorry"
+  },
+  {
+    "index": 78,
+    "Problem": "Consider the functions $f(x) = x^2 - 2x + m$ and $g(x) = x^2 - 2x + 9m$. Solve for $m$ if $f(2) = 2g(2)$.",
+    "Declaration": "f: Function; g: Function; m: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x^2 - 2*x + m); Get_Function_Expression(g) = Get_Lambda_Function(x, x^2 - 2*x + 9*m); Get_Function_Value(f, 2) = 2 * Get_Function_Value(g, 2)",
+    "Query": "m = ?",
+    "lean_theorem": "theorem Unexplored_3942 (f : ℝ → ℝ) (g : ℝ → ℝ) (m : ℝ)  (h1 : f = (λ x => x ^ 2 - 2 * x + m)) (h2 : g = (λ x => x ^ 2 - 2 * x + 9 * m)) (h3 : (f (2)) = 2 * (g (2))) : m = sorry := by sorry"
+  },
+  {
+    "index": 79,
+    "Problem": "Find the inverse function of $f(x) = \\log_{2}(1+x), x > 0$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, Log(2, 1 + x))",
+    "Query": "Get_Inverse_Function(f) = ?",
+    "lean_theorem": "theorem Unexplored_3966 (f : ℝ → ℝ)  (h1 : f = (λ x => (Real.logb (2) (1 + x)))) : (f)⁻¹ = sorry := by sorry"
+  },
+  {
+    "index": 80,
+    "Problem": "Consider the following functions:\n$$\n\\begin{array}{ccc}\nf(x) & = & 4x^2 - 3x + 5 \\\\\ng(x) & = & x^2 - mx - 8\n\\end{array}\n$$\nIf \\( f(5) - g(5) = 15 \\), find the value of \\( m \\).",
+    "Declaration": "f: Function; g: Function; m: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 4 * x^2 - 3 * x + 5); Get_Function_Expression(g) = Get_Lambda_Function(x, x^2 - m * x - 8); Get_Function_Value(f, 5) - Get_Function_Value(g, 5) = 15",
+    "Query": "m = ?",
+    "lean_theorem": "theorem Unexplored_4088 (f : ℝ → ℝ) (g : ℝ → ℝ) (m : ℝ)  (h1 : f = (λ x => 4 * x ^ 2 - 3 * x + 5)) (h2 : g = (λ x => x ^ 2 - m * x - 8)) (h3 : (f (5)) - (g (5)) = 15) : m = sorry := by sorry"
+  },
+  {
+    "index": 81,
+    "Problem": "The range of the function $f(x) = \\left( \\frac{1}{2} \\right)^{|x+1|}$ is",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, (1 / 2) ^ Abs(x + 1))",
+    "Query": "Get_Function_Range(f) = ?",
+    "lean_theorem": "theorem Unexplored_4159 (f : ℝ → ℝ)  (h1 : f = (λ x => ( 1 / 2 ) ^ (|x + 1|))) : Set.range (f) = sorry := by sorry"
+  },
+  {
+    "index": 82,
+    "Problem": "If the function $y=(m+1)x^{m^2+3m+1}$ is an inverse proportion function of $y$ with respect to $x$, then the value of $m$ is.",
+    "Declaration": "m: Real",
+    "Facts": "(m + 1) * x^(m^2 + 3 * m + 1) = 1 / x",
+    "Query": "m = ?",
+    "lean_theorem": "theorem Unexplored_4165 (m : ℝ)  (h1 : ( m + 1 ) * x ^ ( m ^ 2 + 3 * m + 1 ) = 1 / x) : m = sorry := by sorry"
+  },
+  {
+    "index": 83,
+    "Problem": "Find all solutions to the equation \n\\[\\sqrt[3]{18x - 2} + \\sqrt[3]{16x + 2} = 6 \\sqrt[3]{x}.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, (18 * x - 2)^(1/3) + (16 * x + 2)^(1/3) = 6 * x^(1/3)) = ?",
+    "lean_theorem": "theorem Unexplored_11536    : { (x : ℝ) | ( 18 * x - 2 ) ^ ( 1 / 3 ) + ( 16 * x + 2 ) ^ ( 1 / 3 ) = 6 * x ^ ( 1 / 3 ) } = sorry := by sorry"
+  },
+  {
+    "index": 84,
+    "Problem": "Find the functions \\( f: \\mathbb{R} \\rightarrow \\mathbb{R} \\) such that for all \\( x, y \\),\n\n\\[ f(x+y)^{2}=f(x)^{2}+f(y)^{2} \\]",
+    "Declaration": "f: Function",
+    "Facts": "ForAll(x: Real, ForAll(y: Real, Get_Function_Value(f, x + y)^2 = Get_Function_Value(f, x)^2 + Get_Function_Value(f, y)^2))",
+    "Query": "Get_Function_Expression(f) = ?",
+    "lean_theorem": "theorem Unexplored_4211 (f : ℝ → ℝ)  (h1 : (∀ (x : ℝ), (∀ (y : ℝ), (f (x + y)) ^ 2 = (f (x)) ^ 2 + (f (y)) ^ 2))) : f = sorry := by sorry"
+  },
+  {
+    "index": 85,
+    "Problem": "Let $g$ be a function satisfying $g(xy) = g(x)/y$ for all positive real numbers $x$ and $y$. If $g(100) = 2$, what is the value of $g(80)$?",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Value(g, 100) = 2; Get_Function_Value(g, x * y) = Get_Function_Value(g, x) / y",
+    "Query": "Get_Function_Value(g, 80) = ?",
+    "lean_theorem": "theorem Unexplored_4230 (g : ℝ → ℝ)  (h1 : (g (100)) = 2) (h2 : (g (x * y)) = (g (x)) / y) : (g (80)) = sorry := by sorry"
+  },
+  {
+    "index": 86,
+    "Problem": "For the function f(x) = ax^3 - 3x + 1, where x ∈ [-1, 1], if f(x) ≥ 0 always holds True, then find the value of a.",
+    "Declaration": "a: Real; f: Function",
+    "Facts": "ForAll(x ∈ Get_Closed_Interval(-1, 1), Get_Function_Value(f, x) ≥ 0); Get_Function_Expression(f) = Get_Lambda_Function(x, a * x^3 - 3 * x + 1)",
+    "Query": "a = ?",
+    "lean_theorem": "theorem Unexplored_4257 (a : ℝ) (f : ℝ → ℝ)  (h1 : (∀ x ∈ Set.Icc (-1) (1), (f (x)) ≥ 0)) (h2 : f = (λ x => a * x ^ 3 - 3 * x + 1)) : a = sorry := by sorry"
+  },
+  {
+    "index": 87,
+    "Problem": "If a basket is capable of holding 40 fruit altogether, and there are 3 times as many apples as oranges, how many oranges are there?",
+    "Declaration": "Apples: PositiveIntegers; BasketCapacity: PositiveIntegers; Oranges: PositiveIntegers",
+    "Facts": "BasketCapacity = 40; Apples = 3 * Oranges; BasketCapacity = Apples + Oranges",
+    "Query": "Oranges = ?",
+    "lean_theorem": "theorem Unexplored_1869 (Apples : ℕ) (BasketCapacity : ℕ) (Oranges : ℕ)  (h1 : BasketCapacity = 40) (h2 : Apples = 3 * Oranges) (h3 : BasketCapacity = Apples + Oranges) : Oranges = sorry := by sorry"
+  },
+  {
+    "index": 88,
+    "Problem": "If the inverse function of $f(x) = \\frac{x}{x+2}$ is denoted by $y=f^{-1}(x)$, then find the value of $f^{-1}\\left( \\frac{1}{2} \\right)$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x / (x + 2))",
+    "Query": "Get_Function_Value(Get_Inverse_Function(f), 1 / 2) = ?",
+    "lean_theorem": "theorem Unexplored_4298 (f : ℝ → ℝ)  (h1 : f = (λ x => x / ( x + 2 ))) : ((f)⁻¹ (1 / 2)) = sorry := by sorry"
+  },
+  {
+    "index": 89,
+    "Problem": "Consider the function $h(x) = 5x - 6$. Determine the value of $b$ such that $h(b) = 1$.",
+    "Declaration": "h: Function",
+    "Facts": "Get_Function_Expression(h) = Get_Lambda_Function(x, 5*x - 6)",
+    "Query": "Solve_equation(b: Real, Get_Function_Value(h, b) = 1) = ?",
+    "lean_theorem": "theorem Unexplored_4302 (h : ℝ → ℝ)  (h1 : h = (λ x => 5 * x - 6)) : { (b : ℝ) | (h (b)) = 1 } = sorry := by sorry"
+  },
+  {
+    "index": 90,
+    "Problem": "Let \\( f(x) = 5x - 7 \\) and \\( g(x) = 3x + 2 \\). Determine the inverse of the function \\( h(x) = f(g(x)) \\).",
+    "Declaration": "f: Function; g: Function; h: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 5 * x - 7); Get_Function_Expression(g) = Get_Lambda_Function(x, 3 * x + 2); h = Get_Function_Composition(f, g)",
+    "Query": "Get_Inverse_Function(h) = ?",
+    "lean_theorem": "theorem Unexplored_4309 (f : ℝ → ℝ) (g : ℝ → ℝ) (h : ℝ → ℝ)  (h1 : f = (λ x => 5 * x - 7)) (h2 : g = (λ x => 3 * x + 2)) (h3 : h = (f) ∘ (g)) : (h)⁻¹ = sorry := by sorry"
+  },
+  {
+    "index": 91,
+    "Problem": "Consider the revised function $g(x) = x^3 + x^2 + 2\\sqrt{x}$. Evaluate $2g(3) + g(9)$.",
+    "Declaration": "g: Function",
+    "Facts": "Get_Function_Expression(g) = Get_Lambda_Function(x, x^3 + x^2 + 2 * Sqrt(x))",
+    "Query": "2 * Get_Function_Value(g, 3) + Get_Function_Value(g, 9) = ?",
+    "lean_theorem": "theorem Unexplored_4333 (g : ℝ → ℝ)  (h1 : g = (λ x => x ^ 3 + x ^ 2 + 2 * (Real.sqrt (x)))) : 2 * (g (3)) + (g (9)) = sorry := by sorry"
+  },
+  {
+    "index": 92,
+    "Problem": "What is the range of the function \\( f(x) = \\frac{1}{x^3} \\)?",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 1 / (x^3))",
+    "Query": "Get_Function_Range(f) = ?",
+    "lean_theorem": "theorem Unexplored_4433 (f : ℝ → ℝ)  (h1 : f = (λ x => 1 / ( x ^ 3 ))) : Set.range (f) = sorry := by sorry"
+  },
+  {
+    "index": 93,
+    "Problem": "Given the function $f(x) = ax + b$, and that $f(3) = 7$, $f(5) = -1$, find the value of $f(0)$.",
+    "Declaration": "a: Real; b: Real; f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, a * x + b); Get_Function_Value(f, 3) = 7; Get_Function_Value(f, 5) = -1",
+    "Query": "Get_Function_Value(f, 0) = ?",
+    "lean_theorem": "theorem Unexplored_4496 (a : ℝ) (b : ℝ) (f : ℝ → ℝ)  (h1 : f = (λ x => a * x + b)) (h2 : (f (3)) = 7) (h3 : (f (5)) = -1) : (f (0)) = sorry := by sorry"
+  },
+  {
+    "index": 94,
+    "Problem": "The inverse function of $f(x) = 1 + \\log_{2}(x)$ where $x \\ge 1$ is $f^{-1}(x) = \\_\\_\\_\\_\\_\\_$.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 1 + Log(2, x))",
+    "Query": "Get_Function_Expression(Get_Inverse_Function(f)) = ?",
+    "lean_theorem": "theorem Unexplored_4507 (f : ℝ → ℝ)  (h1 : f = (λ x => 1 + (Real.logb (2) (x)))) : (f)⁻¹ = sorry := by sorry"
+  },
+  {
+    "index": 95,
+    "Problem": "$y$ is a function of $x$, and it is known that equal increments in $x$ correspond to equal increments in $y$. Prove that the relationship between $y$ and $x$ can be expressed by the formula $y=ax+b$, where $a$ and $b$ are constants.",
+    "Declaration": "a: Real; b: Real; y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, a * x + b); Get_Function_Value(y, x + 1) - Get_Function_Value(y, x) = a",
+    "Query": "Get_Function_Expression(y) = Get_Lambda_Function(x, a * x + b)",
+    "lean_theorem": "theorem Unexplored_4535 (a : ℝ) (b : ℝ) (y : ℝ → ℝ)  (h1 : y = (λ x => a * x + b)) (h2 : (y (x + 1)) - (y (x)) = a) : y = (λ x => a * x + b) := by sorry"
+  },
+  {
+    "index": 96,
+    "Problem": "Let $g$ be a function satisfying $g(xy) = g(x)y$ for all positive real numbers $x$ and $y$. If $g(400) = 2$, what is the value of $g(800)$?",
+    "Declaration": "g: Function",
+    "Facts": "ForAll(x > 0, ForAll(y > 0, Get_Function_Value(g, x * y) = Get_Function_Value(g, x) * y)); Get_Function_Value(g, 400) = 2",
+    "Query": "Get_Function_Value(g, 800) = ?",
+    "lean_theorem": "theorem Unexplored_4539 (g : ℝ → ℝ)  (h1 : (∀ x > 0, (∀ y > 0, (g (x * y)) = (g (x)) * y))) (h2 : (g (400)) = 2) : (g (800)) = sorry := by sorry"
+  },
+  {
+    "index": 97,
+    "Problem": "Define the function \\( f(x) = 3x^2 - 6x + 2 \\). For what value of \\( x \\) is \\( f(x) \\) equal to \\( f^{-1}(x) \\)?",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 3 * x^2 - 6 * x + 2)",
+    "Query": "Solve_equation(a: Real, Get_Function_Value(f, a) = Get_Function_Value(Get_Inverse_Function(f), a)) = ?",
+    "lean_theorem": "theorem Unexplored_13087 (f : ℝ → ℝ)  (h1 : f = (λ x => 3 * x ^ 2 - 6 * x + 2)) : { (a : ℝ) | (f (a)) = ((f)⁻¹ (a)) } = sorry := by sorry"
+  },
+  {
+    "index": 98,
+    "Problem": "Given the function $f(x)=2^{x}-3$, and $f(m+1)=5$, then $m=$ \\_\\_\\_\\_\\_\\_.",
+    "Declaration": "f: Function",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, 2^x - 3); Get_Function_Value(f, m + 1) = 5",
+    "Query": "m = ?",
+    "lean_theorem": "theorem Unexplored_13088 (f : ℝ → ℝ)  (h1 : f = (λ x => 2 ^ x - 3)) (h2 : (f (m + 1)) = 5) : m = sorry := by sorry"
+  },
+  {
+    "index": 99,
+    "Problem": "Given $0 < x < 2$, find the maximum value of the function $f(x)=x(8-3x)$.",
+    "Declaration": "f: Function, x: Real",
+    "Facts": "Get_Function_Expression(f) = Get_Lambda_Function(x, x * (8 - 3 * x)); 0 < x; x < 2",
+    "Query": "Get_Function_Maximum(f) = ?",
+    "lean_theorem": "theorem Unexplored_13107 (f : ℝ → ℝ)  (h1 : f = (λ x => x * ( 8 - 3 * x ))) (h2 : 0 < x) (h3 : x < 2) : sSup (Set.range f) = sorry := by sorry"
+  },
+  {
+    "index": 100,
+    "Problem": "Consider the function \\( y = \\frac{2x+3}{6x^2 - x - 2} \\). For what \\( x \\)-values does the function have vertical asymptotes?",
+    "Declaration": "y: Function",
+    "Facts": "Get_Function_Expression(y) = Get_Lambda_Function(x, (2 * x + 3) / (6 * x^2 - x - 2))",
+    "Query": "Solve_equation(x: Real, 6 * x^2 - x - 2 = 0) = ?",
+    "lean_theorem": "theorem Unexplored_13198 (y : ℝ → ℝ)  (h1 : y = (λ x => ( 2 * x + 3 ) / ( 6 * x ^ 2 - x - 2 ))) : { (x : ℝ) | 6 * x ^ 2 - x - 2 = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 101,
+    "Problem": "Let $x$, $y$, $z$ be real numbers such that $x + y + z = 7$ and $xy + xz + yz = 10$. Find the largest possible value of $x$.",
+    "Declaration": "S: Set; x: Real; y: Real; z: Real",
+    "Facts": "S = Build_Set(m: Real, m = x ∧ x + y + z = 7 ∧ x * y + x * z + y * z = 10)",
+    "Query": "Get_Set_Maximum(S) = ?",
+    "lean_theorem": "theorem Unexplored_1668 (S : Set ℝ) (x : ℝ) (y : ℝ) (z : ℝ)  (h1 : S = {(m : ℝ) | m = x ∧ x + y + z = 7 ∧ x * y + x * z + y * z = 10}) : sSup S = sorry := by sorry"
+  },
+  {
+    "index": 102,
+    "Problem": "Find all integers \\( a \\) and \\( b \\) such that \\( 7^a - 3 \\times 2^b = 1 \\).",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "",
+    "Query": "Build_Set((a, b), 7^a - 3 * 2^b = 1) = ?",
+    "lean_theorem": "theorem Unexplored_1669 (a : ℤ) (b : ℤ)   : {(a, b) | 7 ^ a - 3 * 2 ^ b = 1} = sorry := by sorry"
+  },
+  {
+    "index": 103,
+    "Problem": "In Arun's opinion, his weight is greater than 64 kg but less than 72 kg. His brother thinks that Arun's weight is greater than 60 kg but less than 70 kg. His mother's view is that his weight cannot be greater than 67 kg. His sister believes that his weight is at least 63 kg but not more than 71 kg. His father is convinced that Arun's weight is more than 62 kg but not exceeding 73 kg. If all five of them are correct in their estimations, what is the average of the different probable weights of Arun within the specified range given by each family member?",
+    "Declaration": "A: Real; B: Real; C: Real; D: Real; E: Real",
+    "Facts": "A > 64; A < 72; B > 60; B < 70; C <= 67; D >= 63; D <= 71; E > 62; E <= 73",
+    "Query": "(A + B + C + D + E) / 5 = ?",
+    "lean_theorem": "theorem Unexplored_1920 (A : ℝ) (B : ℝ) (C : ℝ) (D : ℝ) (E : ℝ)  (h1 : A > 64) (h2 : A < 72) (h3 : B > 60) (h4 : B < 70) (h5 : C <= 67) (h6 : D >= 63) (h7 : D <= 71) (h8 : E > 62) (h9 : E <= 73) : ( A + B + C + D + E ) / 5 = sorry := by sorry"
+  },
+  {
+    "index": 104,
+    "Problem": "For a given positive integer $m > 2^4$, what is the greatest common divisor of $m^5 + 5^3$ and $m + 3$?",
+    "Declaration": "m: PositiveIntegers",
+    "Facts": "m > 2^4",
+    "Query": "Get_GCD(m^5 + 5^3, m + 3) = ?",
+    "lean_theorem": "theorem Unexplored_528 (m : ℕ)  (h1 : m > 2 ^ 4) : (Nat.gcd (m ^ 5 + 5 ^ 3) (m + 3)) = sorry := by sorry"
+  },
+  {
+    "index": 105,
+    "Problem": "For a given positive integer $n > 2^4$, what is the greatest common divisor of $n^4 + 4^2$ and $n + 3$?",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "n > 2^4",
+    "Query": "Get_GCD(n^4 + 4^2, n + 3) = ?",
+    "lean_theorem": "theorem Unexplored_964 (n : ℕ)  (h1 : n > 2 ^ 4) : (Nat.gcd (n ^ 4 + 4 ^ 2) (n + 3)) = sorry := by sorry"
+  },
+  {
+    "index": 106,
+    "Problem": "For a given positive integer $n > 3^2$, what is the greatest common divisor of $n^4 + 3^3$ and $n + 3$?",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "n > 3^2",
+    "Query": "Get_GCD(n^4 + 3^3, n + 3) = ?",
+    "lean_theorem": "theorem Unexplored_2250 (n : ℕ)  (h1 : n > 3 ^ 2) : (Nat.gcd (n ^ 4 + 3 ^ 3) (n + 3)) = sorry := by sorry"
+  },
+  {
+    "index": 107,
+    "Problem": "When the least common multiple of two positive integers is divided by their greatest common divisor, the result is 40. If one integer is 80, what is the smallest possible value of the other integer?",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers",
+    "Facts": "Get_LCM(a, b) / Get_GCD(a, b) = 40; a = 80",
+    "Query": "b = ?",
+    "lean_theorem": "theorem Unexplored_17995 (a : ℕ) (b : ℕ)  (h1 : (Nat.lcm (a) (b)) / (Nat.gcd (a) (b)) = 40) (h2 : a = 80) : b = sorry := by sorry"
+  },
+  {
+    "index": 108,
+    "Problem": "If $\\left|\\frac{20}{x}+1\\right|=4$, find the product of all possible values of $x$. Express your answer as an improper fraction.",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_equation(x: Real, Abs(20 / x + 1) = 4)",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_4628 (S : Set ℝ) [Fintype S] (h1 : S = { (x : ℝ) | (|20 / x + 1|) = 4 }) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 109,
+    "Problem": "What is the product of all real numbers \\(x\\) that are tripled when added to their reciprocals?",
+    "Declaration": "S: Set",
+    "Facts": "S = Build_Set(x: Real, 3 * x = x + (1 / x))",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_4919 (S : Set ℝ) [Fintype S] (h1 : S = {(x : ℝ) | 3 * x = x + ( 1 / x )}) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 110,
+    "Problem": "What is the product of all real numbers that are doubled when added to their reciprocals?",
+    "Declaration": "S: Set",
+    "Facts": "S = Build_Set(x: Real, 2 * x = x + (1 / x))",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_4923 (S : Set ℝ) [Fintype S] (h1 : S = {(x : ℝ) | 2 * x = x + ( 1 / x )}) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 111,
+    "Problem": "If $a$, $b$, and $c$ are positive integers satisfying $ab+c = bc+a = ac+b = 57$, what is the value of $a+b+c$?",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers",
+    "Facts": "a * b + c = 57; a * c + b = 57; b * c + a = 57",
+    "Query": "a + b + c = ?",
+    "lean_theorem": "theorem Unexplored_736 (a : ℕ) (b : ℕ) (c : ℕ)  (h1 : a * b + c = 57) (h2 : a * c + b = 57) (h3 : b * c + a = 57) : a + b + c = sorry := by sorry"
+  },
+  {
+    "index": 112,
+    "Problem": "Let \\(a, b, c\\) be positive real numbers such that \\(a b c = 1\\). Simplify\n\n\\[\n\\frac{1}{1 + a + ab} + \\frac{1}{1 + b + bc} + \\frac{1}{1 + c + ca}.\n\\]",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers",
+    "Facts": "a * b * c = 1",
+    "Query": "1 / (1 + a + a * b) + 1 / (1 + b + b * c) + 1 / (1 + c + c * a) = ?",
+    "lean_theorem": "theorem Unexplored_749 (a : ℝ) (h_a : a > 0) (b : ℝ) (h_b : b > 0) (c : ℝ) (h_c : c > 0)  (h1 : a * b * c = 1) : 1 / ( 1 + a + a * b ) + 1 / ( 1 + b + b * c ) + 1 / ( 1 + c + c * a ) = sorry := by sorry"
+  },
+  {
+    "index": 113,
+    "Problem": "Given real numbers $a$ and $b$ satisfying $(a^{2}+4a+6)(2b^{2}-4b+7)\\leqslant 10$, find $a+2b=\\_\\_\\_\\_\\_\\_$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "(a^2 + 4 * a + 6) * (2 * b^2 - 4 * b + 7) <= 10",
+    "Query": "a + 2 * b = ?",
+    "lean_theorem": "theorem Unexplored_761 (a : ℝ) (b : ℝ)  (h1 : ( a ^ 2 + 4 * a + 6 ) * ( 2 * b ^ 2 - 4 * b + 7 ) <= 10) : a + 2 * b = sorry := by sorry"
+  },
+  {
+    "index": 114,
+    "Problem": "The real numbers \\( a, b, c, \\) and \\( d \\) satisfy\n\\[ a^2 + b^2 + c^2 + 2 = d + \\sqrt{a + b + c - 2d}. \\]\nFind \\( d \\).",
+    "Declaration": "a: Real; b: Real; c: Real; d: Real",
+    "Facts": "a^2 + b^2 + c^2 + 2 = d + Sqrt(a + b + c - 2 * d)",
+    "Query": "d = ?",
+    "lean_theorem": "theorem Unexplored_790 (a : ℝ) (b : ℝ) (c : ℝ) (d : ℝ)  (h1 : a ^ 2 + b ^ 2 + c ^ 2 + 2 = d + (Real.sqrt (a + b + c - 2 * d))) : d = sorry := by sorry"
+  },
+  {
+    "index": 115,
+    "Problem": "If $a$, $b$, and $c$ are positive integers satisfying $ab + c + 10 = bc + a + 10 = ac + b + 10 = 51$, what is the value of $a + b + c$?",
+    "Declaration": "a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers",
+    "Facts": "a * b + c + 10 = 51; a * c + b + 10 = 51; b * c + a + 10 = 51",
+    "Query": "a + b + c = ?",
+    "lean_theorem": "theorem Unexplored_794 (a : ℕ) (b : ℕ) (c : ℕ)  (h1 : a * b + c + 10 = 51) (h2 : a * c + b + 10 = 51) (h3 : b * c + a + 10 = 51) : a + b + c = sorry := by sorry"
+  },
+  {
+    "index": 116,
+    "Problem": "Integers $a$ and $b$ with $a > b > 0$ satisfy $a + b + ab = 119$. What is $a$?",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "a + b + a * b = 119; a > b; b > 0",
+    "Query": "a = ?",
+    "lean_theorem": "theorem Unexplored_11022 (a : ℤ) (b : ℤ)  (h1 : a + b + a * b = 119) (h2 : a > b) (h3 : b > 0) : a = sorry := by sorry"
+  },
+  {
+    "index": 117,
+    "Problem": "Given a positive real number \\( a \\) satisfying \\( a^{a}=(9 a)^{8 a} \\), find the value of \\( \\log _{a} 3 a \\).",
+    "Declaration": "a: PositiveNumbers",
+    "Facts": "a^a = (9 * a)^(8 * a)",
+    "Query": "Log(a, 3 * a) = ?",
+    "lean_theorem": "theorem Unexplored_11032 (a : ℝ) (h_a : a > 0)  (h1 : a ^ a = ( 9 * a ) ^ ( 8 * a )) : (Real.logb (a) (3 * a)) = sorry := by sorry"
+  },
+  {
+    "index": 118,
+    "Problem": "If \\(x+y=\\frac{5}{8}\\) and \\(x-y=\\frac{3}{8}\\), what is the value of \\(x^2-y^2\\)? Express your answer as a common fraction.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x + y = 5/8; x - y = 3/8",
+    "Query": "x^2 - y^2 = ?",
+    "lean_theorem": "theorem Unexplored_93 (x : ℝ) (y : ℝ)  (h1 : x + y = 5 / 8) (h2 : x - y = 3 / 8) : x ^ 2 - y ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 119,
+    "Problem": "Real numbers $x$ and $y$ have an arithmetic mean of 20 and a geometric mean of 10. Find $x^2+y^2$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "(x + y) / 2 = 20; Sqrt(x * y) = 10",
+    "Query": "x^2 + y^2 = ?",
+    "lean_theorem": "theorem Unexplored_7513 (x : ℝ) (y : ℝ)  (h1 : ( x + y ) / 2 = 20) (h2 : (Real.sqrt (x * y)) = 10) : x ^ 2 + y ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 120,
+    "Problem": "Given $x$ and $y$ are positive real numbers, find the minimum value of $\\frac{y}{x}+\\frac{{16x}}{{2x+y}}$.",
+    "Declaration": "x: PositiveNumbers; y: PositiveNumbers",
+    "Facts": "",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = (y / x) + (16 * x) / (2 * x + y))) = ?",
+    "lean_theorem": "theorem Unexplored_7911 (x : ℝ) (h_x : x > 0) (y : ℝ) (h_y : y > 0)   : sInf {(a : ℝ) | a = ( y / x ) + ( 16 * x ) / ( 2 * x + y )} = sorry := by sorry"
+  },
+  {
+    "index": 121,
+    "Problem": "Let $x,$ $y,$ $z$ be positive real numbers such that $xyz = 18.$  Find the minimum value of $x + 3y + 6z.$",
+    "Declaration": "x: PositiveNumbers; y: PositiveNumbers; z: PositiveNumbers",
+    "Facts": "x * y * z = 18",
+    "Query": "Get_Set_Minimum(Build_Set(a: Real, a = x + 3 * y + 6 * z)) = ?",
+    "lean_theorem": "theorem Unexplored_7916 (x : ℝ) (h_x : x > 0) (y : ℝ) (h_y : y > 0) (z : ℝ) (h_z : z > 0)  (h1 : x * y * z = 18) : sInf {(a : ℝ) | a = x + 3 * y + 6 * z} = sorry := by sorry"
+  },
+  {
+    "index": 122,
+    "Problem": "Two real numbers $x$ and $y$ satisfy $x-y=6$ and $x^3-y^3=162$. Compute $xy$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x - y = 6; x^3 - y^3 = 162",
+    "Query": "x * y = ?",
+    "lean_theorem": "theorem Unexplored_8017 (x : ℝ) (y : ℝ)  (h1 : x - y = 6) (h2 : x ^ 3 - y ^ 3 = 162) : x * y = sorry := by sorry"
+  },
+  {
+    "index": 123,
+    "Problem": "Let $C$ and $D$ be real numbers such that $\\frac{C}{x-3} + D(x+2) = \\frac{-5x^2 + 18x + 40}{x-3}$. What is $C+D$?",
+    "Declaration": "C: Real; D: Real",
+    "Facts": "C / (x - 3) + D * (x + 2) = (-5 * x^2 + 18 * x + 40) / (x - 3)",
+    "Query": "C + D = ?",
+    "lean_theorem": "theorem Unexplored_17676 (C : ℝ) (D : ℝ)  (h1 : C / ( x - 3 ) + D * ( x + 2 ) = ( -5 * x ^ 2 + 18 * x + 40 ) / ( x - 3 )) : C + D = sorry := by sorry"
+  },
+  {
+    "index": 124,
+    "Problem": "If $\\left\\lfloor n^2/5 \\right\\rfloor - \\lfloor n/2 \\rfloor^2 = 3$, find all integer values of $n$.",
+    "Declaration": "n: Integers",
+    "Facts": "",
+    "Query": "Solve_equation(n: Integers, Get_Number_Floor(n^2 / 5) - Get_Number_Floor(n / 2)^2 = 3) = ?",
+    "lean_theorem": "theorem Unexplored_945 (n : ℤ)   : { (n : ℤ) | ⌊(n ^ 2 / 5: Real)⌋ - ⌊(n / 2: Real)⌋ ^ 2 = 3 } = sorry := by sorry"
+  },
+  {
+    "index": 125,
+    "Problem": "Determine the sum of all real numbers $x$ satisfying\n\\[(x^2-6x+4)^{x^2-7x+6} = 1.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, (x^2 - 6*x + 4) ^ (x^2 - 7*x + 6) = 1)) = ?",
+    "lean_theorem": "theorem Unexplored_1060  [Fintype { (x : ℝ) | ( x ^ 2 - 6 * x + 4 ) ^ ( x ^ 2 - 7 * x + 6 ) = 1 }]  : ∑ i ∈ { (x : ℝ) | ( x ^ 2 - 6 * x + 4 ) ^ ( x ^ 2 - 7 * x + 6 ) = 1 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 126,
+    "Problem": "Simplify the fraction: $(1-\\frac{1}{x+2})÷\\frac{{x}^{2}-1}{x+2}$, where $x=\\sqrt{3}+1$.",
+    "Declaration": "x: Real",
+    "Facts": "x = Sqrt(3) + 1",
+    "Query": "(1 - 1 / (x + 2)) / ((x^2 - 1) / (x + 2)) = ?",
+    "lean_theorem": "theorem Unexplored_1126 (x : ℝ)  (h1 : x = (Real.sqrt (3)) + 1) : ( 1 - 1 / ( x + 2 ) ) / ( ( x ^ 2 - 1 ) / ( x + 2 ) ) = sorry := by sorry"
+  },
+  {
+    "index": 127,
+    "Problem": "Let \\(a\\) and \\(b\\) be positive real numbers such that \\(a + 3b = 1.\\) Find the minimum value of\n\\[\n\\frac{1}{a} + \\frac{3}{b}.\n\\]",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers",
+    "Facts": "a + 3 * b = 1",
+    "Query": "Get_Set_Minimum(Build_Set(x: Real, x = (1 / a) + (3 / b))) = ?",
+    "lean_theorem": "theorem Unexplored_1329 (a : ℝ) (h_a : a > 0) (b : ℝ) (h_b : b > 0)  (h1 : a + 3 * b = 1) : sInf {(x : ℝ) | x = ( 1 / a ) + ( 3 / b )} = sorry := by sorry"
+  },
+  {
+    "index": 128,
+    "Problem": "Calculate $\\sqrt[3]{125} \\cdot \\sqrt[4]{256} \\cdot \\sqrt{16}$ and express it as a positive integer.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "(125 ^ (1 / 3)) * (256 ^ (1 / 4)) * Sqrt(16) = ?",
+    "lean_theorem": "theorem Unexplored_1567    : ( 125 ^ ( 1 / 3 ) ) * ( 256 ^ ( 1 / 4 ) ) * (Real.sqrt (16)) = sorry := by sorry"
+  },
+  {
+    "index": 129,
+    "Problem": "If the real numbers $x$ and $y$ satisfy $x > y > 0$, and $\\log_{2}x+\\log_{2}y=1$, then the minimum value of $\\frac{x^{2}{+}y^{2}}{x\\mathrm{{-}}y}$ is $\\_\\_\\_\\_$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "Log(2, x) + Log(2, y) = 1; x > y; y > 0",
+    "Query": "Get_Set_Minimum(Build_Set(z: Real, z = (x^2 + y^2) / (x - y))) = ?",
+    "lean_theorem": "theorem Unexplored_1893 (x : ℝ) (y : ℝ)  (h1 : (Real.logb (2) (x)) + (Real.logb (2) (y)) = 1) (h2 : x > y) (h3 : y > 0) : sInf {(z : ℝ) | z = ( x ^ 2 + y ^ 2 ) / ( x - y )} = sorry := by sorry"
+  },
+  {
+    "index": 130,
+    "Problem": "Let $x$ and $y$ be real numbers greater than 1 such that\n\\[(\\log_2 x)^3 + (\\log_3 y)^3 + 9 = 9 (\\log_2 x)(\\log_3 y).\\] Compute $x^3 + y^3.$",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "(Log(2, x))^3 + (Log(3, y))^3 + 9 = 9 * Log(2, x) * Log(3, y); x > 1; y > 1",
+    "Query": "x^3 + y^3 = ?",
+    "lean_theorem": "theorem Unexplored_1941 (x : ℝ) (y : ℝ)  (h1 : ( (Real.logb (2) (x)) ) ^ 3 + ( (Real.logb (3) (y)) ) ^ 3 + 9 = 9 * (Real.logb (2) (x)) * (Real.logb (3) (y))) (h2 : x > 1) (h3 : y > 1) : x ^ 3 + y ^ 3 = sorry := by sorry"
+  },
+  {
+    "index": 131,
+    "Problem": "The formula for the power of a product is $\\left(ab\\right)^{m}=\\_\\_\\_\\_\\_\\_$. ($m$ is a positive integer). Please write down the reasoning process for this formula.",
+    "Declaration": "a: Real; b: Real; m: PositiveIntegers",
+    "Facts": "",
+    "Query": "(a * b) ^ m = ?",
+    "lean_theorem": "theorem Unexplored_1949 (a : ℝ) (b : ℝ) (m : ℕ)   : ( a * b ) ^ m = sorry := by sorry"
+  },
+  {
+    "index": 132,
+    "Problem": "The sum of 3 integers a, b and c is 60. a is one third of the sum of b and c and b is a certain fraction of the sum of a and c. The value of c is 35. What is the ratio of b to the sum of a and c?",
+    "Declaration": "a: Integers; b: Integers; c: Integers",
+    "Facts": "a + b + c = 60; a = (b + c) / 3; b = (a + c) * 2 / 5; c = 35",
+    "Query": "b / (a + c) = ?",
+    "lean_theorem": "theorem Unexplored_2036 (a : ℤ) (b : ℤ) (c : ℤ)  (h1 : a + b + c = 60) (h2 : a = ( b + c ) / 3) (h3 : b = ( a + c ) * 2 / 5) (h4 : c = 35) : b / ( a + c ) = sorry := by sorry"
+  },
+  {
+    "index": 133,
+    "Problem": "Let $x$, $y$, and $z$ be real numbers such that\n\\[\\cos 2x + \\cos 2y + \\cos 2z = \\sin 2x + \\sin 2y + \\sin 2z = 0.\\]\nFind the sum of all possible values of $\\cos 4x + \\cos 4y + \\cos 4z.$",
+    "Declaration": "x: Real; y: Real; z: Real",
+    "Facts": "Cos(2*x) + Cos(2*y) + Cos(2*z) = 0; Sin(2*x) + Sin(2*y) + Sin(2*z) = 0",
+    "Query": "Cos(4*x) + Cos(4*y) + Cos(4*z) = ?",
+    "lean_theorem": "theorem Unexplored_2280 (x : ℝ) (y : ℝ) (z : ℝ)  (h1 : Real.cos (2 * x) + Real.cos (2 * y) + Real.cos (2 * z) = 0) (h2 : Real.sin (2 * x) + Real.sin (2 * y) + Real.sin (2 * z) = 0) : Real.cos (4 * x) + Real.cos (4 * y) + Real.cos (4 * z) = sorry := by sorry"
+  },
+  {
+    "index": 134,
+    "Problem": "Find all the integer roots of:\n\\[x^3 - 6x^2 - 4x + 24 = 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Integers, x^3 - 6 * x^2 - 4 * x + 24 = 0) = ?",
+    "lean_theorem": "theorem Unexplored_2335    : { (x : ℤ) | x ^ 3 - 6 * x ^ 2 - 4 * x + 24 = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 135,
+    "Problem": "Leif’s apple tree has 14 apples and his orange tree has 2 dozen oranges. How many more oranges does he have than apples?",
+    "Declaration": "Apples: PositiveIntegers; Oranges: PositiveIntegers",
+    "Facts": "Apples = 14; Oranges = 2 * 12",
+    "Query": "Oranges - Apples = ?",
+    "lean_theorem": "theorem Unexplored_16 (Apples : ℕ) (Oranges : ℕ)  (h1 : Apples = 14) (h2 : Oranges = 2 * 12) : Oranges - Apples = sorry := by sorry"
+  },
+  {
+    "index": 136,
+    "Problem": "Joshua bought 25 oranges for a certain amount. If he sells each one for 60c and makes a profit of 10 cents on each orange, how much did he spend on buying the oranges?",
+    "Declaration": "Cost: Real; Profit: Real",
+    "Facts": "Cost + Profit = 25 * 0.6; Profit = 10 * 0.25",
+    "Query": "Cost = ?",
+    "lean_theorem": "theorem Unexplored_34 (Cost : ℝ) (Profit : ℝ)  (h1 : Cost + Profit = 25 * 0.6) (h2 : Profit = 10 * 0.25) : Cost = sorry := by sorry"
+  },
+  {
+    "index": 137,
+    "Problem": "If a positive integer \\( n \\) is such that \\( \\sqrt{3} \\) is always between \\( 1+\\frac{3}{n} \\) and \\( 1+\\frac{3}{n+1} \\), then what is \\( n \\)?",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "Sqrt(3) > 1 + 3 / n ∧ Sqrt(3) < 1 + 3 / (n + 1)",
+    "Query": "n = ?",
+    "lean_theorem": "theorem Unexplored_2975 (n : ℕ)  (h1 : (Real.sqrt (3)) > 1 + 3 / n ∧ (Real.sqrt (3)) < 1 + 3 / ( n + 1 )) : n = sorry := by sorry"
+  },
+  {
+    "index": 138,
+    "Problem": "The value of $\\log_{10}{25}$ is between which two consecutive integers $c$ and $d$? Find $c+d$.",
+    "Declaration": "c: Integers; d: Integers",
+    "Facts": "Log(10, 25) < d; c < Log(10, 25); d = c + 1",
+    "Query": "c + d = ?",
+    "lean_theorem": "theorem Unexplored_2988 (c : ℤ) (d : ℤ)  (h1 : (Real.logb (10) (25)) < d) (h2 : c < (Real.logb (10) (25))) (h3 : d = c + 1) : c + d = sorry := by sorry"
+  },
+  {
+    "index": 139,
+    "Problem": "Blake goes to the grocery store and spends $40 on oranges, $50 on apples, and $60 on mangoes. He has a certain amount of money and was given $150 change. How much money did he have initially?",
+    "Declaration": "apples: Real; change: Real; mangoes: Real; money: Real; oranges: Real",
+    "Facts": "apples = 50; change = 150; mangoes = 60; oranges = 40; money + apples + mangoes + oranges = money + change",
+    "Query": "money = ?",
+    "lean_theorem": "theorem Unexplored_1929 (apples : ℝ) (change : ℝ) (mangoes : ℝ) (money : ℝ) (oranges : ℝ)  (h1 : apples = 50) (h2 : change = 150) (h3 : mangoes = 60) (h4 : oranges = 40) (h5 : money + apples + mangoes + oranges = money + change) : money = sorry := by sorry"
+  },
+  {
+    "index": 140,
+    "Problem": "Show that\n\n$$\n\\left(a^{2}+b^{2}+c^{2}+d^{2}\\right)^{2} \\geq (a+b)(b+c)(c+d)(d+a)\n$$\n\nfor all positive real numbers \\(a, b, c, d\\).\n\nWhen does equality hold?",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; c: PositiveNumbers; d: PositiveNumbers",
+    "Facts": "",
+    "Query": "(a^2 + b^2 + c^2 + d^2)^2 >= (a + b) * (b + c) * (c + d) * (d + a)",
+    "lean_theorem": "theorem Unexplored_3177 (a : ℝ) (h_a : a > 0) (b : ℝ) (h_b : b > 0) (c : ℝ) (h_c : c > 0) (d : ℝ) (h_d : d > 0)   : ( a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2 ) ^ 2 >= ( a + b ) * ( b + c ) * ( c + d ) * ( d + a ) := by sorry"
+  },
+  {
+    "index": 141,
+    "Problem": "What is $3^{12} \\div 27^2$? Write your answer as an integer.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "3 ^ 12 / 27 ^ 2 = ?",
+    "lean_theorem": "theorem Unexplored_3181    : 3 ^ 12 / 27 ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 142,
+    "Problem": "When positive integer k is divided by 5, the remainder is 2. When k is divided by 6, the remainder is 5. If k is less than 42, what is the remainder when k is divided by 7?",
+    "Declaration": "k: PositiveIntegers",
+    "Facts": "k % 5 = 2; k % 6 = 5; k < 42",
+    "Query": "k % 7 = ?",
+    "lean_theorem": "theorem Unexplored_3253 (k : ℕ)  (h1 : k % 5 = 2) (h2 : k % 6 = 5) (h3 : k < 42) : k % 7 = sorry := by sorry"
+  },
+  {
+    "index": 143,
+    "Problem": "Let \\( y \\) be a positive integer such that \\( 7y \\equiv 1 \\pmod{29} \\).\n\nWhat is the remainder when \\( 8 + y \\) is divided by 29?",
+    "Declaration": "remainder: PositiveIntegers; y: PositiveIntegers",
+    "Facts": "7 * y % 29 = 1; remainder = (8 + y) % 29",
+    "Query": "remainder = ?",
+    "lean_theorem": "theorem Unexplored_8792 (remainder : ℕ) (y : ℕ)  (h1 : 7 * y % 29 = 1) (h2 : remainder = ( 8 + y ) % 29) : remainder = sorry := by sorry"
+  },
+  {
+    "index": 144,
+    "Problem": "Find the minimum value of\n\\[x^2 + xy + y^2\\]over all real numbers $x$ and $y.$",
+    "Declaration": "S: Set; x: Real; y: Real",
+    "Facts": "S = Build_Set(z: Real, z = x^2 + x * y + y^2)",
+    "Query": "Get_Set_Minimum(S) = ?",
+    "lean_theorem": "theorem Unexplored_10267 (S : Set ℝ) (x : ℝ) (y : ℝ)  (h1 : S = {(z : ℝ) | z = x ^ 2 + x * y + y ^ 2}) : sInf S = sorry := by sorry"
+  },
+  {
+    "index": 145,
+    "Problem": "Find all real numbers \\( y \\) such that \n\\[\n\\frac{y^3 + 3y^2}{y^2 + 5y + 6} + y = -8.\n\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(y: Real, (y^3 + 3 * y^2) / (y^2 + 5 * y + 6) + y = -8) = ?",
+    "lean_theorem": "theorem Unexplored_10281    : { (y : ℝ) | ( y ^ 3 + 3 * y ^ 2 ) / ( y ^ 2 + 5 * y + 6 ) + y = -8 } = sorry := by sorry"
+  },
+  {
+    "index": 146,
+    "Problem": "Let $n=4$ be the given power for which there exist positive real numbers $a$ and $b$ such that:\n\\[(a + bi)^4 = (a - bi)^4.\\]\nCompute $\\frac{b}{a}$.",
+    "Declaration": "a: PositiveNumbers; b: PositiveNumbers; n: NaturalNumbers",
+    "Facts": "(a + b * Complex.I) ^ n = (a - b * Complex.I) ^ n; n = 4",
+    "Query": "b / a = ?",
+    "lean_theorem": "theorem Unexplored_10329 (a : ℝ) (h_a : a > 0) (b : ℝ) (h_b : b > 0) (n : ℕ)  (h1 : ( a + b * Complex.I ) ^ n = ( a - b * Complex.I ) ^ n) (h2 : n = 4) : b / a = sorry := by sorry"
+  },
+  {
+    "index": 147,
+    "Problem": "If \\(x\\) is a real number and \\(x^2 = 25\\), what is the sum of all possible values of \\(x\\)?",
+    "Declaration": "S: Set; x: Real",
+    "Facts": "S = Solve_equation(x, x^2 = 25)",
+    "Query": "Get_Set_Sum(S) = ?",
+    "lean_theorem": "theorem Unexplored_10350 (S : Set ℝ) (x : ℝ) [Fintype S] (h1 : S = { x | x ^ 2 = 25 }) : ∑ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 148,
+    "Problem": "The real number \\( a \\) is such that \\( 2a - \\frac{1}{a} = 3 \\). What is \\( 16a^{4} + \\frac{1}{a^{4}} \\)?",
+    "Declaration": "a: Real",
+    "Facts": "2 * a - 1 / a = 3",
+    "Query": "16 * a^4 + 1 / a^4 = ?",
+    "lean_theorem": "theorem Unexplored_10419 (a : ℝ)  (h1 : 2 * a - 1 / a = 3) : 16 * a ^ 4 + 1 / a ^ 4 = sorry := by sorry"
+  },
+  {
+    "index": 149,
+    "Problem": "Let \\( p, q, \\) and \\( r \\) be real numbers such that\n\\[\np^3 - 18p^2 + 27p - 72 = 0 \\quad \\text{and} \\quad 27q^3 - 243q^2 + 729q - 972 = 0 \\quad \\text{and} \\quad 3r = 9.\n\\]\nCompute \\( p + q + r. \\)",
+    "Declaration": "p: Real; q: Real; r: Real",
+    "Facts": "27 * q^3 - 243 * q^2 + 729 * q - 972 = 0; 3 * r = 9; p^3 - 18 * p^2 + 27 * p - 72 = 0",
+    "Query": "p + q + r = ?",
+    "lean_theorem": "theorem Unexplored_10499 (p : ℝ) (q : ℝ) (r : ℝ)  (h1 : 27 * q ^ 3 - 243 * q ^ 2 + 729 * q - 972 = 0) (h2 : 3 * r = 9) (h3 : p ^ 3 - 18 * p ^ 2 + 27 * p - 72 = 0) : p + q + r = sorry := by sorry"
+  },
+  {
+    "index": 150,
+    "Problem": "Find all real numbers $x$ which satisfy \\[\\frac{x-2}{x-4} \\ge 3.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, (x - 2) / (x - 4) >= 3) = ?",
+    "lean_theorem": "theorem Unexplored_16536    : { (x : ℝ) | ( x - 2 ) / ( x - 4 ) >= 3 } = sorry := by sorry"
+  },
+  {
+    "index": 151,
+    "Problem": "Find the largest constant $D$ so that\n\\[x^2 + y^2 + 4 \\ge D(x + y)\\]\nfor all real numbers $x$ and $y$.",
+    "Declaration": "D: Real; x: Real; y: Real",
+    "Facts": "",
+    "Query": "Get_Set_Maximum(Build_Set(D, x^2 + y^2 + 4 >= D * (x + y))) = ?",
+    "lean_theorem": "theorem Unexplored_16582 (D : ℝ) (x : ℝ) (y : ℝ)   : sSup {D | x ^ 2 + y ^ 2 + 4 >= D * ( x + y )} = sorry := by sorry"
+  },
+  {
+    "index": 152,
+    "Problem": "If $(1-2i)(x+i)=4-3i$ (where $i$ is the imaginary unit), then the real number $x$ is.",
+    "Declaration": "x: Real",
+    "Facts": "(1 - 2 * Complex.I) * (x + Complex.I) = 4 - 3 * Complex.I",
+    "Query": "x = ?",
+    "lean_theorem": "theorem Unexplored_16804 (x : ℝ)  (h1 : ( 1 - 2 * Complex.I ) * ( x + Complex.I ) = 4 - 3 * Complex.I) : x = sorry := by sorry"
+  },
+  {
+    "index": 153,
+    "Problem": "Let \\( x \\) be a positive real number. Find the maximum possible value of\n\\[ \n\\frac{x^2 + 2 - \\sqrt{x^4 + 4}}{x}. \n\\]",
+    "Declaration": "x: PositiveNumbers",
+    "Facts": "None",
+    "Query": "Get_Set_Maximum(Build_Set(y: Real, y = (x^2 + 2 - Sqrt(x^4 + 4)) / x)) = ?",
+    "lean_theorem": "theorem Unexplored_17868 (x : ℝ) (h_x : x > 0)  (h1 : None) : sSup {(y : ℝ) | y = ( x ^ 2 + 2 - (Real.sqrt (x ^ 4 + 4)) ) / x} = sorry := by sorry"
+  },
+  {
+    "index": 154,
+    "Problem": "Prove that \\(5 x^{2}+5 y^{2}+8 x y+2 y-2 x+2 \\geqslant 0\\) for any real numbers \\(x\\) and \\(y\\).",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "None",
+    "Query": "5 * x^2 + 5 * y^2 + 8 * x * y + 2 * y - 2 * x + 2 >= 0",
+    "lean_theorem": "theorem Unexplored_17910 (x : ℝ) (y : ℝ)  (h1 : None) : 5 * x ^ 2 + 5 * y ^ 2 + 8 * x * y + 2 * y - 2 * x + 2 >= 0 := by sorry"
+  },
+  {
+    "index": 155,
+    "Problem": "For real numbers \\( a, b, c \\), the following equality holds:\n\n\\[ a^{2} + b^{2} + c^{2} = ab + bc + ca \\]\n\nProve that \\( a = b = c \\).",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "a^2 + b^2 + c^2 = a * b + b * c + c * a",
+    "Query": "a = b ∧ b = c ∧ c = a",
+    "lean_theorem": "theorem Unexplored_18005 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : a ^ 2 + b ^ 2 + c ^ 2 = a * b + b * c + c * a) : a = b ∧ b = c ∧ c = a := by sorry"
+  },
+  {
+    "index": 156,
+    "Problem": "Find the minimum value of the expression\n\\[\\sin^6 x + 2\\cos^6 x\\]\nas $x$ varies over all real numbers.",
+    "Declaration": "S: Set; x: Real",
+    "Facts": "S = Build_Set(m: Real, m = (Sin(x))^6 + 2 * (Cos(x))^6)",
+    "Query": "Get_Set_Minimum(S) = ?",
+    "lean_theorem": "theorem Unexplored_64 (S : Set ℝ) (x : ℝ)  (h1 : S = {(m : ℝ) | m = ( Real.sin (x) ) ^ 6 + 2 * ( Real.cos (x) ) ^ 6}) : sInf S = sorry := by sorry"
+  },
+  {
+    "index": 157,
+    "Problem": "Let $f$, $g$, and $h$ be polynomials such that $h(x) = f(x)\\cdot g(x)$. If the constant term of $f(x)$ is $-6$ and the constant term of $h(x)$ is 2, what is $g(0)$?",
+    "Declaration": "f: Polynomial; g: Polynomial; h: Polynomial",
+    "Facts": "Get_ConstantTerm(f) = -6; Get_ConstantTerm(h) = 2; h = f * g",
+    "Query": "Eval_Value_Polynomial(g, 0) = ?",
+    "lean_theorem": "theorem Unexplored_229 (f : Polynomial ℝ) (g : Polynomial ℝ) (h : Polynomial ℝ)  (h1 : (f).coeff 0 = -6) (h2 : (h).coeff 0 = 2) (h3 : h = f * g) : (eval (0) (g)) = sorry := by sorry"
+  },
+  {
+    "index": 158,
+    "Problem": "Let \\( f(x) = -6x^2 + 2x - 7 \\), \\( g(x) = -4x^2 + 4x - 3 \\), and \\( h(x) = 10x^2 + 6x + 2 \\). Calculate \\( f(x) + g(x) + h(x)^2 \\) as a single polynomial, with the terms in order by decreasing degree.",
+    "Declaration": "f: Polynomial; g: Polynomial; h: Polynomial",
+    "Facts": "f = -6 * X^2 + 2 * X - 7; g = -4 * X^2 + 4 * X - 3; h = 10 * X^2 + 6 * X + 2",
+    "Query": "f + g + h^2 = ?",
+    "lean_theorem": "theorem Unexplored_565 (f : Polynomial ℝ) (g : Polynomial ℝ) (h : Polynomial ℝ)  (h1 : f = -6 * X ^ 2 + 2 * X - 7) (h2 : g = -4 * X ^ 2 + 4 * X - 3) (h3 : h = 10 * X ^ 2 + 6 * X + 2) : f + g + h ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 159,
+    "Problem": "Evaluate the degree of the polynomial resulting from the expression \\((3x^5 + 2x^4 - x^2 + 7)(4x^{11} - 8x^6 + 2x^5 - 15) - (x^3 + 6)^6\\).",
+    "Declaration": "P: Polynomial",
+    "Facts": "P = (3 * X^5 + 2 * X^4 - X^2 + 7) * (4 * X^11 - 8 * X^6 + 2 * X^5 - 15) - (X^3 + 6)^6",
+    "Query": "Get_PolyDegree(P) = ?",
+    "lean_theorem": "theorem Unexplored_2145 (P : Polynomial ℝ)  (h1 : P = ( 3 * X ^ 5 + 2 * X ^ 4 - X ^ 2 + 7 ) * ( 4 * X ^ 11 - 8 * X ^ 6 + 2 * X ^ 5 - 15 ) - ( X ^ 3 + 6 ) ^ 6) : (P).natDegree = sorry := by sorry"
+  },
+  {
+    "index": 160,
+    "Problem": "If $f(x) = -9x^5 + 4x^3 + 2x - 6$, and $g(x)$ is a polynomial such that the degree of $f(x) + g(x)$ is 2, what is the degree of $g(x)$?",
+    "Declaration": "f: Polynomial; g: Polynomial",
+    "Facts": "Get_PolyDegree(f + g) = 2; f = -9 * X^5 + 4 * X^3 + 2 * X - 6",
+    "Query": "Get_PolyDegree(g) = ?",
+    "lean_theorem": "theorem Unexplored_2233 (f : Polynomial ℝ) (g : Polynomial ℝ)  (h1 : (f + g).natDegree = 2) (h2 : f = -9 * X ^ 5 + 4 * X ^ 3 + 2 * X - 6) : (g).natDegree = sorry := by sorry"
+  },
+  {
+    "index": 161,
+    "Problem": "Let $f(x) = -9x^5 + 5x^4 + 2x^2 - x + 6$, and suppose $g(x)$ is a polynomial such that the degree of $f(x) + g(x)$ is 0. What is the degree of $g(x)$?",
+    "Declaration": "f: Polynomial; g: Polynomial",
+    "Facts": "Get_PolyDegree(f + g) = 0; f = -9 * X^5 + 5 * X^4 + 2 * X^2 - X + 6",
+    "Query": "Get_PolyDegree(g) = ?",
+    "lean_theorem": "theorem Unexplored_2737 (f : Polynomial ℝ) (g : Polynomial ℝ)  (h1 : (f + g).natDegree = 0) (h2 : f = -9 * X ^ 5 + 5 * X ^ 4 + 2 * X ^ 2 - X + 6) : (g).natDegree = sorry := by sorry"
+  },
+  {
+    "index": 162,
+    "Problem": "Let \\( f(x) = -6x^5 + 2x^4 + 5x^2 - 4 \\), and \\( h(x) \\) be a polynomial such that the degree of \\( f(x) + h(x) \\) is 2. What is the degree of \\( h(x) \\)?",
+    "Declaration": "f: Polynomial; h: Polynomial",
+    "Facts": "Get_PolyDegree(f + h) = 2; f = -6 * X^5 + 2 * X^4 + 5 * X^2 - 4",
+    "Query": "Get_PolyDegree(h) = ?",
+    "lean_theorem": "theorem Unexplored_2765 (f : Polynomial ℝ) (h : Polynomial ℝ)  (h1 : (f + h).natDegree = 2) (h2 : f = -6 * X ^ 5 + 2 * X ^ 4 + 5 * X ^ 2 - 4) : (h).natDegree = sorry := by sorry"
+  },
+  {
+    "index": 163,
+    "Problem": "The cubic polynomial\n\\[27x^3 - 9x^2 - 9x - 3 = 0\\]\nhas a real root of the form $\\frac{\\sqrt[3]{a} + \\sqrt[3]{b} + 1}{c},$ where $a,$ $b,$ and $c$ are positive integers. Find $a + b + c.$",
+    "Declaration": "P: CubicPolynomial; a: PositiveIntegers; b: PositiveIntegers; c: PositiveIntegers; x1: Real",
+    "Facts": "Is_Polynomial_Root(P, x1) = True; P = 27 * X^3 - 9 * X^2 - 9 * X - 3; x1 = (a ^ (1/3) + b ^ (1/3) + 1) / c",
+    "Query": "a + b + c = ?",
+    "lean_theorem": "theorem Unexplored_5816 (P : Polynomial ℝ) (P_degree : P.natDegree = 3) (P_leading_nonzero : P.leadingCoeff ≠ 0) (P_discriminant : ℝ) (P_discriminant_def : P_discriminant = P.coeff 2 ^ 2 - 3 * P.coeff 3 * P.coeff 1) (a : ℕ) (b : ℕ) (c : ℕ) (x1 : ℝ)  (h1 : (IsRoot (P) (x1)) = True) (h2 : P = 27 * X ^ 3 - 9 * X ^ 2 - 9 * X - 3) (h3 : x1 = ( a ^ ( 1 / 3 ) + b ^ ( 1 / 3 ) + 1 ) / c) : a + b + c = sorry := by sorry"
+  },
+  {
+    "index": 164,
+    "Problem": "Find the roots of the polynomial $3x^4 + 17x^3 - 32x^2 - 12x$. Enter your answer as a list of numbers separated by commas.",
+    "Declaration": "P: Polynomial",
+    "Facts": "P = 3 * X^4 + 17 * X^3 - 32 * X^2 - 12 * X",
+    "Query": "Get_Polyroots(P) = ?",
+    "lean_theorem": "theorem Unexplored_858 (P : Polynomial ℝ)  (h1 : P = 3 * X ^ 4 + 17 * X ^ 3 - 32 * X ^ 2 - 12 * X) : (P).roots = sorry := by sorry"
+  },
+  {
+    "index": 165,
+    "Problem": "Find all roots of the polynomial \\(x^3 - x^2 - 4x + 4\\).",
+    "Declaration": "P: Polynomial",
+    "Facts": "P = X^3 - X^2 - 4 * X + 4",
+    "Query": "Get_Polyroots(P) = ?",
+    "lean_theorem": "theorem Unexplored_817 (P : Polynomial ℝ)  (h1 : P = X ^ 3 - X ^ 2 - 4 * X + 4) : (P).roots = sorry := by sorry"
+  },
+  {
+    "index": 166,
+    "Problem": "Find the greatest root of the polynomial $f(x) = 16x^4 - 8x^3 + 9x^2 - 3x + 1$.",
+    "Declaration": "f: Polynomial",
+    "Facts": "f = 16 * X^4 - 8 * X^3 + 9 * X^2 - 3 * X + 1",
+    "Query": "Get_Polyroots(f) = ?",
+    "lean_theorem": "theorem Unexplored_8498 (f : Polynomial ℝ)  (h1 : f = 16 * X ^ 4 - 8 * X ^ 3 + 9 * X ^ 2 - 3 * X + 1) : (f).roots = sorry := by sorry"
+  },
+  {
+    "index": 167,
+    "Problem": "Calculate the value of the expression $\\frac{10^{100} + 10^{102}}{10^{101} + 10^{101}}$ and determine which whole number it is closest to.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Number_Round( (10^100 + 10^102) / (10^101 + 10^101) ) = ?",
+    "lean_theorem": "theorem Unexplored_6963    : round (( 10 ^ 100 + 10 ^ 102 ) / ( 10 ^ 101 + 10 ^ 101 ): Real) = sorry := by sorry"
+  },
+  {
+    "index": 168,
+    "Problem": "Find the quadratic polynomial $q(x)$ such that $q(-5) = 0,$ $q(3) = 0,$ and $q(2) = -18.$",
+    "Declaration": "q: QuadraticPolynomial",
+    "Facts": "Eval_Value_Polynomial(q, -5) = 0; Eval_Value_Polynomial(q, 2) = -18; Eval_Value_Polynomial(q, 3) = 0",
+    "Query": "q = ?",
+    "lean_theorem": "theorem Unexplored_5743 (q : Polynomial ℝ) (q_degree : q.natDegree = 2) (q_leading_nonzero : q.leadingCoeff ≠ 0) (q_discriminant : ℝ) (q_discriminant_def : q_discriminant = q.coeff 1 ^ 2 - 4 * q.coeff 2 * q.coeff 0)  (h1 : (eval (-5) (q)) = 0) (h2 : (eval (2) (q)) = -18) (h3 : (eval (3) (q)) = 0) : q = sorry := by sorry"
+  },
+  {
+    "index": 169,
+    "Problem": "Let $f$, $g$, and $h$ be polynomials where $h(x) = f(x) \\cdot g(x)$. Assume $f(x)$ has a constant term of $5$ and $h(x)$ has a constant term of $-10$. If $g(x)$ is a quadratic polynomial, what is the constant term $g(0)$?",
+    "Declaration": "f: Polynomial; g: QuadraticPolynomial; h: Polynomial",
+    "Facts": "Get_ConstantTerm(f) = 5; Get_ConstantTerm(h) = -10; h = f * g",
+    "Query": "Eval_Value_Polynomial(g, 0) = ?",
+    "lean_theorem": "theorem Unexplored_5921 (f : Polynomial ℝ) (g : Polynomial ℝ) (g_degree : g.natDegree = 2) (g_leading_nonzero : g.leadingCoeff ≠ 0) (g_discriminant : ℝ) (g_discriminant_def : g_discriminant = g.coeff 1 ^ 2 - 4 * g.coeff 2 * g.coeff 0) (h : Polynomial ℝ)  (h1 : (f).coeff 0 = 5) (h2 : (h).coeff 0 = -10) (h3 : h = f * g) : (eval (0) (g)) = sorry := by sorry"
+  },
+  {
+    "index": 170,
+    "Problem": "Let $p$, $q$, and $r$ be polynomials such that $r(x) = p(x) \\cdot q(x)$. If the constant term of $p(x)$ is 5 and the constant term of $r(x)$ is -10, what is $q(0)$?",
+    "Declaration": "p: Polynomial; q: Polynomial; r: Polynomial",
+    "Facts": "Get_ConstantTerm(p) = 5; Get_ConstantTerm(r) = -10; r = p * q",
+    "Query": "Eval_Value_Polynomial(q, 0) = ?",
+    "lean_theorem": "theorem Unexplored_6731 (p : Polynomial ℝ) (q : Polynomial ℝ) (r : Polynomial ℝ)  (h1 : (p).coeff 0 = 5) (h2 : (r).coeff 0 = -10) (h3 : r = p * q) : (eval (0) (q)) = sorry := by sorry"
+  },
+  {
+    "index": 171,
+    "Problem": "Given the polynomial function $f(x)=2x^{5}-5x^{4}-4x^{3}+3x^{2}-524$, find the value of the function when $x=5$ ___.",
+    "Declaration": "f: Polynomial; x: Real",
+    "Facts": "f = 2 * X^5 - 5 * X^4 - 4 * X^3 + 3 * X^2 - 524; x = 5",
+    "Query": "Eval_Value_Polynomial(f, x) = ?",
+    "lean_theorem": "theorem Unexplored_8558 (f : Polynomial ℝ) (x : ℝ)  (h1 : f = 2 * X ^ 5 - 5 * X ^ 4 - 4 * X ^ 3 + 3 * X ^ 2 - 524) (h2 : x = 5) : (eval (x) (f)) = sorry := by sorry"
+  },
+  {
+    "index": 172,
+    "Problem": "Find the quadratic polynomial \\( q(x) \\) such that \\( q(-3) = 0, \\) \\( q(6) = 0, \\) and \\( q(7) = -45. \\)",
+    "Declaration": "q: QuadraticPolynomial",
+    "Facts": "Eval_Value_Polynomial(q, -3) = 0; Eval_Value_Polynomial(q, 6) = 0; Eval_Value_Polynomial(q, 7) = -45",
+    "Query": "q = ?",
+    "lean_theorem": "theorem Unexplored_10474 (q : Polynomial ℝ) (q_degree : q.natDegree = 2) (q_leading_nonzero : q.leadingCoeff ≠ 0) (q_discriminant : ℝ) (q_discriminant_def : q_discriminant = q.coeff 1 ^ 2 - 4 * q.coeff 2 * q.coeff 0)  (h1 : (eval (-3) (q)) = 0) (h2 : (eval (6) (q)) = 0) (h3 : (eval (7) (q)) = -45) : q = sorry := by sorry"
+  },
+  {
+    "index": 173,
+    "Problem": "Let $f(x)=-3x^2+x-4$, $g(x)=-5x^2+3x-8$, and $h(x)=5x^2+5x+1$. Express $f(x)+g(x)+h(x)$ as a single polynomial, with the terms in order by decreasing degree.",
+    "Declaration": "f: Polynomial; g: Polynomial; h: Polynomial",
+    "Facts": "f = -3 * X^2 + X - 4; g = -5 * X^2 + 3 * X - 8; h = 5 * X^2 + 5 * X + 1",
+    "Query": "f + g + h = ?",
+    "lean_theorem": "theorem Unexplored_238 (f : Polynomial ℝ) (g : Polynomial ℝ) (h : Polynomial ℝ)  (h1 : f = -3 * X ^ 2 + X - 4) (h2 : g = -5 * X ^ 2 + 3 * X - 8) (h3 : h = 5 * X ^ 2 + 5 * X + 1) : f + g + h = sorry := by sorry"
+  },
+  {
+    "index": 174,
+    "Problem": "Evaluate the expression $2a^2 - 3b^2 + ab$ where $a = 4$ and $b = -2$.",
+    "Declaration": "a: Real; b: Real",
+    "Facts": "a = 4; b = -2",
+    "Query": "2 * a ^ 2 - 3 * b ^ 2 + a * b = ?",
+    "lean_theorem": "theorem Unexplored_244 (a : ℝ) (b : ℝ)  (h1 : a = 4) (h2 : b = -2) : 2 * a ^ 2 - 3 * b ^ 2 + a * b = sorry := by sorry"
+  },
+  {
+    "index": 175,
+    "Problem": "Find the minimum value of the expression\n\\[6x + \\frac{1}{x^6}\\]\nfor \\(x > 0\\).",
+    "Declaration": "S: Set; x: Real",
+    "Facts": "S = Build_Set(a: Real, a = 6 * x + 1 / (x^6) ∧ x > 0)",
+    "Query": "Get_Set_Minimum(S) = ?",
+    "lean_theorem": "theorem Unexplored_246 (S : Set ℝ) (x : ℝ)  (h1 : S = {(a : ℝ) | a = 6 * x + 1 / ( x ^ 6 ) ∧ x > 0}) : sInf S = sorry := by sorry"
+  },
+  {
+    "index": 176,
+    "Problem": "We are given:\n$$ 100 + (120 \\div 15) + (18 \\cdot 20) - 250 - (360 \\div 12) = ? $$\nWhat does this expression equal?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "100 + (120 / 15) + (18 * 20) - 250 - (360 / 12) = ?",
+    "lean_theorem": "theorem Unexplored_253    : 100 + ( 120 / 15 ) + ( 18 * 20 ) - 250 - ( 360 / 12 ) = sorry := by sorry"
+  },
+  {
+    "index": 177,
+    "Problem": "What is the value of the expression $2x^3 + 3x^2 - 7x + 4$, when $x = 2$?",
+    "Declaration": "x: Real",
+    "Facts": "x = 2",
+    "Query": "2 * x^3 + 3 * x^2 - 7 * x + 4 = ?",
+    "lean_theorem": "theorem Unexplored_254 (x : ℝ)  (h1 : x = 2) : 2 * x ^ 3 + 3 * x ^ 2 - 7 * x + 4 = sorry := by sorry"
+  },
+  {
+    "index": 178,
+    "Problem": "Determine the value of the expression $i^{4n}+i^{4n+1}+i^{4n+2}+i^{4n+3}$, where $n$ is a positive integer.",
+    "Declaration": "n: PositiveIntegers",
+    "Facts": "",
+    "Query": "Complex.I ^ (4 * n) + Complex.I ^ (4 * n + 1) + Complex.I ^ (4 * n + 2) + Complex.I ^ (4 * n + 3) = ?",
+    "lean_theorem": "theorem Unexplored_266 (n : ℕ)   : Complex.I ^ ( 4 * n ) + Complex.I ^ ( 4 * n + 1 ) + Complex.I ^ ( 4 * n + 2 ) + Complex.I ^ ( 4 * n + 3 ) = sorry := by sorry"
+  },
+  {
+    "index": 179,
+    "Problem": "If the value of the algebraic expression $x^2 + 3x - 5$ is 2, then the value of the algebraic expression $2x^2 + 6x - 3$ is.",
+    "Declaration": "x: Real",
+    "Facts": "x^2 + 3 * x - 5 = 2",
+    "Query": "2 * x^2 + 6 * x - 3 = ?",
+    "lean_theorem": "theorem Unexplored_292 (x : ℝ)  (h1 : x ^ 2 + 3 * x - 5 = 2) : 2 * x ^ 2 + 6 * x - 3 = sorry := by sorry"
+  },
+  {
+    "index": 180,
+    "Problem": "Suppose that $m, m+2, m+4, m+6, m+8$ are five consecutive even integers.\n\nDetermine a simplified expression for the sum of these five consecutive even integers.",
+    "Declaration": "m: EvenNumbers",
+    "Facts": "",
+    "Query": "m + (m + 2) + (m + 4) + (m + 6) + (m + 8) = ?",
+    "lean_theorem": "theorem Unexplored_297 (m : ℤ) (h_m : Even m)   : m + ( m + 2 ) + ( m + 4 ) + ( m + 6 ) + ( m + 8 ) = sorry := by sorry"
+  },
+  {
+    "index": 181,
+    "Problem": "I take variable $b$, triple it, and add six. I subtract $5b$ from this new expression and divide the resulting difference by three. What is my final expression in simplest form?",
+    "Declaration": "b: Real",
+    "Facts": "",
+    "Query": "(3 * b + 6 - 5 * b) / 3 = ?",
+    "lean_theorem": "theorem Unexplored_304 (b : ℝ)   : ( 3 * b + 6 - 5 * b ) / 3 = sorry := by sorry"
+  },
+  {
+    "index": 182,
+    "Problem": "Evaluate the expression \\[ \\frac{a+3}{a+1} \\cdot \\frac{b-2}{b-3} \\cdot \\frac{c + 9}{c+7} , \\] given that $c = b-11$, $b = a+3$, $a = 5$, and none of the denominators are zero.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "a + 1 != 0; a = 5; b - 3 != 0; b = a + 3; c + 7 != 0; c = b - 11",
+    "Query": "((a + 3) / (a + 1)) * ((b - 2) / (b - 3)) * ((c + 9) / (c + 7)) = ?",
+    "lean_theorem": "theorem Unexplored_308 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : a + 1 != 0) (h2 : a = 5) (h3 : b - 3 != 0) (h4 : b = a + 3) (h5 : c + 7 != 0) (h6 : c = b - 11) : ( ( a + 3 ) / ( a + 1 ) ) * ( ( b - 2 ) / ( b - 3 ) ) * ( ( c + 9 ) / ( c + 7 ) ) = sorry := by sorry"
+  },
+  {
+    "index": 183,
+    "Problem": "Take a variable \\( c \\), triple it, and then add six. From this result, subtract \\( 6c \\), and then divide the whole expression by three. What is the expression in simplest form?",
+    "Declaration": "c: Real",
+    "Facts": "",
+    "Query": "(3 * c + 6 - 6 * c) / 3 = ?",
+    "lean_theorem": "theorem Unexplored_311 (c : ℝ)   : ( 3 * c + 6 - 6 * c ) / 3 = sorry := by sorry"
+  },
+  {
+    "index": 184,
+    "Problem": "The expression $\\frac{x-5}{6x+12}$ is equal to zero for what value of $x$?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: Real, (x - 5) / (6 * x + 12) = 0) = ?",
+    "lean_theorem": "theorem Unexplored_328    : { (x : ℝ) | ( x - 5 ) / ( 6 * x + 12 ) = 0 } = sorry := by sorry"
+  },
+  {
+    "index": 185,
+    "Problem": "What is the sum of all values of $x$ for which the expression $\\frac{x+3}{x^2 - 7x + 10}$ is undefined?",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, x^2 - 7 * x + 10 = 0)) = ?",
+    "lean_theorem": "theorem Unexplored_357  [Fintype { (x : ℝ) | x ^ 2 - 7 * x + 10 = 0 }]  : ∑ i ∈ { (x : ℝ) | x ^ 2 - 7 * x + 10 = 0 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 186,
+    "Problem": "Evaluate the expression $\\left\\lceil{\\frac{7}{3}}\\right\\rceil+\\left\\lfloor{-\\frac{7}{3}}\\right\\rfloor$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Number_Ceil(7 / 3) + Get_Number_Floor(-7 / 3) = ?",
+    "lean_theorem": "theorem Unexplored_378    : ⌈(7 / 3: Real)⌉ + ⌊(-7 / 3: Real)⌋ = sorry := by sorry"
+  },
+  {
+    "index": 187,
+    "Problem": "The expression \\( 25x^2 - 155x - 150 \\) can be written as \\( (5x + a)(5x + b) \\), where \\( a \\) and \\( b \\) are integers. What is \\( a + 2b \\)?",
+    "Declaration": "a: Integers; b: Integers",
+    "Facts": "25 * x^2 - 155 * x - 150 = (5 * x + a) * (5 * x + b)",
+    "Query": "a + 2 * b = ?",
+    "lean_theorem": "theorem Unexplored_385 (a : ℤ) (b : ℤ)  (h1 : 25 * x ^ 2 - 155 * x - 150 = ( 5 * x + a ) * ( 5 * x + b )) : a + 2 * b = sorry := by sorry"
+  },
+  {
+    "index": 188,
+    "Problem": "What is the degree of the polynomial $(2x^3 + 5x^2 + 1)^{15}$?",
+    "Declaration": "P: Polynomial",
+    "Facts": "P = (2 * X^3 + 5 * X^2 + 1)^15",
+    "Query": "Get_PolyDegree(P) = ?",
+    "lean_theorem": "theorem Unexplored_387 (P : Polynomial ℝ)  (h1 : P = ( 2 * X ^ 3 + 5 * X ^ 2 + 1 ) ^ 15) : (P).natDegree = sorry := by sorry"
+  },
+  {
+    "index": 189,
+    "Problem": "Given the expression $\\dfrac{\\sqrt[3]{8}}{\\sqrt{2}}$, to what power must 2 be raised to equal this expression?",
+    "Declaration": "expr: Real",
+    "Facts": "expr = (8 ^ (1 / 3)) / Sqrt(2)",
+    "Query": "Log(2, expr) = ?",
+    "lean_theorem": "theorem Unexplored_526 (expr : ℝ)  (h1 : expr = ( 8 ^ ( 1 / 3 ) ) / (Real.sqrt (2))) : (Real.logb (2) (expr)) = sorry := by sorry"
+  },
+  {
+    "index": 190,
+    "Problem": "Find the quadratic polynomial $q(x)$ such that $q(-8) = 0,$ $q(3) = 0,$ and $q(6) = -45.$",
+    "Declaration": "q: QuadraticPolynomial",
+    "Facts": "Eval_Value_Polynomial(q, -8) = 0; Eval_Value_Polynomial(q, 3) = 0; Eval_Value_Polynomial(q, 6) = -45",
+    "Query": "q = ?",
+    "lean_theorem": "theorem Unexplored_534 (q : Polynomial ℝ) (q_degree : q.natDegree = 2) (q_leading_nonzero : q.leadingCoeff ≠ 0) (q_discriminant : ℝ) (q_discriminant_def : q_discriminant = q.coeff 1 ^ 2 - 4 * q.coeff 2 * q.coeff 0)  (h1 : (eval (-8) (q)) = 0) (h2 : (eval (3) (q)) = 0) (h3 : (eval (6) (q)) = -45) : q = sorry := by sorry"
+  },
+  {
+    "index": 191,
+    "Problem": "A student, while performing polynomial subtraction, mistakenly thought that subtracting $2a^{2}+3a-5$ was the same as adding $2a^{2}+3a-5$. The answer obtained was $5a^{2}+a-4$ (with no other errors in calculations). What is the correct result? (Please provide a comprehensive calculation, otherwise no credit will be given)",
+    "Declaration": "P: Polynomial; Q: Polynomial",
+    "Facts": "P - Q = 5 * a^2 + a - 4; P + Q = 2 * a^2 + 3 * a - 5",
+    "Query": "P - Q = ?",
+    "lean_theorem": "theorem Unexplored_545 (P : Polynomial ℝ) (Q : Polynomial ℝ)  (h1 : P - Q = 5 * a ^ 2 + a - 4) (h2 : P + Q = 2 * a ^ 2 + 3 * a - 5) : P - Q = sorry := by sorry"
+  },
+  {
+    "index": 192,
+    "Problem": "The numbers \\( x \\) and \\( y \\) are such that \\( x + y = x y = 17 \\). Find the value of the expression:\n\n\\[ \n\\left( x^2 - 17x \\right) \\left( y + \\frac{17}{y} \\right) \n\\]",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "x * y = 17; x + y = 17",
+    "Query": "(x^2 - 17 * x) * (y + 17 / y) = ?",
+    "lean_theorem": "theorem Unexplored_562 (x : ℝ) (y : ℝ)  (h1 : x * y = 17) (h2 : x + y = 17) : ( x ^ 2 - 17 * x ) * ( y + 17 / y ) = sorry := by sorry"
+  },
+  {
+    "index": 193,
+    "Problem": "The quadratic expression $6x^2 + 36x + 216$ can be rewritten in the form $a(x + b)^2 + c$, where $a$, $b$, and $c$ are constants. Find the value of $a + b + c$.",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "6 * x^2 + 36 * x + 216 = a * (x + b)^2 + c",
+    "Query": "a + b + c = ?",
+    "lean_theorem": "theorem Unexplored_566 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : 6 * x ^ 2 + 36 * x + 216 = a * ( x + b ) ^ 2 + c) : a + b + c = sorry := by sorry"
+  },
+  {
+    "index": 194,
+    "Problem": "Find the product of all $x$ such that the expression $\\frac{x^2+3x+1}{x^2+3x-5}$ is undefined.",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_equation(x: Real, x^2 + 3 * x - 5 = 0)",
+    "Query": "Get_Set_Product(S) = ?",
+    "lean_theorem": "theorem Unexplored_874 (S : Set ℝ) [Fintype S] (h1 : S = { (x : ℝ) | x ^ 2 + 3 * x - 5 = 0 }) : ∏ i ∈ S.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 195,
+    "Problem": "ramu bought an old car for rs . 42000 . he spent rs . 10000 on repairs and sold it for rs . 64900 . what is his profit percent ?",
+    "Declaration": "Profit: Real; Price: Real; Repair: Real",
+    "Facts": "Profit = Price - (42000 + Repair); Price = 64900; Repair = 10000",
+    "Query": "Profit / (42000 + Repair) * 100 = ?",
+    "lean_theorem": "theorem Unexplored_8117 (Profit : ℝ) (Price : ℝ) (Repair : ℝ)  (h1 : Profit = Price - ( 42000 + Repair )) (h2 : Price = 64900) (h3 : Repair = 10000) : Profit / ( 42000 + Repair ) * 100 = sorry := by sorry"
+  },
+  {
+    "index": 196,
+    "Problem": "Amanda received some money as a gift. She plans to buy two cassette tapes that cost $9 each and a headphone set that costs $25. After buying these items, she will have $7 left. How much money did she receive as a gift?",
+    "Declaration": "G: Real; T1: Real; T2: Real; H: Real",
+    "Facts": "G = T1 + T2 + H + 7; T1 = 9; T2 = 9; H = 25",
+    "Query": "G = ?",
+    "lean_theorem": "theorem Unexplored_8451 (G : ℝ) (T1 : ℝ) (T2 : ℝ) (H : ℝ)  (h1 : G = T1 + T2 + H + 7) (h2 : T1 = 9) (h3 : T2 = 9) (h4 : H = 25) : G = sorry := by sorry"
+  },
+  {
+    "index": 197,
+    "Problem": "Find the sum of the roots of the equation \\[(2x^4 + 3x^3 - 5x + 15)(7x^3 - 14x^2 + 7x - 21) = 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Get_Set_Sum(Solve_equation(x: Real, (2 * x^4 + 3 * x^3 - 5 * x + 15) * (7 * x^3 - 14 * x^2 + 7 * x - 21) = 0)) = ?",
+    "lean_theorem": "theorem Unexplored_8521  [Fintype { (x : ℝ) | ( 2 * x ^ 4 + 3 * x ^ 3 - 5 * x + 15 ) * ( 7 * x ^ 3 - 14 * x ^ 2 + 7 * x - 21 ) = 0 }]  : ∑ i ∈ { (x : ℝ) | ( 2 * x ^ 4 + 3 * x ^ 3 - 5 * x + 15 ) * ( 7 * x ^ 3 - 14 * x ^ 2 + 7 * x - 21 ) = 0 }.toFinset, i = sorry := by sorry"
+  },
+  {
+    "index": 198,
+    "Problem": "Gabby is saving money to buy a new makeup set which costs $65. She has some money saved and her mom gives her an additional $20. Gabby needs $10 more to buy the set. How much money did Gabby have saved initially?",
+    "Declaration": "InitialMoney: Real; SetPrice: Real",
+    "Facts": "InitialMoney + 20 = SetPrice - 10; SetPrice = 65",
+    "Query": "InitialMoney = ?",
+    "lean_theorem": "theorem Unexplored_8526 (InitialMoney : ℝ) (SetPrice : ℝ)  (h1 : InitialMoney + 20 = SetPrice - 10) (h2 : SetPrice = 65) : InitialMoney = sorry := by sorry"
+  },
+  {
+    "index": 199,
+    "Problem": "Each year Dani gets 4 pairs of two pants each as pay winning the best Amazon buyer of the season. If he initially had 50 pants, calculate the number of pants he'll have in 5 years.",
+    "Declaration": "P: Real; Y: Real",
+    "Facts": "P = 50; Y = 4 * 2 * 5",
+    "Query": "P + Y = ?",
+    "lean_theorem": "theorem Unexplored_8614 (P : ℝ) (Y : ℝ)  (h1 : P = 50) (h2 : Y = 4 * 2 * 5) : P + Y = sorry := by sorry"
+  },
+  {
+    "index": 200,
+    "Problem": "Iris went to the mall to buy clothes.  She bought three jackets at $10 each, two pairs of shorts at $6 each, and four pairs of pants at $12 each. How much did she spend in all?",
+    "Declaration": "jackets: Real; pants: Real; shorts: Real",
+    "Facts": "jackets = 3 * 10; pants = 4 * 12; shorts = 2 * 6",
+    "Query": "jackets + pants + shorts = ?",
+    "lean_theorem": "theorem Unexplored_8793 (jackets : ℝ) (pants : ℝ) (shorts : ℝ)  (h1 : jackets = 3 * 10) (h2 : pants = 4 * 12) (h3 : shorts = 2 * 6) : jackets + pants + shorts = sorry := by sorry"
+  },
+  {
+    "index": 201,
+    "Problem": "Seth and his brother want to see their favorite band in concert. There are three tiers of ticket prices: General Admission for $50.00, Premium Seating for $75.00, and VIP Access for $150.00. They decide on the Premium Seating tickets. There is a 15% processing fee for the tickets. They will also be charged $10.00 for parking and an additional $5.00 per person entrance fee. During the concert, they buy refreshments totaling $20.00 and decide to buy two band t-shirts with a total cost of $40.00. Calculate the total cost of going to the concert, considering all the ticket fees, parking, entrance fees, refreshments, and merchandise.",
+    "Declaration": "processingFee: Real; ticketPrice: Real; totalCost: Real; totalTicketsPrice: Real",
+    "Facts": "processingFee = 0.15; ticketPrice = 75; totalCost = totalTicketsPrice + processingFee * totalTicketsPrice + 10 + 2 * 5 + 20 + 40; totalTicketsPrice = 2 * ticketPrice",
+    "Query": "totalCost = ?",
+    "lean_theorem": "theorem Unexplored_8927 (processingFee : ℝ) (ticketPrice : ℝ) (totalCost : ℝ) (totalTicketsPrice : ℝ)  (h1 : processingFee = 0.15) (h2 : ticketPrice = 75) (h3 : totalCost = totalTicketsPrice + processingFee * totalTicketsPrice + 10 + 2 * 5 + 20 + 40) (h4 : totalTicketsPrice = 2 * ticketPrice) : totalCost = sorry := by sorry"
+  },
+  {
+    "index": 202,
+    "Problem": "Cid owns a mechanic shop, he charges $20 for an oil change, $30 for a repair, and $5 for a car wash. How much money did he earn if he changed the oil of 5 cars, repaired 10 cars, and washed 15 cars?",
+    "Declaration": "ChangeOilPrice: Real; CarWashPrice: Real; RepairPrice: Real",
+    "Facts": "ChangeOilPrice = 20; CarWashPrice = 5; RepairPrice = 30",
+    "Query": "5 * ChangeOilPrice + 10 * RepairPrice + 15 * CarWashPrice = ?",
+    "lean_theorem": "theorem Unexplored_9188 (ChangeOilPrice : ℝ) (CarWashPrice : ℝ) (RepairPrice : ℝ)  (h1 : ChangeOilPrice = 20) (h2 : CarWashPrice = 5) (h3 : RepairPrice = 30) : 5 * ChangeOilPrice + 10 * RepairPrice + 15 * CarWashPrice = sorry := by sorry"
+  },
+  {
+    "index": 203,
+    "Problem": "Sara got her first paycheck of two weeks of work. She had worked 40 hours a week at a certain rate per hour. After buying a new set of tires for her car for $410, she was left with $510. What was her hourly wage?",
+    "Declaration": "hourlyWage: Real; totalHours: Real",
+    "Facts": "40 * totalHours * hourlyWage + 510 - 410 = 510; totalHours = 2",
+    "Query": "hourlyWage = ?",
+    "lean_theorem": "theorem Unexplored_11861 (hourlyWage : ℝ) (totalHours : ℝ)  (h1 : 40 * totalHours * hourlyWage + 510 - 410 = 510) (h2 : totalHours = 2) : hourlyWage = sorry := by sorry"
+  },
+  {
+    "index": 204,
+    "Problem": "Susie babysits every day with varying hours at different rates. On weekdays, she babysits for 4 hours a day at the rate of $12 per hour. On weekends, she babysits for 2.5 hours a day at the rate of $15 per hour. She spent 3/8 of the money she earned from last week to buy a make-up set. She then spent 2/5 of her remaining money on skincare products. Afterwards, she paid 1/6 of her remaining money to cover her cellphone expense. How much is left from her earnings last week, in dollars?",
+    "Declaration": "remaining: Real; spent: Real; total: Real",
+    "Facts": "remaining = total - spent; spent = 3/8 * total + 2/5 * (total - 3/8 * total) + 1/6 * (total - 3/8 * total - 2/5 * (total - 3/8 * total)); total = 4 * 5 * 12 + 2.5 * 2 * 15",
+    "Query": "remaining = ?",
+    "lean_theorem": "theorem Unexplored_11941 (remaining : ℝ) (spent : ℝ) (total : ℝ)  (h1 : remaining = total - spent) (h2 : spent = 3 / 8 * total + 2 / 5 * ( total - 3 / 8 * total ) + 1 / 6 * ( total - 3 / 8 * total - 2 / 5 * ( total - 3 / 8 * total ) )) (h3 : total = 4 * 5 * 12 + 2.5 * 2 * 15) : remaining = sorry := by sorry"
+  },
+  {
+    "index": 205,
+    "Problem": "A customer buys three items: a bag marked at $200, a shirt marked at $80, and a pair of shoes marked at $120. The bag is sold for $120, the shirt for $60, and the pair of shoes for $90. Calculate the overall discount rate for the combined purchase.",
+    "Declaration": "BagPrice: Real; ShirtPrice: Real; ShoesPrice: Real; BagSellPrice: Real; ShirtSellPrice: Real; ShoesSellPrice: Real",
+    "Facts": "BagPrice = 200; ShirtPrice = 80; ShoesPrice = 120; BagSellPrice = 120; ShirtSellPrice = 60; ShoesSellPrice = 90",
+    "Query": "(BagPrice + ShirtPrice + ShoesPrice) - (BagSellPrice + ShirtSellPrice + ShoesSellPrice) / (BagPrice + ShirtPrice + ShoesPrice) = ?",
+    "lean_theorem": "theorem Unexplored_11986 (BagPrice : ℝ) (ShirtPrice : ℝ) (ShoesPrice : ℝ) (BagSellPrice : ℝ) (ShirtSellPrice : ℝ) (ShoesSellPrice : ℝ)  (h1 : BagPrice = 200) (h2 : ShirtPrice = 80) (h3 : ShoesPrice = 120) (h4 : BagSellPrice = 120) (h5 : ShirtSellPrice = 60) (h6 : ShoesSellPrice = 90) : ( BagPrice + ShirtPrice + ShoesPrice ) - ( BagSellPrice + ShirtSellPrice + ShoesSellPrice ) / ( BagPrice + ShirtPrice + ShoesPrice ) = sorry := by sorry"
+  },
+  {
+    "index": 206,
+    "Problem": "Wendy is a very generous kid. Every time her parents buy her some stuff, she always gives some of it to her friends. For her birthday this year, she received a new set of shoes. She now has a total of 33 pairs of shoes. If she was left with 19 pairs of shoes, how many pairs of shoes did she give away to her friends?",
+    "Declaration": "GiftedShoes: PositiveIntegers",
+    "Facts": "GiftedShoes + 19 = 33",
+    "Query": "GiftedShoes = ?",
+    "lean_theorem": "theorem Unexplored_12644 (GiftedShoes : ℕ)  (h1 : GiftedShoes + 19 = 33) : GiftedShoes = sorry := by sorry"
+  },
+  {
+    "index": 207,
+    "Problem": "Joey wants to buy the latest released pair of designer High Jump basketball sneakers. He plans to mow 3 neighbors’ lawns for $8 a lawn, sell 2 collectible figures to his friends for $9 each, and work an after-school job for 10 hours at $5 per hour. If his earnings just cover the price of the High Jump sneakers, how much do the shoes cost?",
+    "Declaration": "Cost: Real; Earnings: Real; Price: Real",
+    "Facts": "Earnings = 3 * 8 + 2 * 9 + 10 * 5; Earnings = Cost",
+    "Query": "Cost = ?",
+    "lean_theorem": "theorem Unexplored_13195 (Cost : ℝ) (Earnings : ℝ) (Price : ℝ)  (h1 : Earnings = 3 * 8 + 2 * 9 + 10 * 5) (h2 : Earnings = Cost) : Cost = sorry := by sorry"
+  },
+  {
+    "index": 208,
+    "Problem": "Carrie's mom gave her some money to go shopping. She bought a sweater for $24, a T-shirt for $6, and a pair of shoes for $11. Carrie has $50 left. How much money did her mom give her?",
+    "Declaration": "MomMoney: Real; Sweater: Real; Tshirt: Real; Shoes: Real",
+    "Facts": "MomMoney - (Sweater + Tshirt + Shoes) = 50; Sweater = 24; Tshirt = 6; Shoes = 11",
+    "Query": "MomMoney = ?",
+    "lean_theorem": "theorem Unexplored_13207 (MomMoney : ℝ) (Sweater : ℝ) (Tshirt : ℝ) (Shoes : ℝ)  (h1 : MomMoney - ( Sweater + Tshirt + Shoes ) = 50) (h2 : Sweater = 24) (h3 : Tshirt = 6) (h4 : Shoes = 11) : MomMoney = sorry := by sorry"
+  },
+  {
+    "index": 209,
+    "Problem": "Seth bought 20 cartons of ice cream and 2 cartons of yogurt. Each carton of ice cream cost $6, and each carton of yogurt cost $1. How much more did Seth spend on ice cream than on yogurt?",
+    "Declaration": "iceCream: Real; yogurt: Real",
+    "Facts": "iceCream = 20 * 6; yogurt = 2 * 1",
+    "Query": "iceCream - yogurt = ?",
+    "lean_theorem": "theorem Unexplored_13238 (iceCream : ℝ) (yogurt : ℝ)  (h1 : iceCream = 20 * 6) (h2 : yogurt = 2 * 1) : iceCream - yogurt = sorry := by sorry"
+  },
+  {
+    "index": 210,
+    "Problem": "Sara's sister has some small notebooks in her closet. Last summer she ordered 6 more notebooks and then lost 2. Now, Sara's sister has 8 notebooks. How many notebooks did Sara's sister have initially?",
+    "Declaration": "N: NaturalNumbers",
+    "Facts": "N + 6 - 2 = 8",
+    "Query": "N = ?",
+    "lean_theorem": "theorem Unexplored_13270 (N : ℕ)  (h1 : N + 6 - 2 = 8) : N = sorry := by sorry"
+  },
+  {
+    "index": 211,
+    "Problem": "Josie received some money as a gift. She plans to buy two cassette tapes that cost $9 each and a headphone set that costs $25. She will have $7 left. How much money did she receive as a gift?",
+    "Declaration": "G: Real; Tape1: Real; Tape2: Real; Headphone: Real",
+    "Facts": "G = Tape1 + Tape2 + Headphone + 7; Tape1 = 9; Tape2 = 9; Headphone = 25",
+    "Query": "G = ?",
+    "lean_theorem": "theorem Unexplored_13933 (G : ℝ) (Tape1 : ℝ) (Tape2 : ℝ) (Headphone : ℝ)  (h1 : G = Tape1 + Tape2 + Headphone + 7) (h2 : Tape1 = 9) (h3 : Tape2 = 9) (h4 : Headphone = 25) : G = sorry := by sorry"
+  },
+  {
+    "index": 212,
+    "Problem": "John's car needs a new engine. The labor costs $75 an hour for 16 hours. The part itself cost $1200. How much did the repairs cost in total?",
+    "Declaration": "LaborPrice: Real; PartPrice: Real",
+    "Facts": "LaborPrice = 75; PartPrice = 1200",
+    "Query": "LaborPrice * 16 + PartPrice = ?",
+    "lean_theorem": "theorem Unexplored_14085 (LaborPrice : ℝ) (PartPrice : ℝ)  (h1 : LaborPrice = 75) (h2 : PartPrice = 1200) : LaborPrice * 16 + PartPrice = sorry := by sorry"
+  },
+  {
+    "index": 213,
+    "Problem": "John's car needs a new engine.  The labor costs $75 an hour for 16 hours.  The part itself cost $1200.  How much did the repairs cost in total?",
+    "Declaration": "LaborPrice: Real; PartPrice: Real",
+    "Facts": "LaborPrice = 75; PartPrice = 1200",
+    "Query": "LaborPrice * 16 + PartPrice = ?",
+    "lean_theorem": "theorem Unexplored_14743 (LaborPrice : ℝ) (PartPrice : ℝ)  (h1 : LaborPrice = 75) (h2 : PartPrice = 1200) : LaborPrice * 16 + PartPrice = sorry := by sorry"
+  },
+  {
+    "index": 214,
+    "Problem": "Ramu bought an old car for Rs. 36,400. He spent Rs. 8,000 on repairs, paid Rs. 4,500 in taxes, and paid Rs. 2,500 for insurance. He then sold the car for Rs. 68,400. What is his profit percent?",
+    "Declaration": "Cost: Real; Insurance: Real; Profit: Real; Taxes: Real",
+    "Facts": "Cost = 36400; Insurance = 2500; Profit = 68400 - (Cost + Taxes + Insurance); Taxes = 4500",
+    "Query": "Profit / (Cost + Taxes + Insurance) * 100 = ?",
+    "lean_theorem": "theorem Unexplored_15350 (Cost : ℝ) (Insurance : ℝ) (Profit : ℝ) (Taxes : ℝ)  (h1 : Cost = 36400) (h2 : Insurance = 2500) (h3 : Profit = 68400 - ( Cost + Taxes + Insurance )) (h4 : Taxes = 4500) : Profit / ( Cost + Taxes + Insurance ) * 100 = sorry := by sorry"
+  },
+  {
+    "index": 215,
+    "Problem": "Seth bought 9 boxes of oranges. He gave a box to his mother. He then gave away half of the remaining boxes. How many boxes of oranges does Seth have left?",
+    "Declaration": "Boxes: Real",
+    "Facts": "Boxes = 9",
+    "Query": "Boxes - 1 - 0.5 * (Boxes - 1) = ?",
+    "lean_theorem": "theorem Unexplored_15631 (Boxes : ℝ)  (h1 : Boxes = 9) : Boxes - 1 - 0.5 * ( Boxes - 1 ) = sorry := by sorry"
+  },
+  {
+    "index": 216,
+    "Problem": "ramu bought an old car for rs . 34000 . he spent rs . 12000 on repairs and sold it for rs . 65000 . what is his profit percent ?",
+    "Declaration": "Profit: Real; RepairCost: Real; SellingPrice: Real; BuyingPrice: Real",
+    "Facts": "Profit = SellingPrice - BuyingPrice; RepairCost = 12000; SellingPrice = 65000; BuyingPrice = 34000 + RepairCost",
+    "Query": "Profit / BuyingPrice * 100 = ?",
+    "lean_theorem": "theorem Unexplored_16878 (Profit : ℝ) (RepairCost : ℝ) (SellingPrice : ℝ) (BuyingPrice : ℝ)  (h1 : Profit = SellingPrice - BuyingPrice) (h2 : RepairCost = 12000) (h3 : SellingPrice = 65000) (h4 : BuyingPrice = 34000 + RepairCost) : Profit / BuyingPrice * 100 = sorry := by sorry"
+  },
+  {
+    "index": 217,
+    "Problem": "Paula's aunt gave her $109 to spend on clothes at the mall. She bought 2 shirts that cost $11 each and a pair of pants that cost $13. How much money does Paula have left to buy more clothes?",
+    "Declaration": "moneyLeft: Real; totalCost: Real",
+    "Facts": "moneyLeft = 109 - 2 * 11 - 13; totalCost = 2 * 11 + 13",
+    "Query": "moneyLeft = ?",
+    "lean_theorem": "theorem Unexplored_17305 (moneyLeft : ℝ) (totalCost : ℝ)  (h1 : moneyLeft = 109 - 2 * 11 - 13) (h2 : totalCost = 2 * 11 + 13) : moneyLeft = sorry := by sorry"
+  },
+  {
+    "index": 218,
+    "Problem": "John buys a pair of earbuds that cost $200. If tax was 15%, how much did he pay after tax?",
+    "Declaration": "PreTaxPrice: Real; TaxRate: Real",
+    "Facts": "PreTaxPrice = 200; TaxRate = 0.15",
+    "Query": "PreTaxPrice + PreTaxPrice * TaxRate = ?",
+    "lean_theorem": "theorem Unexplored_17552 (PreTaxPrice : ℝ) (TaxRate : ℝ)  (h1 : PreTaxPrice = 200) (h2 : TaxRate = 0.15) : PreTaxPrice + PreTaxPrice * TaxRate = sorry := by sorry"
+  },
+  {
+    "index": 219,
+    "Problem": "Given the sets \\( A \\), \\( B \\), and \\( C \\), the following inclusions hold:\n\n\\[ A \\cup B \\subset C, \\quad A \\cup C \\subset B, \\quad B \\cup C \\subset A. \\]\n\nDoes it follow that \\( A = B = C \\)?",
+    "Declaration": "A: Set; B: Set; C: Set",
+    "Facts": "A ∪ B ⊆ C; A ∪ C ⊆ B; B ∪ C ⊆ A",
+    "Query": "A = B ∧ B = C",
+    "lean_theorem": "theorem Unexplored_171 (A : Set ℝ) (B : Set ℝ) (C : Set ℝ)  (h1 : A ∪ B ⊆ C) (h2 : A ∪ C ⊆ B) (h3 : B ∪ C ⊆ A) : A = B ∧ B = C := by sorry"
+  },
+  {
+    "index": 220,
+    "Problem": "(Inequality Optional Question)  \nIn the range of real numbers, the solution set of the inequality $||x-2|-1| \\leq 1$ is \\_\\_\\_\\_\\_\\_.",
+    "Declaration": "S: Set",
+    "Facts": "S = Solve_inequation(x: Real, Abs(Abs(x - 2) - 1) <= 1)",
+    "Query": "S = ?",
+    "lean_theorem": "theorem Unexplored_17066 (S : Set ℝ)  (h1 : S = { (x : ℝ) | (|(|x - 2|) - 1|) <= 1 }) : S = sorry := by sorry"
+  },
+  {
+    "index": 221,
+    "Problem": "If the sets $M=\\{y \\mid y=2^x\\}$ and $N=\\{y \\mid y=\\log_{0.5} \\sqrt {x^2+1}\\}$, then find the union of $M$ and $N$, $M \\cup N$.",
+    "Declaration": "M: Set; N: Set",
+    "Facts": "M = Build_Set(y, y = 2^x); N = Build_Set(y, y = Log(0.5, Sqrt(x^2 + 1)))",
+    "Query": "M ∪ N = ?",
+    "lean_theorem": "theorem Unexplored_17079 (M : Set ℝ) (N : Set ℝ)  (h1 : M = {y | y = 2 ^ x}) (h2 : N = {y | y = (Real.logb (0.5) ((Real.sqrt (x ^ 2 + 1))))}) : M ∪ N = sorry := by sorry"
+  },
+  {
+    "index": 222,
+    "Problem": "Let \\(a, b, c\\) be real numbers such that \\(a + b + c = 3.\\) Find the set of all possible values of \\(ab + ac + bc.\\)",
+    "Declaration": "a: Real; b: Real; c: Real",
+    "Facts": "a + b + c = 3",
+    "Query": "Build_Set(x: Real, x = a * b + a * c + b * c) = ?",
+    "lean_theorem": "theorem Unexplored_1190 (a : ℝ) (b : ℝ) (c : ℝ)  (h1 : a + b + c = 3) : {(x : ℝ) | x = a * b + a * c + b * c} = sorry := by sorry"
+  },
+  {
+    "index": 223,
+    "Problem": "Let $\\lfloor x \\rfloor$ denote the greatest integer less than or equal to $x$. Then, the solution set of the inequality $\\lfloor x \\rfloor^2 - 5\\lfloor x \\rfloor - 36 \\leq 0$ is.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Get_Number_Floor(x)^2 - 5 * Get_Number_Floor(x) - 36 <= 0) = ?",
+    "lean_theorem": "theorem Unexplored_1351    : { (x : ℝ) | ⌊(x: Real)⌋ ^ 2 - 5 * ⌊(x: Real)⌋ - 36 <= 0 } = sorry := by sorry"
+  },
+  {
+    "index": 224,
+    "Problem": "Determine the set of all integers $n$ such that $n^2 - 13n + 36 < 0$.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(n: Integers, n^2 - 13 * n + 36 < 0) = ?",
+    "lean_theorem": "theorem Unexplored_1713    : { (n : ℤ) | n ^ 2 - 13 * n + 36 < 0 } = sorry := by sorry"
+  },
+  {
+    "index": 225,
+    "Problem": "Find the ordered pair $(x, y)$ that satisfies the equations $3x - 18y = 5$ and $4y - x = 6$.",
+    "Declaration": "x: Real; y: Real",
+    "Facts": "3 * x - 18 * y = 5; 4 * y - x = 6",
+    "Query": "(x, y) = ?",
+    "lean_theorem": "theorem Unexplored_2000 (x : ℝ) (y : ℝ)  (h1 : 3 * x - 18 * y = 5) (h2 : 4 * y - x = 6) : (x, y) = sorry := by sorry"
+  },
+  {
+    "index": 226,
+    "Problem": "Let the universal set $A = \\{x | x \\leq 2x + 1 \\leq 5\\}$, and $B = \\{x | 0 < x \\leq 3\\}$. Then, $A \\cap B = \\_\\_\\_\\_\\_\\_$.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = Solve_inequation(x: Real, x <= 2 * x + 1 ∧ 2 * x + 1 <= 5); B = Solve_inequation(x: Real, 0 < x ∧ x <= 3)",
+    "Query": "A ∩ B = ?",
+    "lean_theorem": "theorem Unexplored_21 (A : Set ℝ) (B : Set ℝ)  (h1 : A = { (x : ℝ) | x <= 2 * x + 1 ∧ 2 * x + 1 <= 5 }) (h2 : B = { (x : ℝ) | 0 < x ∧ x <= 3 }) : A ∩ B = sorry := by sorry"
+  },
+  {
+    "index": 227,
+    "Problem": "Given sets $A = \\{x\\,|\\,x < -1 \\text{ or } 2 \\leq x < 3\\}$ and $B = \\{x\\,|\\,-2 \\leq x < 4\\}$, find the union $A \\cup B$.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = Build_Set(x, x < -1 ∨ 2 <= x ∧ x < 3); B = Build_Set(x, -2 <= x ∧ x < 4)",
+    "Query": "A ∪ B = ?",
+    "lean_theorem": "theorem Unexplored_35 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {x | x < -1 ∨ 2 <= x ∧ x < 3}) (h2 : B = {x | -2 <= x ∧ x < 4}) : A ∪ B = sorry := by sorry"
+  },
+  {
+    "index": 228,
+    "Problem": "Given set A = {x | 1 < x < 3} and set B = {x | 2 < x < 4}, find A $\\cup$ B.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = Build_Set(x, 1 < x ∧ x < 3); B = Build_Set(x, 2 < x ∧ x < 4)",
+    "Query": "A ∪ B = ?",
+    "lean_theorem": "theorem Unexplored_87 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {x | 1 < x ∧ x < 3}) (h2 : B = {x | 2 < x ∧ x < 4}) : A ∪ B = sorry := by sorry"
+  },
+  {
+    "index": 229,
+    "Problem": "Given the sets $S = \\{x \\in \\mathbb{R} | x + 1 \\geq 2\\}$ and $T = \\{-2, -1, 0, 1, 2\\}$, find $S \\cap T$.",
+    "Declaration": "S: Set; T: Set",
+    "Facts": "S = Solve_inequation(x: Real, x + 1 >= 2); T = {-2, -1, 0, 1, 2}",
+    "Query": "S ∩ T = ?",
+    "lean_theorem": "theorem Unexplored_257 (S : Set ℝ) (T : Set ℝ)  (h1 : S = { (x : ℝ) | x + 1 >= 2 }) (h2 : T = {-2, -1, 0, 1, 2}) : S ∩ T = sorry := by sorry"
+  },
+  {
+    "index": 230,
+    "Problem": "Michael solved the equation $|x-3| = 4$. Meanwhile, Alice solved an equation of the form $x^2 + bx + c = 0$ that had the same two solutions for $x$ as Michael's equation. What is the ordered pair $(b, c)$?",
+    "Declaration": "b: Integers; c: Integers",
+    "Facts": "Solve_equation(x: Real, Abs(x - 3) = 4) = Solve_equation(x: Real, x^2 + b*x + c = 0)",
+    "Query": "(b, c) = ?",
+    "lean_theorem": "theorem Unexplored_267 (b : ℤ) (c : ℤ)  (h1 : { (x : ℝ) | (|x - 3|) = 4 } = { (x : ℝ) | x ^ 2 + b * x + c = 0 }) : (b, c) = sorry := by sorry"
+  },
+  {
+    "index": 231,
+    "Problem": "Given set A={1, 2, 3} and set B={x|x^2-x-2≤0}, find A∩B.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = {1, 2, 3}; B = Solve_inequation(x: Real, x^2 - x - 2 <= 0)",
+    "Query": "A ∩ B = ?",
+    "lean_theorem": "theorem Unexplored_290 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {1, 2, 3}) (h2 : B = { (x : ℝ) | x ^ 2 - x - 2 <= 0 }) : A ∩ B = sorry := by sorry"
+  },
+  {
+    "index": 232,
+    "Problem": "Given two sets $A=\\{1,3\\}$ and $B=\\{1,2,m\\}$ where $A \\subseteq B$, find $A \\cup B$.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = {1, 3}; A ⊆ B; B = {1, 2, m}",
+    "Query": "A ∪ B = ?",
+    "lean_theorem": "theorem Unexplored_717 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {1, 3}) (h2 : A ⊆ B) (h3 : B = {1, 2, m}) : A ∪ B = sorry := by sorry"
+  },
+  {
+    "index": 233,
+    "Problem": "Given the sets $M=\\{x \\mid |x+1| \\leq 1\\}$ and $N=\\{-1, 0, 1\\}$, find the intersection $M \\cap N$.",
+    "Declaration": "M: Set; N: Set",
+    "Facts": "M = Solve_inequation(x: Real, Abs(x + 1) <= 1); N = {-1, 0, 1}",
+    "Query": "M ∩ N = ?",
+    "lean_theorem": "theorem Unexplored_951 (M : Set ℝ) (N : Set ℝ)  (h1 : M = { (x : ℝ) | (|x + 1|) <= 1 }) (h2 : N = {-1, 0, 1}) : M ∩ N = sorry := by sorry"
+  },
+  {
+    "index": 234,
+    "Problem": "Given sets $A=\\{x\\left|\\right.x+2 \\gt 0\\}$ and $B=\\{-3,-2,-1,0\\}$, find $A\\cap B$.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = Build_Set(x: Real, x + 2 > 0); B = {-3, -2, -1, 0}",
+    "Query": "A ∩ B = ?",
+    "lean_theorem": "theorem Unexplored_1524 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {(x : ℝ) | x + 2 > 0}) (h2 : B = {-3, -2, -1, 0}) : A ∩ B = sorry := by sorry"
+  },
+  {
+    "index": 235,
+    "Problem": "Given the set A = {1, 3} and set B = {-1, 2, 3}, find A ∩ B.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = {1, 3}; B = {-1, 2, 3}",
+    "Query": "A ∩ B = ?",
+    "lean_theorem": "theorem Unexplored_6012 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {1, 3}) (h2 : B = {-1, 2, 3}) : A ∩ B = sorry := by sorry"
+  },
+  {
+    "index": 236,
+    "Problem": "Given the set $A=\\{-1\\}$ and $A \\cup B = \\{-1, 3\\}$, please write down all possible sets $B$ that satisfy the condition.",
+    "Declaration": "A: Set; B: Set",
+    "Facts": "A = {-1}; A ∪ B = {-1, 3}",
+    "Query": "B = ?",
+    "lean_theorem": "theorem Unexplored_14682 (A : Set ℝ) (B : Set ℝ)  (h1 : A = {-1}) (h2 : A ∪ B = {-1, 3}) : B = sorry := by sorry"
+  },
+  {
+    "index": 237,
+    "Problem": "Prove that if for a pair of values \\( x \\) and \\( y \\)\n\n$$\nx^{2}-3 x y+2 y^{2}+x-y=0\n$$\n\nand\n\n$$\nx^{2}-2 x y+y^{2}-5 x+z y=0,\n$$\n\nthen for the same pair of values\n\n$$\nx y-12 x+15 y=0\n$$",
+    "Declaration": "x: Real; y: Real; z: Real",
+    "Facts": "x^2 - 3*x*y + 2*y^2 + x - y = 0; x^2 - 2*x*y + y^2 - 5*x + z*y = 0",
+    "Query": "x*y - 12*x + 15*y = 0",
+    "lean_theorem": "theorem Unexplored_16723 (x : ℝ) (y : ℝ) (z : ℝ)  (h1 : x ^ 2 - 3 * x * y + 2 * y ^ 2 + x - y = 0) (h2 : x ^ 2 - 2 * x * y + y ^ 2 - 5 * x + z * y = 0) : x * y - 12 * x + 15 * y = 0 := by sorry"
+  },
+  {
+    "index": 238,
+    "Problem": "There are some oranges and 192 bananas in Philip's collection. The bananas are organized into 345 groups and oranges are organized into 16 groups. Each group of oranges has 24 oranges. How many oranges are in Philip's collection?",
+    "Declaration": "O: Integers; B: Integers",
+    "Facts": "B / 345 = 192; O / 16 = 24",
+    "Query": "O = ?",
+    "lean_theorem": "theorem Unexplored_2029 (O : ℤ) (B : ℤ)  (h1 : B / 345 = 192) (h2 : O / 16 = 24) : O = sorry := by sorry"
+  },
+  {
+    "index": 239,
+    "Problem": "The solution set of the quadratic inequality $(x+3)(2-x)<0$ is.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, (x + 3) * (2 - x) < 0) = ?",
+    "lean_theorem": "theorem Unexplored_632    : { (x : ℝ) | ( x + 3 ) * ( 2 - x ) < 0 } = sorry := by sorry"
+  },
+  {
+    "index": 240,
+    "Problem": "Express the solution set of the inequality $|x-1| < 1$ in interval notation.",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_inequation(x: Real, Abs(x - 1) < 1) = ?",
+    "lean_theorem": "theorem Unexplored_661    : { (x : ℝ) | (|x - 1|) < 1 } = sorry := by sorry"
+  },
+  {
+    "index": 241,
+    "Problem": "In the geometric sequence with a first term of $8$ and a second term of $-8$, what is the $300^{th}$ term?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 8; Get_Sequence_Terms(S, 2) = -8",
+    "Query": "Get_Sequence_Terms(S, 300) = ?",
+    "lean_theorem": "theorem Unexplored_956 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (1)) = 8) (h2 : (S (2)) = -8) : (S (300)) = sorry := by sorry"
+  },
+  {
+    "index": 242,
+    "Problem": "In the geometric sequence with a first term of $8$ and a second term of $-4$, what is the $150^{th}$ term?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 8; Get_Sequence_Terms(S, 2) = -4",
+    "Query": "Get_Sequence_Terms(S, 150) = ?",
+    "lean_theorem": "theorem Unexplored_969 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (1)) = 8) (h2 : (S (2)) = -4) : (S (150)) = sorry := by sorry"
+  },
+  {
+    "index": 243,
+    "Problem": "The first three terms of an arithmetic sequence are 3, 15, and 27. What is the value of the 30th term?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 3; Get_Sequence_Terms(S, 2) = 15; Get_Sequence_Terms(S, 3) = 27",
+    "Query": "Get_Sequence_Terms(S, 30) = ?",
+    "lean_theorem": "theorem Unexplored_1036 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (1)) = 3) (h2 : (S (2)) = 15) (h3 : (S (3)) = 27) : (S (30)) = sorry := by sorry"
+  },
+  {
+    "index": 244,
+    "Problem": "The first and seventeenth terms of an arithmetic sequence are 6 and 40, respectively. What is the fifty-fifth term?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 6; Get_Sequence_Terms(S, 17) = 40",
+    "Query": "Get_Sequence_Terms(S, 55) = ?",
+    "lean_theorem": "theorem Unexplored_1127 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (1)) = 6) (h2 : (S (17)) = 40) : (S (55)) = sorry := by sorry"
+  },
+  {
+    "index": 245,
+    "Problem": "Consider the following terms of an arithmetic sequence: $1, 2x - 3, 5x + 4, \\ldots$. Find the value of $x$.",
+    "Declaration": "S: ArithmeticSequence; x: Real",
+    "Facts": "Get_Sequence_Terms(S, 1) = 1; Get_Sequence_Terms(S, 2) = 2 * x - 3; Get_Sequence_Terms(S, 3) = 5 * x + 4",
+    "Query": "x = ?",
+    "lean_theorem": "theorem Unexplored_1162 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d) (x : ℝ)  (h1 : (S (1)) = 1) (h2 : (S (2)) = 2 * x - 3) (h3 : (S (3)) = 5 * x + 4) : x = sorry := by sorry"
+  },
+  {
+    "index": 246,
+    "Problem": "If the sum of the second and fourth terms of an arithmetic sequence is $12$, what is the sum of the third and fifth terms?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 2) + Get_Sequence_Terms(S, 4) = 12",
+    "Query": "Get_Sequence_Terms(S, 3) + Get_Sequence_Terms(S, 5) = ?",
+    "lean_theorem": "theorem Unexplored_1170 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (2)) + (S (4)) = 12) : (S (3)) + (S (5)) = sorry := by sorry"
+  },
+  {
+    "index": 247,
+    "Problem": "Two arithmetic sequences $C$ and $D$ both begin with 50. Sequence $C$ has a common difference of 12 and is increasing, while sequence $D$ has a common difference of 8 and is decreasing. What is the absolute value of the difference between the 31st term of sequence $C$ and the 31st term of sequence $D$?",
+    "Declaration": "C: ArithmeticSequence; D: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(C, 1) = 50; Get_Sequence_Terms(C, 2) = 50 + 12; Get_Sequence_Terms(D, 1) = 50; Get_Sequence_Terms(D, 2) = 50 - 8",
+    "Query": "Abs(Get_Sequence_Terms(C, 31) - Get_Sequence_Terms(D, 31)) = ?",
+    "lean_theorem": "theorem Unexplored_1349 (C: ℕ → ℝ) (C_d : ℝ) (C_property : ∀ n : ℕ, C (n + 1) - C n = C_d) (D: ℕ → ℝ) (D_d : ℝ) (D_property : ∀ n : ℕ, D (n + 1) - D n = D_d)  (h1 : (C (1)) = 50) (h2 : (C (2)) = 50 + 12) (h3 : (D (1)) = 50) (h4 : (D (2)) = 50 - 8) : (|(C (31)) - (D (31))|) = sorry := by sorry"
+  },
+  {
+    "index": 248,
+    "Problem": "In the geometric sequence with a first term of $5$ and a second term of $-10$, what is the $303^{rd}$ term?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 5; Get_Sequence_Terms(S, 2) = -10",
+    "Query": "Get_Sequence_Terms(S, 303) = ?",
+    "lean_theorem": "theorem Unexplored_7846 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (1)) = 5) (h2 : (S (2)) = -10) : (S (303)) = sorry := by sorry"
+  },
+  {
+    "index": 249,
+    "Problem": "If the sum of the first and third terms of an arithmetic sequence is $8$, what is the second term?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) + Get_Sequence_Terms(S, 3) = 8",
+    "Query": "Get_Sequence_Terms(S, 2) = ?",
+    "lean_theorem": "theorem Unexplored_7848 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (1)) + (S (3)) = 8) : (S (2)) = sorry := by sorry"
+  },
+  {
+    "index": 250,
+    "Problem": "The fifth and eighth terms of a geometric sequence are 5 and 40, respectively. What is the 11th term of this sequence?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 5) = 5; Get_Sequence_Terms(S, 8) = 40",
+    "Query": "Get_Sequence_Terms(S, 11) = ?",
+    "lean_theorem": "theorem Unexplored_7964 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (5)) = 5) (h2 : (S (8)) = 40) : (S (11)) = sorry := by sorry"
+  },
+  {
+    "index": 251,
+    "Problem": "The fifth and sixth terms of an arithmetic sequence are 2 and 5, respectively. What is the third term?",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 5) = 2; Get_Sequence_Terms(S, 6) = 5",
+    "Query": "Get_Sequence_Terms(S, 3) = ?",
+    "lean_theorem": "theorem Unexplored_7985 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (5)) = 2) (h2 : (S (6)) = 5) : (S (3)) = sorry := by sorry"
+  },
+  {
+    "index": 252,
+    "Problem": "What is the twelfth term in the geometric sequence $27, 9, 3, 1, \\ldots$?",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 27; Get_Sequence_Terms(S, 2) = 9; Get_Sequence_Terms(S, 3) = 3; Get_Sequence_Terms(S, 4) = 1",
+    "Query": "Get_Sequence_Terms(S, 12) = ?",
+    "lean_theorem": "theorem Unexplored_7991 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (1)) = 27) (h2 : (S (2)) = 9) (h3 : (S (3)) = 3) (h4 : (S (4)) = 1) : (S (12)) = sorry := by sorry"
+  },
+  {
+    "index": 253,
+    "Problem": "In the arithmetic sequence $\\{a_n\\}$, $a_2 = -5$ and $d = 3$. Find $a_1$.",
+    "Declaration": "a1: Real; d: Real; a2: Real",
+    "Facts": "a2 = a1 + d; d = 3; a2 = -5",
+    "Query": "a1 = ?",
+    "lean_theorem": "theorem Unexplored_4 (a1 : ℝ) (d : ℝ) (a2 : ℝ)  (h1 : a2 = a1 + d) (h2 : d = 3) (h3 : a2 = -5) : a1 = sorry := by sorry"
+  },
+  {
+    "index": 254,
+    "Problem": "Determine the sixth term of the geometric sequence with the first term $3$ and the second term $6$.",
+    "Declaration": "S: GeometricSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 3; Get_Sequence_Terms(S, 2) = 6",
+    "Query": "Get_Sequence_Terms(S, 6) = ?",
+    "lean_theorem": "theorem Unexplored_8 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q)  (h1 : (S (1)) = 3) (h2 : (S (2)) = 6) : (S (6)) = sorry := by sorry"
+  },
+  {
+    "index": 255,
+    "Problem": "If $\\cos x,$ $\\sin x,$ $\\tan x$ form a geometric sequence, in this order, find $\\cot^4 x + \\cot^2 x.$",
+    "Declaration": "S: GeometricSequence; x: Real",
+    "Facts": "Get_Sequence_Terms(S, 1) = Cos(x); Get_Sequence_Terms(S, 2) = Sin(x); Get_Sequence_Terms(S, 3) = Tan(x)",
+    "Query": "Cot(x)^4 + Cot(x)^2 = ?",
+    "lean_theorem": "theorem Unexplored_119 (S: ℕ → ℝ) (S_q : ℝ) (S_property : ∀ n : ℕ, S (n + 1) / S n = S_q) (x : ℝ)  (h1 : (S (1)) = Real.cos (x)) (h2 : (S (2)) = Real.sin (x)) (h3 : (S (3)) = Real.tan (x)) : Real.cot (x) ^ 4 + Real.cot (x) ^ 2 = sorry := by sorry"
+  },
+  {
+    "index": 256,
+    "Problem": "Let $\\{a_{n}\\}$ be an arithmetic sequence with the sum of the first $n$ terms denoted as $S_{n}$. If $S_{5}=30$, then $a_{3}=\\_\\_\\_\\_\\_\\_$.",
+    "Declaration": "S5: Real; a1: Real; d: Real",
+    "Facts": "S5 = 30; S5 = 5 * a1 + 10 * d",
+    "Query": "a1 + 2 * d = ?",
+    "lean_theorem": "theorem Unexplored_181 (S5 : ℝ) (a1 : ℝ) (d : ℝ)  (h1 : S5 = 30) (h2 : S5 = 5 * a1 + 10 * d) : a1 + 2 * d = sorry := by sorry"
+  },
+  {
+    "index": 257,
+    "Problem": "Consider the arithmetic sequence $3$, $8$, $13$, $18$, $\\ldots$. Find the $20^{\\text{th}}$ term in this sequence.",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 3; Get_Sequence_Terms(S, 2) = 8; Get_Sequence_Terms(S, 3) = 13; Get_Sequence_Terms(S, 4) = 18",
+    "Query": "Get_Sequence_Terms(S, 20) = ?",
+    "lean_theorem": "theorem Unexplored_376 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (1)) = 3) (h2 : (S (2)) = 8) (h3 : (S (3)) = 13) (h4 : (S (4)) = 18) : (S (20)) = sorry := by sorry"
+  },
+  {
+    "index": 258,
+    "Problem": "The general term formula for the sequence $\\{a_n\\}$ is $a_n = 3n - 5$. Find $a_3$.",
+    "Declaration": "a: Sequence",
+    "Facts": "Get_Sequence_Terms(a, n) = 3 * n - 5",
+    "Query": "Get_Sequence_Terms(a, 3) = ?",
+    "lean_theorem": "theorem Unexplored_2644 (a : ℕ → ℝ)  (h1 : (a (n)) = 3 * n - 5) : (a (3)) = sorry := by sorry"
+  },
+  {
+    "index": 259,
+    "Problem": "Consider the arithmetic sequence $10, 7, 4, \\ldots$. Find the $10$th term.",
+    "Declaration": "S: ArithmeticSequence",
+    "Facts": "Get_Sequence_Terms(S, 1) = 10; Get_Sequence_Terms(S, 2) = 7; Get_Sequence_Terms(S, 3) = 4",
+    "Query": "Get_Sequence_Terms(S, 10) = ?",
+    "lean_theorem": "theorem Unexplored_2706 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d)  (h1 : (S (1)) = 10) (h2 : (S (2)) = 7) (h3 : (S (3)) = 4) : (S (10)) = sorry := by sorry"
+  },
+  {
+    "index": 260,
+    "Problem": "Given the arithmetic sequence ${a_n}$, $a_3$ and $a_{15}$ are the roots of the equation $x^2-6x-1=0$. Find the value of $a_7+a_8+a_9+a_{10}+a_{11}=\\_\\_\\_\\_\\_\\_.$",
+    "Declaration": "an: ArithmeticSequence; x1: Real; x2: Real",
+    "Facts": "Get_Sequence_Terms(an, 3) = x1; Get_Sequence_Terms(an, 15) = x2; Solve_equation(x, x^2 - 6*x - 1 = 0) = {x1, x2}",
+    "Query": "Get_Sequence_Terms(an, 7) + Get_Sequence_Terms(an, 8) + Get_Sequence_Terms(an, 9) + Get_Sequence_Terms(an, 10) + Get_Sequence_Terms(an, 11) = ?",
+    "lean_theorem": "theorem Unexplored_5652 (an: ℕ → ℝ) (an_d : ℝ) (an_property : ∀ n : ℕ, an (n + 1) - an n = an_d) (x1 : ℝ) (x2 : ℝ)  (h1 : (an (3)) = x1) (h2 : (an (15)) = x2) (h3 : { x | x ^ 2 - 6 * x - 1 = 0 } = {x1, x2}) : (an (7)) + (an (8)) + (an (9)) + (an (10)) + (an (11)) = sorry := by sorry"
+  },
+  {
+    "index": 261,
+    "Problem": "From the relation \\( x_{n-1}=\\frac{x_{n}+x_{n-1}+x_{n-2}}{3} \\), we obtain: \\( 2 x_{n-1}=x_{n-2}+x_{n} \\) for all \\( n \\geq 3 \\). This means that the given sequence is an arithmetic progression. Let the common difference of the progression be \\( d \\). Then, \\(\\frac{x_{300}-x_{33}}{x_{333}-x_{3}}=\\frac{(300-33)d}{330d}=\\frac{89}{110}\\).",
+    "Declaration": "d: Real; x: Sequence",
+    "Facts": "2 * Get_Sequence_Terms(x, n - 1) = Get_Sequence_Terms(x, n - 2) + Get_Sequence_Terms(x, n); Get_Sequence_Terms(x, n - 1) = (Get_Sequence_Terms(x, n) + Get_Sequence_Terms(x, n - 1) + Get_Sequence_Terms(x, n - 2)) / 3; n ≥ 3",
+    "Query": "(Get_Sequence_Terms(x, 300) - Get_Sequence_Terms(x, 33)) / (Get_Sequence_Terms(x, 333) - Get_Sequence_Terms(x, 3)) = 89 / 110",
+    "lean_theorem": "theorem Unexplored_5708 (d : ℝ) (x : ℕ → ℝ)  (h1 : 2 * (x (n - 1)) = (x (n - 2)) + (x (n))) (h2 : (x (n - 1)) = ( (x (n)) + (x (n - 1)) + (x (n - 2)) ) / 3) (h3 : n ≥ 3) : ( (x (300)) - (x (33)) ) / ( (x (333)) - (x (3)) ) = 89 / 110 := by sorry"
+  },
+  {
+    "index": 262,
+    "Problem": "Let the geometric sequence \\\\(\\{a_n\\}\\) satisfy \\\\(a_1+a_2=-1\\\\) and \\\\(a_1-a_3=-3\\\\). Find \\\\(a_4=\\\\) \\_\\_\\_\\_\\_\\_.",
+    "Declaration": "a1: Real; a2: Real; a3: Real; a4: Real",
+    "Facts": "a1 + a2 = -1; a1 - a3 = -3",
+    "Query": "a4 = ?",
+    "lean_theorem": "theorem Unexplored_10920 (a1 : ℝ) (a2 : ℝ) (a3 : ℝ) (a4 : ℝ)  (h1 : a1 + a2 = -1) (h2 : a1 - a3 = -3) : a4 = sorry := by sorry"
+  },
+  {
+    "index": 263,
+    "Problem": "Consider the following terms of an arithmetic sequence: \\( \\frac{1}{3}, 2x, x+4, \\ldots \\). Solve for \\( x \\).",
+    "Declaration": "S: ArithmeticSequence; x: Real",
+    "Facts": "Get_Sequence_Terms(S, 1) = 1 / 3; Get_Sequence_Terms(S, 2) = 2 * x; Get_Sequence_Terms(S, 3) = x + 4",
+    "Query": "x = ?",
+    "lean_theorem": "theorem Unexplored_12213 (S: ℕ → ℝ) (S_d : ℝ) (S_property : ∀ n : ℕ, S (n + 1) - S n = S_d) (x : ℝ)  (h1 : (S (1)) = 1 / 3) (h2 : (S (2)) = 2 * x) (h3 : (S (3)) = x + 4) : x = sorry := by sorry"
+  },
+  {
+    "index": 264,
+    "Problem": "Find all rational roots of the equation \\[3x^5 - 2x^4 + 5x^3 - x^2 - 7x + 2 = 0.\\]",
+    "Declaration": "",
+    "Facts": "",
+    "Query": "Solve_equation(x: RationalNumbers, 3 * x^5 - 2 * x^4 + 5 * x^3 - x^2 - 7 * x + 2 = 0) = ?",
+    "lean_theorem": "theorem Unexplored_7681    : { (x : ℚ) | 3 * x ^ 5 - 2 * x ^ 4 + 5 * x ^ 3 - x ^ 2 - 7 * x + 2 = 0 } = sorry := by sorry"
+  }
+]
